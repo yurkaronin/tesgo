@@ -6,11 +6,11 @@
 *.pdf
 *.psd
 *.sublime*
-node_modules/
-build/
-dist/
-docs/
+/node_modules/
+/build/
+/dist/
+/docs/
 npm-debug.*
-source/css/*.css
-source/css/*.map
+/source/css/*.css
+/source/css/*.map
 Thumbs.db

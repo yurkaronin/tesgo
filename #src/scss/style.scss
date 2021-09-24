@@ -202,6 +202,39 @@ section {
   background: #0944c2;
 }
 
-.footertop_listother .footertop_link {
+/* .footertop_listother .footertop_link {
   color: #ffffff !important;
+} */
+
+.dropmnpc_nav .dropmnpc_link {
+  position: relative;
+  color: #231f20;
+  opacity: 1;
+}
+
+.dropmnpc_link:hover::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  bottom: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.dropmnpc_navtitle {
+  font-weight: 700 !important;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.cartout_infout {
+  display: flex;
+  justify-content: space-between;
 }
