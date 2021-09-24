@@ -2156,6 +2156,42 @@ section {
 
 /* Libs Style All */
 
+.goodsslid_itm:hover,
+.goodsslid_itm:active,
+.goodsslid_itm:focus {
+  -webkit-box-shadow: inset 0 0 0 1px #0051ff;
+          box-shadow: inset 0 0 0 1px #0051ff;
+}
+
+.mainslid_itm a,
+.bltemplate_col a .articlebl a {
+  display: block;
+}
+
+.search_trig_img:hover svg path,
+.search_trig_img:hover svg circle,
+.searchbox_iconsearch:hover svg path,
+.searchbox_iconsearch:hover svg circle {
+  stroke: #ff4d00;
+}
+
+.accincomemess_date {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.accincomemess .accincomemess_title {
+  margin-bottom: 30px;
+}
+
+.headtop {
+  background: #0944c2;
+}
+
+.footertop_listother .footertop_link {
+  color: #ffffff !important;
+}
+
 @media (min-width: 576px) {
   .container,
   .container-sm {

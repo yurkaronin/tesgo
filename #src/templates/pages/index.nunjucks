@@ -1,5 +1,5 @@
 {% extends "layout.nunjucks" %}
-{% set title = "Tesgo 2" %}
+{% set title = "Tesgo-home" %}
 {% set css = "home" %}
 
 {% block content %}
@@ -27,11 +27,12 @@
 				<div class="mainslider_row">
 					<div class="swiper-container mainslid js-mainslider-initial">
 						<div class="swiper-wrapper">
+
 							<div class="swiper-slide mainslid_itm">
+              <a href="#!">
 								<div class="mainslid_itm_picturewrap">
 									<div class="mainslid_itm_image" style="background-image: url('img/mainslider-image-1.jpg');"></div>
 								</div>
-
 								<div class="mainslid_itm_content">
 									<h2 class="mainslid_itm_title">
 										CLEAN & GREEN<br>
@@ -42,10 +43,13 @@
 										В литературе неоднократно описано, как <br>
 										неоднородность эксперментально верифицируема
 									</p>
-									<a class="mainslid_itm_link m-button" href="#!">Узнать больше</a>
+									<button class="mainslid_itm_link m-button" type="button">Узнать больше</button>
 								</div>
+                </a>
 							</div>
+
 							<div class="swiper-slide mainslid_itm">
+              <a href="#!">
 								<div class="mainslid_itm_picturewrap">
 									<div class="mainslid_itm_image" style="background-image: url('img/mainslider-image-1.jpg');"></div>
 								</div>
@@ -60,10 +64,13 @@
 										В литературе неоднократно описано, как <br>
 										неоднородность эксперментально верифицируема
 									</p>
-									<a class="mainslid_itm_link m-button" href="#!">Узнать больше</a>
+									<button class="mainslid_itm_link m-button" type="button">Узнать больше</button>
 								</div>
+                </a>
 							</div>
+
 							<div class="swiper-slide mainslid_itm">
+              <a href="#!">
 								<div class="mainslid_itm_picturewrap">
 									<div class="mainslid_itm_image" style="background-image: url('img/mainslider-image-1.jpg');"></div>
 								</div>
@@ -78,9 +85,10 @@
 										В литературе неоднократно описано, как <br>
 										неоднородность эксперментально верифицируема
 									</p>
-									<a class="mainslid_itm_link m-button" href="#!">Узнать больше</a>
+									<button class="mainslid_itm_link m-button" type="button">Узнать больше</button>
 								</div>
 							</div>
+              </a>
 						</div>
 
 						<div class="swiper-pagination mainslid_pagination js-mainslider-pagination"></div>
@@ -100,18 +108,25 @@
 		<section class="bltemplate">
 			<div class="container">
 				<div class="row bltemplate_row">
+
 					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 bltemplate_col bltemplate_col-left">
+          <a href="#!">
 						<div class="bltemplate_itm" style="background-image: url('img/bltemplate-image-1.jpg');">
 							<h3 class="bltemplate_itm_title">Доставим <br class="bltemplate_itm_title-br"> бесплатно</h3>
-							<a class="bltemplate_itm_link m-button" href="#!">Подробнее</a>
+							<button class="bltemplate_itm_link m-button" type="button">Подробнее</button>
 						</div>
+            </a>
 					</div>
+
 					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 bltemplate_col bltemplate_col-right">
+          <a href="#!">
 						<div class="bltemplate_itm" style="background-image: url('img/bltemplate-image-2.jpg');">
 							<h3 class="bltemplate_itm_title">Программа <br class="bltemplate_itm_title-br"> лояльности</h3>
-							<a class="bltemplate_itm_link m-button" href="#!">Подробнее</a>
+							<button class="bltemplate_itm_link m-button" type="button">Подробнее</button>
 						</div>
+            </a>
 					</div>
+
 				</div>
 			</div>
 		</section>

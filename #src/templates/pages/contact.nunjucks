@@ -61,27 +61,15 @@
                 </div>
                 <div class="cont_navitm">
                   <div class="cont_navitm_title">Ростовская область</div>
-                  {# <nav class="cont_navitm_menu">
-                    <a class="cont_navitm_link" href="#!">Адлер</a>
-                    <a class="cont_navitm_link" href="#!">Анапа</a>
-                    <a class="cont_navitm_link" href="#!">Геленджик</a>
-                    <a class="cont_navitm_link" href="#!">Краснодар</a>
-                    <a class="cont_navitm_link" href="#!">Новороссийск</a>
-                    <a class="cont_navitm_link" href="#!">Сочи</a>
-                    <a class="cont_navitm_link" href="#!">Большой Сочи</a>
-                  </nav> #}
+                  <nav class="cont_navitm_menu">
+                    <a class="cont_navitm_link" href="#!">Ростов-на-Дону</a>
+                  </nav>
                 </div>
                 <div class="cont_navitm">
                   <div class="cont_navitm_title">Ставропольский край</div>
-                  {# <nav class="cont_navitm_menu">
-                    <a class="cont_navitm_link" href="#!">Адлер</a>
-                    <a class="cont_navitm_link" href="#!">Анапа</a>
-                    <a class="cont_navitm_link" href="#!">Геленджик</a>
-                    <a class="cont_navitm_link" href="#!">Краснодар</a>
-                    <a class="cont_navitm_link" href="#!">Новороссийск</a>
-                    <a class="cont_navitm_link" href="#!">Сочи</a>
-                    <a class="cont_navitm_link" href="#!">Большой Сочи</a>
-                  </nav> #}
+                  <nav class="cont_navitm_menu">
+                    <a class="cont_navitm_link" href="#!">Ставрополь</a>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -104,7 +92,7 @@
               </div>
 
               <div class="blcont contactblinfo">
-                <div class="blcont_title">Склад</div>
+                <div class="blcont_title">Офис</div>
                 <div class="blcont_list">
                   <div class="blcont_list_itm">
                     <span class="blcont_list_label">Адрес:</span>

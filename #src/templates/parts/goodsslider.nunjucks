@@ -2,6 +2,7 @@
 
   <div class="swiper-container goodsslid js-goodsslider-initial">
     <div class="swiper-wrapper">
+
       <a href="#!" class="swiper-slide goodsslid_itm carditm">
         <div class="carditm_picture">
           <img class="carditm_image" src="img/goods-itm-image-1.png" alt="Alpet R">
@@ -17,6 +18,7 @@
           <span class="carditm_deliv_text">Доставим завтра</span>
         </div>
       </a>
+
       <a href="#!" class="swiper-slide goodsslid_itm carditm">
         <div class="carditm_picture">
           <img class="carditm_image" src="img/goods-itm-image-2.png" alt="Alpet R">

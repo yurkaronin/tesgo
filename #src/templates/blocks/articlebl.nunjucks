@@ -8,6 +8,7 @@
     <div class="container">
       <div class="row articlebl_row">
         <div class="col-xl-6 col-lg-6 articlebl_col articlebl_col-accentblock">
+          <a href="#!">
           <div class="articlebl_content">
             <h3 class="articlebl_title">
               CLEAN & GREEN<br class="articlebl_title-br1">
@@ -18,9 +19,11 @@
               В литературе неоднократно описано, как неоднородность<br>
               эксперментально верифицируема
             </p>
-            <a class="articlebl_link m-button" href="#!">Узнать больше</a>
+            <button class="articlebl_link m-button" type="button">Узнать больше</button>
           </div>
+          </a>
         </div>
+
         <div class="col-xl-6 col-lg-6 articlebl_col articlebl_col-desc">
           <div class="articlebl_blinfotext">
             <p class="articlebl_infotext">

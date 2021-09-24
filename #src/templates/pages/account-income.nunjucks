@@ -73,8 +73,9 @@
               <div class="accincome_row">
                 <div class="accincome_messages">
                   <div class="accincomemess">
-                    <h3 class="accincomemess_title">Уведомление от Администрации</h3>
                     <div class="accincomemess_date">8 июня 2021 г.</div>
+                    <h3 class="accincomemess_title">Уведомление от Администрации</h3>
+
                     <div class="accincomemess_desc">
                       <p class="accincomemess_text">
                         Струя, на первый взгляд, расщепляет квазар. Еще в ранних работах Л.Д.Ландау показано, что вихрь представляет собой нестационарный взрыв, в итоге возможно появление обратной связи и самовозбуждение системы. Тело возбуждает субсветовой гидродинамический удар.
