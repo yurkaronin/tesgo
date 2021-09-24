@@ -1,0 +1,16 @@
+<footer class="footer" id="footer">
+  <div class="footerbot">
+    <div class="container">
+      <div class="footerbot_wrap">
+        <div class="footerbot_contblock">
+          <div class="footerbot_city footerbot_style">Краснодар</div>
+          <div class="footerbot_copy footerbot_style">© ООО «Тесго», все права защищены, 2021</div>
+        </div>
+        <div class="footerbot_contblock">
+          <a class="footerbot_link footerbot_style" href="#!">Политика конфиденциальности</a>
+          <a class="footerbot_link footerbot_style" href="#!">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

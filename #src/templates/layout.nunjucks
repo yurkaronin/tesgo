@@ -1,0 +1,74 @@
+{% if not(title) %}
+{% set title = "Default title" %}
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>{{ title }}</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Icons IE 11, Chrome, Firefox, Safari, Opera -->
+  <link rel="icon" href="img/favicon/favicon16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="img/favicon/favicon60.png" sizes="60x60">
+  <!-- Facebook -->
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="img/preview-img.png" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:locale" content="ru" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css"> 
+  <!-- Main Style Page -->
+  <link rel="stylesheet" href="css/style.min.css" />
+  {% if (css) %}
+  <link rel="stylesheet" href="css/{{css}}.min.css" />
+  {% endif %}
+  
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#0051ff" />
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#0051ff" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0051ff" />
+</head>
+
+
+<!-- Analytics -->
+
+<!-- Analytics -->
+
+<body>
+
+  <!--[if lt IE 9]>
+    <p class="browserupgrade">
+      You are using an old browser. Please
+      <a href="https://browsehappy.com/?locale=en">update your browser</a> для
+      for the site to work correctly.
+    </p>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  {% block content %}{% endblock %}
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/bundle.min.js"></script>
+  {% if (pageproduct) %}
+    <script src="js/cardprod.js"></script>
+  {% endif %}
+</body>
+
+</html>

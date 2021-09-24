@@ -1,0 +1,199 @@
+.popularcat {
+  padding: 21px 0 29px;
+  &_col {
+    margin-bottom: 24px;
+  }
+}
+
+.catblock {
+  display: block;
+  &:hover {
+    .catblock_name,
+    .catblock_count {
+      color: $accent;
+    }
+  }
+
+  &_picture {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 224px;
+
+    background: rgba(35, 31, 32, 0.05);
+  }
+
+  &_image {
+    display: block;
+    max-width: 100%;
+  }
+
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 14px 0 10px;
+  }
+
+  &_name {
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    transition: all 250ms ease-in;
+  }
+
+  &_count {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #adb8c1;
+
+    transition: all 250ms ease-in;
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+  .catblock_name {
+    margin-right: 9px;
+  }
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+  .popularcat_col {
+    margin-bottom: 32px;
+  }
+
+  .catblock_content {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 14px 0 26px;
+  }
+
+  .catblock_name {
+    margin-bottom: 8px;
+  }
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+}
+
+// ≥992px
+@media (max-width: 992px) {
+  .popularcat_col {
+    margin-bottom: 18px;
+  }
+
+  .catblock_content {
+    padding: 14px 0 14px;
+  }
+}
+
+// ≥850px
+@media (max-width: 850px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+  .popularcat {
+    padding: 21px 0 21px;
+  }
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  .popularcat {
+    padding: 16px 0 21px;
+  }
+
+  .popularcat_col {
+    margin-bottom: 13px;
+  }
+
+  .catblock_content {
+    padding: 12px 0 12px;
+  }
+
+  .catblock_picture {
+    min-height: 200px;
+  }
+
+  .catblock_count {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+  .goodsslid_itm {
+    width: 200px;
+  }
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

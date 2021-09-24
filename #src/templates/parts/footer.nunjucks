@@ -1,0 +1,476 @@
+<section class="navigatbl">
+  <div class="container">
+    <div class="navigatbl_wrap">
+      <div class="row navigatbl_row navigatbl_row-1">
+        <div class="col-xl-3 col-lg-3 col-md-12 navigatbl_col">
+          <div class="navfblock">
+            <a class="navfblock_title" href="#!">
+              Моющие средства
+              <img class="navfblock_title_icon" src="img/icon-arrow-down.svg" alt="иконка">
+            </a>
+            <ul class="navfblock_list">
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Весь товар</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Жидкое Мыло / Пена для рук</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">для Сантехники</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">для Полов</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">для Посуды</a>
+              </li>
+
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+
+              {# <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для удаления Жира и Нагара</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Стекол</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Стирки</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Дезинфекции</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">Специальные средства</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">Разное</a>
+              </li> #}
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-12 navigatbl_col">
+          <div class="navfblock">
+            <a class="navfblock_title" href="#!">
+              Бумажные товары
+              <img class="navfblock_title_icon" src="img/icon-arrow-down.svg" alt="иконка">
+            </a>
+            <ul class="navfblock_list">
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Весь товар</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Салфетки для сервировки стола</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Влажные салфетки </a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Осибори</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Листовые полотенца V сложения</a>
+              </li>
+
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-12 navigatbl_col">
+          <div class="navfblock">
+            <a class="navfblock_title" href="#!">
+              Средства индивидуальной защиты
+              <img class="navfblock_title_icon" src="img/icon-arrow-down.svg" alt="иконка">
+            </a>
+            <ul class="navfblock_list">
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Весь товар</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Перчатки Виниловые</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Перчатки Нитриловые</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Перчатки Латексные</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Перчатки Латексные хозяйственные</a>
+              </li>
+
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-12 navigatbl_col">
+          <div class="navfblock">
+            <a class="navfblock_title" href="#!">
+              Хозтовары
+              <img class="navfblock_title_icon" src="img/icon-arrow-down.svg" alt="иконка">
+            </a>
+            <ul class="navfblock_list">
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Весь товар</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Пакеты для мусора</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Микрофибры</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Губки </a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Сетки</a>
+              </li>
+
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row navigatbl_row navigatbl_row-2">
+        <div class="col-xl-3 col-lg-3 col-md-12 navigatbl_col">
+          <div class="navfblock">
+            <a class="navfblock_title" href="#!">
+              Общепит
+              <img class="navfblock_title_icon" src="img/icon-arrow-down.svg" alt="иконка">
+            </a>
+            <ul class="navfblock_list">
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Весь товар</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Фольга</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Пленка пищевая</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Пергамент силиконизированный</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Товары для сервировки стола</a>
+              </li>
+
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-12 navigatbl_col">
+          <div class="navfblock">
+            <a class="navfblock_title" href="#!">
+              Гостиница
+              <img class="navfblock_title_icon" src="img/icon-arrow-down.svg" alt="иконка">
+            </a>
+            <ul class="navfblock_list">
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Весь товар</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Косметика эконом серии "Hotel"</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Косметика серии "French Flowers"</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Тапочки</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Полотенца</a>
+              </li>
+
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-12 navigatbl_col">
+          <div class="navfblock">
+            <a class="navfblock_title" href="#!">
+              Бакалея
+              <img class="navfblock_title_icon" src="img/icon-arrow-down.svg" alt="иконка">
+            </a>
+            <ul class="navfblock_list">
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Весь товар</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Крупы</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Соль / Сахар / Перец</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Кетчуп / Горчица</a>
+              </li>
+              <li class="navfblock_list_itm">
+                <a class="navfblock_link" href="#!">Приправы / Специи</a>
+              </li>
+
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+              <li class="navfblock_list_itm is-hidden is-display-none">
+                <a class="navfblock_link" href="#!">для Скрытого</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="btnnavmore navigatbl_btnmore js-navigatbl-btnmore">
+        {# <img class="btnnavmore_icon" src="img/icon-burgermore.svg" alt="иконка"> #}
+        <svg class="btnnavmore_icon" data-src="img/icon-burgermore.svg" width="16" height="9"></svg>
+        <span class="btnnavmore_text">Показать еще</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="footer">
+  <div class="footertop">
+    <div class="container">
+
+      {# <div class="row footertop_row">
+        <div class="col-xl-3 col-lg-3 col-md-6 footertop_col footertop_col-linksmain">
+          <div class="footertop_itm">
+            <ul class="footertop_listmain">
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Где купить</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Подписаться на рассылку</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Программа лояльности</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Обратная связь</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 footertop_col footertop_col-linkhelp">
+          <div class="footertop_itm">
+            <div class="footertop_itm_title">Помощь</div>
+            <ul class="footertop_listother">
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Юрлицам</a>
+              </li>
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Как купить</a>
+              </li>
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Доставка</a>
+              </li>
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Гарантия и возврат</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 footertop_col footertop_col-linkabout">
+          <div class="footertop_itm">
+            <div class="footertop_itm_title">О Tesgo</div>
+            <ul class="footertop_listother">
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Карьера</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 footertop_col footertop_col-linkcontact">
+          <div class="footertop_itm">
+            <div class="footertop_social social">
+              <a class="social_link" target="_blank" href="#!">
+                <svg class="social_link_icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.2392 16V8.70218H11.6878L12.0552 5.85725H9.2392V4.04118C9.2392 3.21776 9.46692 2.65661 10.649 2.65661L12.1543 2.65599V0.111384C11.894 0.0775563 11.0004 0 9.96041 0C7.78873 0 6.30196 1.32557 6.30196 3.75942V5.85725H3.84595V8.70218H6.30196V16H9.2392Z" />
+                </svg>
+              </a>
+              <a class="social_link" target="_blank" href="#!">
+                <svg class="social_link_icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M15.9843 4.70404C15.9468 3.8539 15.8093 3.26944 15.6124 2.76299C15.4092 2.22541 15.0967 1.74412 14.6872 1.34401C14.2871 0.937683 13.8026 0.621948 13.2712 0.421957C12.7619 0.22502 12.1805 0.0875415 11.3303 0.0500586C10.4738 0.00940124 10.2019 0 8.02963 0C5.85733 0 5.58543 0.00940124 4.73212 0.0468842C3.88197 0.0843671 3.29751 0.221967 2.79119 0.418783C2.25348 0.621948 1.77219 0.934509 1.37209 1.34401C0.965758 1.74412 0.650145 2.22858 0.450033 2.75994C0.253095 3.26944 0.115618 3.85073 0.0781347 4.70087C0.0374774 5.55736 0.0280762 5.82926 0.0280762 8.00156C0.0280762 10.1739 0.0374774 10.4458 0.0749603 11.2991C0.112443 12.1492 0.250043 12.7337 0.446981 13.2401C0.650145 13.7777 0.965758 14.259 1.37209 14.6591C1.77219 15.0654 2.25666 15.3812 2.78801 15.5812C3.29751 15.7781 3.8788 15.9156 4.72906 15.9531C5.58226 15.9907 5.85428 16 8.02658 16C10.1989 16 10.4708 15.9907 11.3241 15.9531C12.1742 15.9156 12.7587 15.7781 13.265 15.5812C14.3403 15.1654 15.1904 14.3153 15.6062 13.2401C15.803 12.7306 15.9406 12.1492 15.9781 11.2991C16.0156 10.4458 16.025 10.1739 16.025 8.00156C16.025 5.82926 16.0218 5.55736 15.9843 4.70404ZM14.5435 11.2366C14.509 12.018 14.3778 12.4399 14.2684 12.7212C13.9995 13.4183 13.4463 13.9715 12.7493 14.2403C12.468 14.3497 12.043 14.481 11.2646 14.5153C10.4207 14.5529 10.1676 14.5622 8.03281 14.5622C5.89799 14.5622 5.64172 14.5529 4.80085 14.5153C4.01945 14.481 3.5975 14.3497 3.31619 14.2403C2.96932 14.1121 2.65359 13.909 2.39731 13.6433C2.13163 13.3838 1.92847 13.0713 1.80027 12.7244C1.69087 12.4431 1.55962 12.018 1.52532 11.2397C1.48771 10.3958 1.47843 10.1426 1.47843 8.00779C1.47843 5.87297 1.48771 5.6167 1.52532 4.77596C1.55962 3.99455 1.69087 3.5726 1.80027 3.29129C1.92847 2.9443 2.13163 2.62869 2.40049 2.37229C2.65981 2.10661 2.97237 1.90345 3.31937 1.77537C3.60067 1.66597 4.0258 1.53472 4.80403 1.50029C5.64794 1.46281 5.90117 1.45341 8.03586 1.45341C10.1738 1.45341 10.4269 1.46281 11.2678 1.50029C12.0492 1.53472 12.4712 1.66597 12.7525 1.77537C13.0993 1.90345 13.4151 2.10661 13.6714 2.37229C13.937 2.63174 14.1402 2.9443 14.2684 3.29129C14.3778 3.5726 14.509 3.99761 14.5435 4.77596C14.581 5.61987 14.5904 5.87297 14.5904 8.00779C14.5904 10.1426 14.581 10.3927 14.5435 11.2366Z"
+                       />
+                    <path
+                      d="M8.02961 3.8916C5.76049 3.8916 3.91943 5.73254 3.91943 8.00178C3.91943 10.271 5.76049 12.112 8.02961 12.112C10.2989 12.112 12.1398 10.271 12.1398 8.00178C12.1398 5.73254 10.2989 3.8916 8.02961 3.8916ZM8.02961 10.6679C6.55752 10.6679 5.36344 9.47399 5.36344 8.00178C5.36344 6.52957 6.55752 5.33561 8.02961 5.33561C9.50182 5.33561 10.6958 6.52957 10.6958 8.00178C10.6958 9.47399 9.50182 10.6679 8.02961 10.6679Z"
+                       />
+                    <path
+                      d="M13.262 3.72907C13.262 4.25896 12.8323 4.68861 12.3023 4.68861C11.7724 4.68861 11.3428 4.25896 11.3428 3.72907C11.3428 3.19906 11.7724 2.76953 12.3023 2.76953C12.8323 2.76953 13.262 3.19906 13.262 3.72907Z"
+                       />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="social_link" target="_blank" href="#!">
+                <svg class="social_link_icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M13.2767 8.6855C13.018 8.35883 13.092 8.2135 13.2767 7.9215C13.28 7.91816 15.4153 4.9675 15.6353 3.96683L15.6367 3.96616C15.746 3.6015 15.6367 3.3335 15.108 3.3335H13.3587C12.9133 3.3335 12.708 3.5635 12.598 3.82083C12.598 3.82083 11.7073 5.95283 10.4473 7.33483C10.0407 7.73416 9.85267 7.86216 9.63067 7.86216C9.52133 7.86216 9.35133 7.73416 9.35133 7.3695V3.96616C9.35133 3.52883 9.22667 3.3335 8.858 3.3335H6.10733C5.828 3.3335 5.662 3.5375 5.662 3.7275C5.662 4.14216 6.292 4.2375 6.35733 5.40416V7.9355C6.35733 8.49016 6.25667 8.59216 6.03333 8.59216C5.43867 8.59216 3.99533 6.4515 3.14 4.0015C2.96733 3.52616 2.79867 3.33416 2.35 3.33416H0.6C0.100667 3.33416 0 3.56416 0 3.8215C0 4.27616 0.594666 6.53683 2.76533 9.5235C4.212 11.5622 6.24933 12.6668 8.10267 12.6668C9.21667 12.6668 9.35267 12.4215 9.35267 11.9995C9.35267 10.0515 9.252 9.8675 9.81 9.8675C10.0687 9.8675 10.514 9.9955 11.554 10.9788C12.7427 12.1448 12.938 12.6668 13.6033 12.6668H15.3527C15.8513 12.6668 16.104 12.4215 15.9587 11.9375C15.626 10.9195 13.378 8.8255 13.2767 8.6855Z"
+                      />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+            <a class="footertop_callme" href="#!">Перезвоните мне</a>
+          </div>
+        </div>
+      </div> #}
+
+      <div class="row footertop_row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footertop_col">
+          <div class="footertop_itm footertop_col-linksmain">
+            <ul class="footertop_listmain">
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Где купить</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Подписаться на рассылку</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Программа лояльности</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="#!">Обратная связь</a>
+              </li>
+              <li class="footertop_listmain_itm">
+                <a class="footertop_link" href="contact.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footertop_itm footertop_col-linkhelp">
+            <div class="footertop_itm_title">Помощь</div>
+            <ul class="footertop_listother">
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Юрлицам</a>
+              </li>
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Как купить</a>
+              </li>
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Доставка</a>
+              </li>
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="warranty.html">Гарантия и возврат</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 footertop_col">
+          <div class="footertop_itm footertop_col-linkabout">
+            <div class="footertop_itm_title">О Tesgo</div>
+            <ul class="footertop_listother">
+              <li class="footertop_listother_itm">
+                <a class="footertop_link" href="#!">Карьера</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footertop_itm footertop_col-linkcontact">
+            <div class="footertop_social social">
+              <a class="social_link" target="_blank" href="#!">
+                <svg class="social_link_icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.2392 16V8.70218H11.6878L12.0552 5.85725H9.2392V4.04118C9.2392 3.21776 9.46692 2.65661 10.649 2.65661L12.1543 2.65599V0.111384C11.894 0.0775563 11.0004 0 9.96041 0C7.78873 0 6.30196 1.32557 6.30196 3.75942V5.85725H3.84595V8.70218H6.30196V16H9.2392Z" />
+                </svg>
+              </a>
+              <a class="social_link" target="_blank" href="#!">
+                <svg class="social_link_icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M15.9843 4.70404C15.9468 3.8539 15.8093 3.26944 15.6124 2.76299C15.4092 2.22541 15.0967 1.74412 14.6872 1.34401C14.2871 0.937683 13.8026 0.621948 13.2712 0.421957C12.7619 0.22502 12.1805 0.0875415 11.3303 0.0500586C10.4738 0.00940124 10.2019 0 8.02963 0C5.85733 0 5.58543 0.00940124 4.73212 0.0468842C3.88197 0.0843671 3.29751 0.221967 2.79119 0.418783C2.25348 0.621948 1.77219 0.934509 1.37209 1.34401C0.965758 1.74412 0.650145 2.22858 0.450033 2.75994C0.253095 3.26944 0.115618 3.85073 0.0781347 4.70087C0.0374774 5.55736 0.0280762 5.82926 0.0280762 8.00156C0.0280762 10.1739 0.0374774 10.4458 0.0749603 11.2991C0.112443 12.1492 0.250043 12.7337 0.446981 13.2401C0.650145 13.7777 0.965758 14.259 1.37209 14.6591C1.77219 15.0654 2.25666 15.3812 2.78801 15.5812C3.29751 15.7781 3.8788 15.9156 4.72906 15.9531C5.58226 15.9907 5.85428 16 8.02658 16C10.1989 16 10.4708 15.9907 11.3241 15.9531C12.1742 15.9156 12.7587 15.7781 13.265 15.5812C14.3403 15.1654 15.1904 14.3153 15.6062 13.2401C15.803 12.7306 15.9406 12.1492 15.9781 11.2991C16.0156 10.4458 16.025 10.1739 16.025 8.00156C16.025 5.82926 16.0218 5.55736 15.9843 4.70404ZM14.5435 11.2366C14.509 12.018 14.3778 12.4399 14.2684 12.7212C13.9995 13.4183 13.4463 13.9715 12.7493 14.2403C12.468 14.3497 12.043 14.481 11.2646 14.5153C10.4207 14.5529 10.1676 14.5622 8.03281 14.5622C5.89799 14.5622 5.64172 14.5529 4.80085 14.5153C4.01945 14.481 3.5975 14.3497 3.31619 14.2403C2.96932 14.1121 2.65359 13.909 2.39731 13.6433C2.13163 13.3838 1.92847 13.0713 1.80027 12.7244C1.69087 12.4431 1.55962 12.018 1.52532 11.2397C1.48771 10.3958 1.47843 10.1426 1.47843 8.00779C1.47843 5.87297 1.48771 5.6167 1.52532 4.77596C1.55962 3.99455 1.69087 3.5726 1.80027 3.29129C1.92847 2.9443 2.13163 2.62869 2.40049 2.37229C2.65981 2.10661 2.97237 1.90345 3.31937 1.77537C3.60067 1.66597 4.0258 1.53472 4.80403 1.50029C5.64794 1.46281 5.90117 1.45341 8.03586 1.45341C10.1738 1.45341 10.4269 1.46281 11.2678 1.50029C12.0492 1.53472 12.4712 1.66597 12.7525 1.77537C13.0993 1.90345 13.4151 2.10661 13.6714 2.37229C13.937 2.63174 14.1402 2.9443 14.2684 3.29129C14.3778 3.5726 14.509 3.99761 14.5435 4.77596C14.581 5.61987 14.5904 5.87297 14.5904 8.00779C14.5904 10.1426 14.581 10.3927 14.5435 11.2366Z" />
+                    <path
+                      d="M8.02961 3.8916C5.76049 3.8916 3.91943 5.73254 3.91943 8.00178C3.91943 10.271 5.76049 12.112 8.02961 12.112C10.2989 12.112 12.1398 10.271 12.1398 8.00178C12.1398 5.73254 10.2989 3.8916 8.02961 3.8916ZM8.02961 10.6679C6.55752 10.6679 5.36344 9.47399 5.36344 8.00178C5.36344 6.52957 6.55752 5.33561 8.02961 5.33561C9.50182 5.33561 10.6958 6.52957 10.6958 8.00178C10.6958 9.47399 9.50182 10.6679 8.02961 10.6679Z" />
+                    <path
+                      d="M13.262 3.72907C13.262 4.25896 12.8323 4.68861 12.3023 4.68861C11.7724 4.68861 11.3428 4.25896 11.3428 3.72907C11.3428 3.19906 11.7724 2.76953 12.3023 2.76953C12.8323 2.76953 13.262 3.19906 13.262 3.72907Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a class="social_link" target="_blank" href="#!">
+                <svg class="social_link_icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M13.2767 8.6855C13.018 8.35883 13.092 8.2135 13.2767 7.9215C13.28 7.91816 15.4153 4.9675 15.6353 3.96683L15.6367 3.96616C15.746 3.6015 15.6367 3.3335 15.108 3.3335H13.3587C12.9133 3.3335 12.708 3.5635 12.598 3.82083C12.598 3.82083 11.7073 5.95283 10.4473 7.33483C10.0407 7.73416 9.85267 7.86216 9.63067 7.86216C9.52133 7.86216 9.35133 7.73416 9.35133 7.3695V3.96616C9.35133 3.52883 9.22667 3.3335 8.858 3.3335H6.10733C5.828 3.3335 5.662 3.5375 5.662 3.7275C5.662 4.14216 6.292 4.2375 6.35733 5.40416V7.9355C6.35733 8.49016 6.25667 8.59216 6.03333 8.59216C5.43867 8.59216 3.99533 6.4515 3.14 4.0015C2.96733 3.52616 2.79867 3.33416 2.35 3.33416H0.6C0.100667 3.33416 0 3.56416 0 3.8215C0 4.27616 0.594666 6.53683 2.76533 9.5235C4.212 11.5622 6.24933 12.6668 8.10267 12.6668C9.21667 12.6668 9.35267 12.4215 9.35267 11.9995C9.35267 10.0515 9.252 9.8675 9.81 9.8675C10.0687 9.8675 10.514 9.9955 11.554 10.9788C12.7427 12.1448 12.938 12.6668 13.6033 12.6668H15.3527C15.8513 12.6668 16.104 12.4215 15.9587 11.9375C15.626 10.9195 13.378 8.8255 13.2767 8.6855Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+            <a class="footertop_callme" href="#!">Перезвоните мне</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footerbot">
+    <div class="container">
+      <div class="footerbot_wrap">
+        <div class="footerbot_contblock">
+          <div class="footerbot_city footerbot_style">Краснодар</div>
+          <div class="footerbot_copy footerbot_style">© ООО «Тесго», все права защищены, 2021</div>
+        </div>
+        <div class="footerbot_contblock">
+          <a class="footerbot_link footerbot_style" href="#!">Политика конфиденциальности</a>
+          <a class="footerbot_link footerbot_style" href="#!">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

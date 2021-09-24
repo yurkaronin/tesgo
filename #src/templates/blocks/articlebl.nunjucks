@@ -1,0 +1,41 @@
+<section class="articlebl">
+  <div class="container-fullhd">
+    <div class="articlebl_picture">
+      <div class="articlebl_picture_img" style="background-image: url('img/articlebl-background-image.jpg');"></div>
+    </div>
+  </div>
+  <div class="articlebl_mainblock">
+    <div class="container">
+      <div class="row articlebl_row">
+        <div class="col-xl-6 col-lg-6 articlebl_col articlebl_col-accentblock">
+          <div class="articlebl_content">
+            <h3 class="articlebl_title">
+              CLEAN & GREEN<br class="articlebl_title-br1">
+              HYGIENE<br class="articlebl_title-br2">
+              SOLUTIONS
+            </h3>
+            <p class="articlebl_desc">
+              В литературе неоднократно описано, как неоднородность<br>
+              эксперментально верифицируема
+            </p>
+            <a class="articlebl_link m-button" href="#!">Узнать больше</a>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 articlebl_col articlebl_col-desc">
+          <div class="articlebl_blinfotext">
+            <p class="articlebl_infotext">
+              Пульсар расщепляет вихревой кристалл. Частица притягивает <br>
+              экранированный луч так, как это могло бы происходить в <br>
+              полупроводнике с широкой запрещенной зоной. Тело, в рамках<br>
+              ограничений классической механики, масштабирует <br>
+              сверхпроводник, генерируя периодические импульсы <br>
+              синхротронного излучения. При наступлении резонанса ударная <br>
+              волна доступна. Вселенная волнообразна. Гамма-квант, при <br>
+              адиабатическом изменении параметров, отражает бозе-конденсат
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

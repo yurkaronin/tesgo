@@ -1,0 +1,377 @@
+// All Style Popups //
+
+.modal {
+  position: relative;
+  z-index: 20;
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(35, 31, 32, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    position: relative;
+
+    background-color: #fff;
+    padding: 35px 48px 48px;
+    max-width: 524px;
+    max-height: 100vh;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  &_logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+    &_icon {
+      display: block;
+    }
+  }
+
+  &_title {
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  &_titlesignin {
+    margin-bottom: 22px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  &_desc {
+    margin-bottom: 14px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+    color: #76818b;
+  }
+
+  .form {
+    .form_conbox {
+      margin-bottom: 25px;
+    }
+
+    .form_box {
+      margin-bottom: 0;
+    }
+
+    .form_box-business {
+      margin-bottom: 26px;
+    }
+
+    .form_box-legalcomp {
+      margin-bottom: 30px;
+    }
+
+    .form_inpt {
+      margin-bottom: 30px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .form_textarea_el {
+      min-height: 152px;
+    }
+
+    .form_checkbox {
+      margin-bottom: 0;
+      flex-grow: 1;
+    }
+
+    .form_submit {
+      width: 100%;
+
+      &:hover {
+        background: #ff4d00;
+      }
+    }
+  }
+
+  &_btnclose {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+
+    padding: 0;
+
+    &_icon {
+      pointer-events: none;
+    }
+  }
+}
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  // will-change: transform;
+}
+
+// POPUP ORDER //
+
+// POPUP POLITICA //
+.polpopup {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &_container {
+    height: 88vh;
+    overflow-y: scroll;
+    padding: 50px 30px 20px;
+
+    &_title {
+      margin-bottom: 40px;
+      font-size: 36px;
+      color: #111;
+    }
+
+    &_desc {
+      color: #111;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    &_txt {
+      margin-bottom: 20px;
+      font-size: 18px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+}
+
+// ≥1016px
+@media (max-width: 1016px) {
+}
+
+// ≥992px
+@media (max-width: 992px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+}
+
+// ≥740px
+@media (max-width: 740px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+  // Popup Politica //
+  .polpopup {
+    &_container {
+      padding: 36px 20px 20px;
+
+      &_title {
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  .modal {
+    &__container {
+      padding: 27px 15px 24px;
+      margin: 0 10px;
+    }
+
+    &_title {
+      font-size: 26px;
+    }
+
+    &_titlesignin {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+
+    .form {
+      .form_conbox {
+        margin-bottom: 14px;
+      }
+
+      .form_inpt {
+        margin-bottom: 23px;
+      }
+
+      .form_textarea_el {
+        min-height: 140px;
+      }
+
+      .form_actions {
+        margin-top: 21px;
+      }
+    }
+
+    &_btnclose {
+      right: 10px;
+      top: 10px;
+      &_icon {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+  .modal {
+    .form {
+      .form_checkbox {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+// ≥414px
+@media (max-width: 414px) {
+  // Popup Politica //
+  .polpopup {
+    &_container {
+      h4 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+}
+
+// ≥350px
+@media (max-width: 350px) {
+  // Popup Politica //
+  .polpopup {
+    &_container {
+      padding: 36px 12px 20px;
+    }
+  }
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

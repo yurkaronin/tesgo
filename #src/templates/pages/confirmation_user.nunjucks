@@ -1,0 +1,313 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Оформить заказ" %}
+{% set css = "confirm" %}
+
+{% block content %}
+
+<div class="page-wrapper confirmpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Оформить заказ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="confirm">
+        <div class="container">
+          <div class="confirm_wrap">
+
+            <h2 class="confirm_title title-comp-bold title-comp-other">Оформить заказ</h2>
+
+            <div class="confirm_row row">
+              <div class="confirm_col confirm_col-form col-xl-8">
+                <form class="form confform">
+                  <div class="form_conbox form_conbox-continf">
+                    <div class="form_title">Контактная информация</div>
+                    <div class="form_box form_box-business">
+                      <label class="form_radio">
+                        <input class="form_radio_input js-radio-bus-business" type="radio" name="business" value="Физлицо" checked>
+                        <span class="form_radio_status">
+                          <span class="form_radio_status-check"></span>
+                        </span>
+                        <span class="form_radio_cont">
+                          <span class="form_radio_title">Физлицо</span>
+                        </span>
+                      </label>
+                      <label class="form_radio">
+                        <input class="form_radio_input js-radio-bus-business" id="form-radio-organiz" type="radio" name="business" value="Организация">
+                        <span class="form_radio_status">
+                          <span class="form_radio_status-check"></span>
+                        </span>
+                        <span class="form_radio_cont">
+                          <span class="form_radio_title">Организация</span>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="form_box form_box-legalcomp js-form-box-organization">
+                      <div class="form_inpt form_inpt-full form_inpt-company">
+                        <input class="form_inpt_el" type="text" name="company" placeholder="Название организации" required>
+                        <span class="form_inpt_name">Компания</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-one form_inpt-inn">
+                        <input class="form_inpt_el" type="text" name="inn" required>
+                        <span class="form_inpt_name">ИНН</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-two form_inpt-kpp">
+                        <input class="form_inpt_el" type="text" name="kpp" required>
+                        <span class="form_inpt_name">КПП</span>
+                      </div>
+
+                      <div class="form_inpt form_inpt-full form_inpt-legaddrs">
+                        <input class="form_inpt_el" type="text" name="legaddrs" placeholder="Название организации" required>
+                        <span class="form_inpt_name">Юридический адрес</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-one form_inpt-bik">
+                        <input class="form_inpt_el" type="text" name="bik" required>
+                        <span class="form_inpt_name">БИК</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-two form_inpt-checaccount">
+                        <input class="form_inpt_el" type="text" name="checaccount" required>
+                        <span class="form_inpt_name">Расчетный счет</span>
+                      </div>
+                    </div>
+
+                    <div class="form_box form_box-physicalperson js-form-box-physicalperson">
+                      <div class="form_inpt form_inpt-name">
+                        <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо" required>
+                        <span class="form_inpt_name">Имя</span>
+                      </div>
+                      <div class="form_inpt form_inpt-tel">
+                        <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона" required>
+                        <span class="form_inpt_name">Телефон</span>
+                      </div>
+                      <div class="form_inpt form_inpt-email">
+                        <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта" required>
+                        <span class="form_inpt_name">Email</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form_conbox form_conbox-deliv">
+                    <div class="form_title">Доставка</div>
+                    <div class="form_box form_box-deliv">
+                      <label class="form_radiobig form_radiobig-deliv">
+                        <input class="form_radiobig_input" type="radio" name="delivery" value="Курьером" checked>
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">Курьером</span>
+                            <span class="form_radiobig_desc">
+                              Вы забираете товар <br>
+                              самостоятельно в любом из <br>
+                              наших пунктов выдачи
+                            </span>
+                            <span class="form_radiobig_order">
+                              Бесплатно
+                            </span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="form_radiobig form_radiobig-deliv">
+                        <input class="form_radiobig_input" type="radio" name="delivery" value="Самовывоз">
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">Курьером</span>
+                            <span class="form_radiobig_desc">
+                              Вы забираете товар <br>
+                              самостоятельно в любом из <br>
+                              наших пунктов выдачи
+                            </span>
+                            <span class="form_radiobig_order">
+                              Бесплатно
+                            </span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="form_box">
+                      <div class="form_inpt form_inpt-index">
+                        <input class="form_inpt_el" type="text" name="index" placeholder="350000">
+                        <span class="form_inpt_name">Индекс</span>
+                      </div>
+                      <div class="form_select form_select-city">
+                        <select class="form_select_el js-select-all" name="city">
+                          <option value="Краснодар">Краснодар</option>
+                          <option value="город-2">город-2</option>
+                          <option value="город-3">город-3</option>
+                          <option value="город-4">город-4</option>
+                        </select>
+                        <span class="form_select_name">Город</span>
+                      </div>
+                      <div class="form_select form_select-deladdress">
+                        <select class="form_select_el js-select-all" name="delivery-address">
+                          <option data-placeholder="true">Улица, дом, квартира (офис, помещение)</option>
+                          <option value="город-2">офис-1</option>
+                          <option value="город-3">офис-2</option>
+                          <option value="город-4">офис-3</option>
+                        </select>
+                        <span class="form_select_name">Адрес доставки</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_conbox form_conbox-pay">
+                    <div class="form_title">Оплата</div>
+                    <div class="form_box-payment">
+                      <label class="form_radiobig form_radiobig-payment">
+                        <input class="form_radiobig_input" type="radio" name="payment" value="Наличными курьеру" checked>
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">Наличными курьеру</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="form_radiobig form_radiobig-payment">
+                        <input class="form_radiobig_input" type="radio" name="payment" value="Банковской картой">
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">Банковской картой</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="form_radiobig form_radiobig-payment">
+                        <input class="form_radiobig_input" type="radio" name="payment" value="С помощью QR кода">
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">С помощью QR кода</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="form_radiobig form_radiobig-payment">
+                        <input class="form_radiobig_input" type="radio" name="payment" value="Google Pay">
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">Google Pay</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="form_radiobig form_radiobig-payment">
+                        <input class="form_radiobig_input" type="radio" name="payment" value="Apple Pay">
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">Apple Pay</span>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="form_radiobig form_radiobig-payment">
+                        <input class="form_radiobig_input" type="radio" name="payment" value="Samsung Pay">
+                        <span class="form_radiobig_bigcont">
+                          <span class="form_radiobig_status">
+                            <span class="form_radiobig_status-check"></span>
+                          </span>
+                          <span class="form_radiobig_cont">
+                            <span class="form_radiobig_title">Samsung Pay</span>
+                          </span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form_actions">
+                    <a class="form_reforder m-button m-button-black" href="#!refine-order">Уточнить заказ</a>
+                    <button class="form_submit m-button m-button-card" type="submit">Подтвердить заказ</button>
+                  </div>
+                </form>
+              </div>
+              <div class="confirm_col confirm_col-info col-xl-4">
+                <div class="cartout">
+                  <ul class="cartout_inf">
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Товаров</span><span class="cartout_inf_numb">45</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">На сумму</span><span class="cartout_inf_numb">15 555 ₽</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Скидка</span><span class="cartout_inf_numb">0 ₽</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Покупатель</span><span class="cartout_inf_numb">Физлицо</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Доставка</span><span class="cartout_inf_numb">Курьером</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Оплата</span><span class="cartout_inf_numb">Банковской картой</span>
+                    </li>
+                  </ul>
+                  <div class="cartout_infout">
+                    <div class="cartout_infout_title">К оплате:</div>
+                    <div class="cartout_price">15 555 ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer-sm.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

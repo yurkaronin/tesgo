@@ -1,0 +1,1096 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Tesgo - Корзина</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Icons IE 11, Chrome, Firefox, Safari, Opera -->
+  <link rel="icon" href="img/favicon/favicon16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="img/favicon/favicon60.png" sizes="60x60">
+  <!-- Facebook -->
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="img/preview-img.png" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:locale" content="ru" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css"> 
+  <!-- Main Style Page -->
+  <link rel="stylesheet" href="css/style.min.css" />
+  
+  <link rel="stylesheet" href="css/cart.min.css" />
+  
+  
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#0051ff" />
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#0051ff" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0051ff" />
+</head>
+
+
+<!-- Analytics -->
+
+<!-- Analytics -->
+
+<body>
+
+  <!--[if lt IE 9]>
+    <p class="browserupgrade">
+      You are using an old browser. Please
+      <a href="https://browsehappy.com/?locale=en">update your browser</a> для
+      for the site to work correctly.
+    </p>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  
+
+<div class="page-wrapper cartpage">
+
+  
+
+  
+
+  <!-- HEADER -->
+  <header class="header header-other" id="header">
+  <div class="headtop">
+    <div class="container">
+      <div class="headtop_wrap">
+        <div class="citytel">
+          <div class="citytel_name">Краснодар</div>
+          <a class="citytel_link" href="tel:88000000000">8-800-000-00-00</a>
+        </div>
+        <div class="linkauth">
+          <a class="linkauth_link linkauth_link-help" href="#!">Помощь</a>
+          <span class="linkauth_separator"></span>
+          
+          <div class="authuser">
+            <button class="authuser_btn">
+              <svg class="authuser_btn_icon" data-src="img/icon-user.svg" width="16" height="16"></svg>
+            </button>
+            <div class="authuser_content">
+              <ul class="authuser_list">
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Профиль</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Заказы</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link is-active" href="#!">Избранное</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Входящие</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Обратная связь</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Выход</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headmid-hidden"></div>
+  <div class="headmid">
+    <div class="container">
+      <div class="headmid_wrap">
+
+        <a class="logo" href="/">
+          
+          <svg class="logo_img" data-src="img/logo.svg" width="125" height="48"></svg>
+        </a>
+
+        <nav class="nav headmid_nav">
+          <ul class="nav_menu">
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="category.html">
+                Химия
+              </a>
+              <div class="dropmnpc headmid_navdrop">
+                
+                <div class="dropmnpc_content">
+                  <div class="dropmnpc_row">
+                    <div class="dropmnpc_col dropmnpc_col-nav">
+                      <div class="dropmnpc_navtitle">Весь товар</div>
+                      <div class="dropmnpc_nav">
+                        <button class="dropmnpc_link is-active" type="button" data-tabbtn="1">Жидкое Мыло / Пена для рук</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="2">для Сантехники</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="3">для Полов</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="4">для Посуды</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="5">для удаления Жира и Нагара</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="6">для Стирки</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="7">для Дезинфекции</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="8">Специальные средства</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="9">Разное</button>
+                      </div>
+                    </div>
+                    <div class="dropmnpc_col dropmnpc_col-prod">
+                      <div class="dropmnpc_prods is-active" data-tabcontent="1">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                      <div class="dropmnpc_prods" data-tabcontent="2">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня1</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Бумага</a>
+              <div class="dropmnpc headmid_navdrop">
+                <div class="dropmnpc_content">
+                  <div class="dropmnpc_row">
+                    <div class="dropmnpc_col dropmnpc_col-nav">
+                      <div class="dropmnpc_navtitle">Весь товар</div>
+                      <div class="dropmnpc_nav">
+                        <button class="dropmnpc_link is-active" type="button" data-tabbtn="1">Жидкое Мыло / Пена для рук</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="2">для Сантехники</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="3">для Полов</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="4">для Посуды</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="5">для удаления Жира и Нагара</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="6">для Стирки</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="7">для Дезинфекции</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="8">Специальные средства</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="9">Разное</button>
+                      </div>
+                    </div>
+                    <div class="dropmnpc_col dropmnpc_col-prod">
+                      <div class="dropmnpc_prods is-active" data-tabcontent="1">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                      <div class="dropmnpc_prods" data-tabcontent="2">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня1</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">СИЗ</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Хозтовары</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Общепит</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Гостиница</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Бакалея</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="control">
+
+          <div class="search control_search">
+            <div class="search_trig js-search-trigger">
+              <span class="search_trig_text">Поиск</span>
+              <img class="search_trig_img" src="img/icon-search.svg" alt="поиск">
+            </div>
+          </div>
+
+          <div class="actions control_actions">
+            <a class="actions_link actions_link-compar circle-dot" href="comparison.html">
+              <svg class="actions_link_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+            </a>
+            <a class="actions_link actions_link-like" href="#!">
+              <svg class="actions_link_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+            </a>
+            <a class="actions_link actions_link-basket" href="cart.html">
+              <svg class="actions_link_icon" data-src="img/icon-basket.svg" width="24" height="24"></svg>
+            </a>
+          </div>
+
+          <button class="btnmenu js-btnmenu">
+            
+            <svg class="actions_link_icon" data-src="img/icon-burger.svg" width="24" height="24"></svg>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<div class="searchbox">
+  <div class="searchbox_wrap searchbox_wrap-top">
+    <div class="container">
+      <div class="searchbox_row row align-items-center">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 searchbox_topcol searchbox_topcol-logo">
+          <a class="logo searchbox_logo" href="/">
+            <svg class="logo_img" data-src="img/logo.svg" width="125" height="48"></svg>
+          </a>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-12 searchbox_topcol searchbox_topcol-search">
+          <div class="searchbox_fieled">
+            <input class="searchbox_input" type="text" name="search" placeholder="Поиск">
+            <img class="searchbox_iconsearch" src="img/icon-search.svg" alt="поиск">
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-1 col-6 searchbox_topcol searchbox_topcol-close">
+          <button class="searchbox_close js-searchbox-close">
+            <svg class="searchbox_close_icon" data-src="img/icon-close.svg"></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="searchbox_wrap searchbox_wrap-bot">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-12">
+          <div class="searchbox_title">Популярные поисковые запросы</div>
+          <ul class="searchbox_list">
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Популярный запрос</a>
+            </li>
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Пример популярного запроса</a>
+            </li>
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Популярный запрос</a>
+            </li>
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Пример популярного запроса</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menumob js-menumob">
+  <div class="menumob_overlay js-menumob-overlay"></div>
+  <div class="menumob_content">
+    <div class="menumob_box menumob_box-main js-menumob-box-main">
+
+      <div class="muserauth">
+        <div class="muserauth_main">
+          <div class="muserauth_main_iconwrap">
+            <svg class="muserauth_main_icon" data-src="img/icon-user.svg"></svg>
+          </div>
+          <div class="muserauth_main_text">Привет, <span class="muserauth_main_name">Андрей</span></div>
+          <svg class="muserauth_main_iconarrow" data-src="img/icon-arrow-right-sm.svg"></svg>
+        </div>
+      </div>
+
+      <div class="mcatmenu">
+        <div class="mcatmenu_itm js-mdropmenu" data-label="0">
+          <span class="mcatmenu_itm_name">Химия</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="1">
+          <span class="mcatmenu_itm_name">Бумага</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="2">
+          <span class="mcatmenu_itm_name">СИЗ</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="3">
+          <span class="mcatmenu_itm_name">Хозтовары</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="4">
+          <span class="mcatmenu_itm_name">Общепит</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="5">
+          <span class="mcatmenu_itm_name">Гостиница</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="6">
+          <span class="mcatmenu_itm_name">Акции</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+      </div>
+      <div class="mdesctext">
+        <p class="mdesctext_text">
+          Не только в вакууме, но и в любой нейтральной среде относительно низкой плотности
+          кристаллическая решетка квазипериодично облучает поток. <a href="#!">Подробнее</a>
+        </p>
+      </div>
+      <div class="mauth">
+        <a class="mauth_link mauth_link-signin m-button" href="#!">ВХОД</a>
+      </div>
+      <div class="mactions">
+        <a class="mactions_link mactions_link-comp" href="comparison.html">
+          <div class="mactions_link_wrapicon circle-dot">
+            <svg class="mactions_link_icon" data-src="img/icon-comparison.svg"></svg>
+          </div>
+          <span class="mactions_link_text">Сравнение</span>
+        </a>
+        <a class="mactions_link mactions_link-like" href="#!">
+          <div class="mactions_link_wrapicon">
+            <svg class="mactions_link_icon" data-src="img/icon-like.svg"></svg>
+          </div>
+          <span class="mactions_link_text">Избранное</span>
+        </a>
+        <a class="mactions_link mactions_link-help" href="#!">
+          <div class="mactions_link_wrapicon">
+            <svg class="mactions_link_icon" data-src="img/icon-help.svg"></svg>
+          </div>
+          <span class="mactions_link_text">Помощь</span>
+        </a>
+      </div>
+      <div class="mcitytel">
+        <div class="mcitytel_name">Краснодар</div>
+        <a class="mcitytel_link" href="tel:88000000000">8-800-000-00-00</a>
+      </div>
+    </div>
+
+    <div class="menumob_box menumob_box-other" data-mboxother="0">
+      <button class="menumob_btndopclose js-menumob-btnclose-drop" aria-labelledby="Назад">
+        <img class="menumob_btndopclose_icon" src="img/icon-arrow-left-sm.svg" alt="иконка назад">
+        <span class="menumob_btndopclose_text">Назад</span>
+      </button>
+      <div class="menumob_dopcontent">
+        <div class="menumob_dopcontent_title">Химия</div>
+        <nav class="menumob_dopcontent_nav">
+          <a class="menumob_dopcontent_link" href="#!">Весь товар</a>
+          <a class="menumob_dopcontent_link" href="#!">Мыло Пена для рук</a>
+          <a class="menumob_dopcontent_link" href="#!">для Сантехники</a>
+          <a class="menumob_dopcontent_link" href="#!">для Полов</a>
+          <a class="menumob_dopcontent_link" href="#!">для удаления Жира и Нагара</a>
+          <a class="menumob_dopcontent_link" href="#!">для Стирки</a>
+          <a class="menumob_dopcontent_link" href="#!">для Стекол</a>
+          <a class="menumob_dopcontent_link" href="#!">для Дезинфекции</a>
+          <a class="menumob_dopcontent_link" href="#!">Специальные средства</a>
+          <a class="menumob_dopcontent_link" href="#!">Разное</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="menumob_box menumob_box-other" data-mboxother="1">
+      <button class="menumob_btndopclose js-menumob-btnclose-drop" aria-labelledby="Назад">
+        <img class="menumob_btndopclose_icon" src="img/icon-arrow-left-sm.svg" alt="иконка назад">
+        <span class="menumob_btndopclose_text">Назад</span>
+      </button>
+      <div class="menumob_dopcontent">
+        <div class="menumob_dopcontent_title">Бумага</div>
+        <nav class="menumob_dopcontent_nav">
+          <a class="menumob_dopcontent_link" href="#!">Весь товар</a>
+          <a class="menumob_dopcontent_link" href="#!">Мыло Пена для рук</a>
+          <a class="menumob_dopcontent_link" href="#!">для Сантехники</a>
+          <a class="menumob_dopcontent_link" href="#!">для Полов</a>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Корзина</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="cart">
+        <div class="container">
+          <div class="cart_wrap">
+
+            <h2 class="cart_title title-comp-bold title-comp-other">Корзина</h2>
+
+            <div class="cart_row row">
+              <div class="cart_col cart_col-lists col-xl-8">
+                <div class="cartlists">
+                  <div class="cartitm">
+                    <a href="#!card-itm" class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-1.png" alt="alt">
+                    </a>
+                    <div class="cartitm_main">
+                      <a href="#!card-itm" class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </a>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div>
+                  <div class="cartitm">
+                    <a href="#!card-itm" class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-2.png" alt="alt">
+                    </a>
+                    <div class="cartitm_main">
+                      <a href="#!card-itm" class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </a>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div>
+                  <div class="cartitm">
+                    <a href="#!card-itm" class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-3.png" alt="alt">
+                    </a>
+                    <div class="cartitm_main">
+                      <a href="#!card-itm" class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </a>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="cart_col cart_col-info col-xl-4">
+                <div class="cartout">
+                  <ul class="cartout_inf">
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Товаров</span><span class="cartout_inf_numb">45</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">На сумму</span><span class="cartout_inf_numb">15 555 ₽</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Скидка</span><span class="cartout_inf_numb">0 ₽</span>
+                    </li>
+                  </ul>
+                  <div class="cartout_infout">
+                    <div class="cartout_infout_title">Итого:</div>
+                    <div class="cartout_price">15 555 ₽</div>
+                    <div class="cartout_sale">До скидки 3% еще 328 ₽</div>
+                  </div>
+                  <div class="cartout_links">
+                    <a class="cartout_checkout m-button m-button-card" href="#!checkout">Оформить заказ</a>
+                    <a class="cartout_buyclick m-button m-button-buyclick" href="#!buyoneclick">Купить в 1 клик</a>
+                  </div>
+                  <a class="cartout_contshopping" href="#!continue-shopping">Продолжить покупки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+  <div class="footerbot">
+    <div class="container">
+      <div class="footerbot_wrap">
+        <div class="footerbot_contblock">
+          <div class="footerbot_city footerbot_style">Краснодар</div>
+          <div class="footerbot_copy footerbot_style">© ООО «Тесго», все права защищены, 2021</div>
+        </div>
+        <div class="footerbot_contblock">
+          <a class="footerbot_link footerbot_style" href="#!">Политика конфиденциальности</a>
+          <a class="footerbot_link footerbot_style" href="#!">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- POPUPS -->
+  <div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <h3 class="modal_title">Связаться с нами</h3>
+
+      <form class="form accinfocontform">
+        <div class="form_conbox">
+          <div class="form_box">
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо"
+                required>
+              <span class="form_inpt_name">Имя</span>
+            </div>
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона"
+                required>
+              <span class="form_inpt_name">Телефон</span>
+            </div>
+            <div class="form_inpt form_textarea form_inpt-full">
+              <textarea class="form_inpt_el form_textarea_el" name="message"
+                placeholder="Введите текст" required></textarea>
+              <span class="form_inpt_name form_textarea_name">Текст сообщения</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form_blpolit">
+          <p class="form_politica">
+            Нажимая Отправить, Вы принимаете
+            <a class="form_politica_link" href="#!">Политику конфиденциальности</a>
+            и
+            <a class="form_politica_link" href="#!">Условия использования</a>
+          </p>
+        </div>
+
+        <div class="form_actions">
+          <button class="form_submit m-button m-button-black" type="submit">Отправить</button>
+        </div>
+      </form>
+
+      <button class="modal_btnclose" data-micromodal-close aria-label="закрыть попап">
+        <svg class="modal_btnclose_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-signin" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+
+      <div class="modal_logo">
+        <img class="modal_logo_icon" src="img/logo-modal.svg" alt="TESGO">
+      </div>
+
+      <h3 class="modal_titlesignin">
+        Авторизуйтесь и получите множество возможностей
+      </h3>
+
+      <form class="form accinfocontform">
+        <div class="form_conbox">
+          <div class="form_box">
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта"
+                required>
+              <span class="form_inpt_name">Email</span>
+            </div>
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="password" name="password" autocomplete="off" placeholder="Введите пароль" required>
+              <span class="form_inpt_name">Пароль</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form_modalblk">
+          <label class="form_checkbox">
+            <input class="form_checkbox_input" type="checkbox" name="sevelogged" checked>
+            <span class="form_checkbox_status">
+              <span class="form_checkbox_status-sheck">
+                <img src="img/icon-checkbtn.svg" alt="check">
+              </span>
+            </span>
+            <span class="form_checkbox_cont">
+              <span class="form_checkbox_title">Не выходить из системы</span>
+            </span>
+          </label>
+          <a class="form_forgotpass" href="#!">Забыли пароль?</a>
+        </div>
+
+        <div class="form_blpolit">
+          <p class="form_politica">
+            Выполняя вход, Вы принимаете
+            <a class="form_politica_link" href="#!">Политику конфиденциальности</a>
+            и
+            <a class="form_politica_link" href="#!">Условия использования</a>
+          </p>
+        </div>
+
+        <div class="form_actions">
+          <button class="form_submit m-button m-button-black" type="submit">Войти</button>
+        </div>
+
+        <div class="form_notacc">
+          У Вас еще нет личного кабинета?
+          <a class="form_notacc_link" data-micromodal-trigger="modal-signup"
+            href="#!">Зарегистрируйтесь</a>
+        </div>
+      </form>
+
+      <button class="modal_btnclose" data-micromodal-close aria-label="закрыть попап">
+        <svg class="modal_btnclose_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-signup" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+
+      <div class="modal_logo">
+        <img class="modal_logo_icon" src="img/logo.svg" alt="TESGO">
+      </div>
+
+      <h3 class="modal_title">
+        Регистрация
+      </h3>
+
+      <p class="modal_desc">
+        Зарегистрируйтесь на сайте Tesgo и получи доступ к лучшим товарам, а также возможность
+        следить за заказами, получать уведомления и многое другое.
+      </p>
+
+      <form class="form accinfocontform">
+
+        <div class="form_conbox form_conbox-continf">
+          <div class="form_box form_box-business">
+            <label class="form_radio">
+              <input class="form_radio_input js-radio-bus-business" type="radio" name="business" value="Физлицо" checked>
+              <span class="form_radio_status">
+                <span class="form_radio_status-check"></span>
+              </span>
+              <span class="form_radio_cont">
+                <span class="form_radio_title">Физлицо</span>
+              </span>
+            </label>
+            <label class="form_radio">
+              <input class="form_radio_input js-radio-bus-business" id="form-radio-organiz"
+                type="radio" name="business" value="Организация">
+              <span class="form_radio_status">
+                <span class="form_radio_status-check"></span>
+              </span>
+              <span class="form_radio_cont">
+                <span class="form_radio_title">Организация</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="form_box form_box-legalcomp js-form-box-organization">
+            <div class="form_inpt form_inpt-full form_inpt-company">
+              <input class="form_inpt_el" type="text" name="company" placeholder="Название организации">
+              <span class="form_inpt_name">Компания</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-inn">
+              <input class="form_inpt_el" type="text" name="inn">
+              <span class="form_inpt_name">ИНН</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-kpp">
+              <input class="form_inpt_el" type="text" name="kpp" placeholder="" КПП>
+              <span class="form_inpt_name">КПП</span>
+            </div>
+
+            <div class="form_inpt form_inpt-full form_inpt-legaddrs">
+              <input class="form_inpt_el" type="text" name="legaddrs" placeholder="Введите адрес полностью">
+              <span class="form_inpt_name">Юридический адрес</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-bik">
+              <input class="form_inpt_el" type="text" name="bik">
+              <span class="form_inpt_name">БИК</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-checaccount">
+              <input class="form_inpt_el" type="text" name="checaccount">
+              <span class="form_inpt_name">Расчетный счет</span>
+            </div>
+          </div>
+
+          <div class="form_box form_box-physicalperson js-form-box-physicalperson">
+            <div class="form_inpt">
+              <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо">
+              <span class="form_inpt_name">Имя</span>
+            </div>
+            <div class="form_inpt">
+              <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона">
+              <span class="form_inpt_name">Телефон</span>
+            </div>
+            <div class="form_inpt">
+              <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта">
+              <span class="form_inpt_name">Email</span>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+        <div class="form_blpolit">
+          <p class="form_politica">
+            Регистрируясь, Вы принимаете
+            <a class="form_politica_link" href="#!">Политику конфиденциальности</a>
+            и
+            <a class="form_politica_link" href="#!">Условия использования</a>
+          </p>
+        </div>
+
+        <div class="form_actions">
+          <button class="form_submit m-button m-button-black"
+            type="submit">зарегистрироваться</button>
+        </div>
+      </form>
+
+      <button class="modal_btnclose" data-micromodal-close aria-label="закрыть попап">
+        <svg class="modal_btnclose_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+
+
+  <!-- JAVASCRIPT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/bundle.min.js"></script>
+  
+</body>
+
+</html>

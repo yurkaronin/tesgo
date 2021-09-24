@@ -1,0 +1,110 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Личный кабинет | Обратная связь" %}
+{% set css = "account" %}
+
+{% block content %}
+
+<div class="page-wrapper accountpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Личный кабинет</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="account">
+        <div class="container">
+          <div class="account_wrap">
+
+            <h2 class="account_title title-comp-bold title-comp-other">Личный кабинет</h2>
+
+            <nav class="accountnav">
+              <div class="accountnav_container">
+                <ul class="accountnav_list">
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Профиль</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Заказы</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Избранное</a>
+                  </li>
+                  <li class="accountnav_list_itm is-notific">
+                    <a class="accountnav_link" href="#!">Входящие</a>
+                  </li>
+                  <li class="accountnav_list_itm is-active">
+                    <a class="accountnav_link" href="#!">Обратная связь</a>
+                  </li>
+                </ul>
+                <a class="accountnav_signout" href="#!">Выход</a>
+              </div>
+            </nav>
+
+            <div class="accfeefback">
+              <div class="accfeefback_row">
+                <h3 class="accfeefback_title">
+                  У вас есть вопрос? Задавайте, и ваш персональный менеджер <br>
+                  ответит вам в ближайшее время
+                </h3>
+                <form class="form accfebackform">
+                  <div class="form_conbox">
+                    <div class="form_inpt form_textarea form_inpt-full form_inpt-message">
+                      <textarea class="form_inpt_el form_textarea_el" name="message" placeholder="Введите текст" required></textarea>
+                      <span class="form_inpt_name form_textarea_name">Текст вопроса</span>
+                    </div>
+                  </div>
+                  <div class="form_actions">
+                    <button class="form_submit m-button m-button-card" type="submit">Задать вопрос</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

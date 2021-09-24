@@ -1,0 +1,147 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Какие условия возврата?" %}
+{% set css = "warranty" %}
+
+{% block content %}
+
+<div class="page-wrapper warrantypage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="breadcrumbsblock">
+      <div class="container">
+        <div class="breadcrumbsblock_wrap">
+          <nav class="breadcrumbs">
+            <a class="breadcrumbs_moblink" href="#!">Главная</a>
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs_list_itm is-current">
+                <a class="breadcrumbs_list_link" href="/">Гарантия и возврат</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="warranty">
+      <div class="container">
+        <div class="warranty_wrap">
+
+          <div class="warranty_row row">
+            <div class="warranty_col warranty_col-maininf col-xl-8">
+              <h2 class="warranty_title title-comp-bold title-comp-other">Какие условия возврата?
+              </h2>
+              <div class="warranty_ingblock">
+                <p class="warranty_text warranty_text-bold">
+                  На все заказы, оформленные на сайте tesgo.com, распространяется увеличенный срок
+                  возврата — 60 дней
+                </p>
+                <p class="warranty_text">
+                  Погранслой по определению инвариантен относительно сдвига. Турбулентность тормозит
+                  экситон. Исследователями из разных лабораторий неоднократно наблюдалось, как
+                  ударная волна восстанавливает фронт, в итоге возможно появление обратной связи и
+                  самовозбуждение системы. Химическое соединение, как неоднократно наблюдалось при
+                  постоянном воздействии ультрафиолетового облучения, трансформирует
+                  плоскополяризованный поток. Не только в вакууме, но и в любой нейтральной среде
+                  относительно низкой плотности расслоение недетерминировано излучает
+                  гидродинамический удар только в отсутствие тепло- и массообмена с окружающей
+                  средой.
+                </p>
+                <p class="warranty_text">
+                  Жидкость, в отличие от классического случая, стохастично притягивает
+                  экранированный экситон независимо от расстояния до горизонта событий.
+                </p>
+              </div>
+              <a class="warranty_linkbuy m-button m-button-black" href="#!">купить товары</a>
+              <div class="warranty_picture">
+                <img class="warranty_image" src="img/warranty-image.png" alt="гарантия">
+              </div>
+              <div class="warranty_faq">
+                <h3 class="warranty_faq_title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h3>
+                <div class="warranty_faq_bl">
+                  <h4 class="warranty_faq_bl_title">Можно ли обменять товар, заказанный на Tesgo?</h4>
+                  <p class="warranty_faq_bl_desc">
+                    Самый удобный способ обменять товары — просто разместить новый заказ, а затем
+                    вернуть товары, которые тебе не понравились.
+                  </p>
+                </div>
+                <div class="warranty_faq_bl">
+                  <h4 class="warranty_faq_bl_title">Как вернуть товар с дефектом/браком?</h4>
+                  <p class="warranty_faq_bl_desc">
+                    Мы отвечаем за качество всей нашей обуви и экипировки. Если с момента покупки
+                    товара с подозрением на дефект/брак на Tesgo прошло меньше 30 дней, просто верни
+                    товар. Если с даты покупки прошло более 30 дней, свяжись с нами, чтобы вернуть
+                    товар.
+                  </p>
+                </div>
+                <div class="warranty_faq_bl">
+                  <h4 class="warranty_faq_bl_title">Как вернуть товар, приобретенный в магазине Tesgo?</h4>
+                  <p class="warranty_faq_bl_desc">
+                    Возврат товаров, приобретенных в розничном магазине Tesgo, производится в
+                    соответствующем магазине. Обратите внимание, что условия возврата в магазине
+                    могут отличаться от условий возврата товара, приобретенного на сайте. Если у вас
+                    возникнут вопросы, узнайте условия в магазине.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="warranty_col warranty_col-blcont col-xl-4">
+              <div class="blcont warranty_blcont">
+                <div class="blcont_title">Склад</div>
+                <div class="blcont_list">
+                  <div class="blcont_list_itm">
+                    <span class="blcont_list_label">Адрес:</span>
+                    <p class="blcont_list_text">
+                      г. Краснодар, ул. Тихорецкая,
+                      д. 6
+                    </p>
+                  </div>
+                  <div class="blcont_list_itm">
+                    <span class="blcont_list_label">Телефон:</span>
+                    <a class="blcont_list_link" href="tel:+79002909017">+7 900 290-90-17</a>
+                  </div>
+                  <div class="blcont_list_itm">
+                    <span class="blcont_list_label">E-mail:</span>
+                    <a class="blcont_list_link" href="mailto:info@tesgo.ru">info@tesgo.ru</a>
+                  </div>
+                </div>
+                <a class="blcont_callback m-button m-button-card" href="#!">Связаться с нами</a>
+                <p class="blcont_textunder">
+                  Остались вопросы? Свяжитесь с нами, и персональный менеджер ответит Вам в ближайшее время.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

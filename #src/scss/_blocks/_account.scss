@@ -1,0 +1,841 @@
+.account {
+  margin-bottom: 32px;
+
+  &_title {
+    margin-bottom: 34px;
+  }
+}
+
+.accountnav {
+  position: relative;
+  margin-bottom: 18px;
+
+  &_container {
+    display: flex;
+    align-items: center;
+  }
+
+  &_list {
+    display: flex;
+    align-items: center;
+
+    flex-grow: 1;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &_itm {
+      position: relative;
+      margin-right: 24px;
+
+      &.is-active {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          width: 100%;
+          height: 2px;
+          background: #231f20;
+        }
+
+        .accountnav_link {
+          color: #231f20;
+        }
+      }
+
+      &.is-notific {
+        @extend .circle-dot;
+        &::before {
+          right: -10px;
+          top: -1px;
+        }
+      }
+    }
+  }
+
+  &_link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #76818b;
+  }
+
+  &_signout {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #76818b;
+  }
+
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 9px;
+
+    .accountnav_list_itm {
+      padding: 9px 0;
+    }
+
+    .accountnav_list_itm.is-active::after {
+      display: none;
+    }
+
+    .accountnav_list_itm.is-notific::before {
+      right: -13px;
+      top: 8px;
+    }
+
+    .accountnav_container {
+      width: max-content;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 15px;
+  }
+}
+
+/////////////////////////
+
+.accmain {
+  &_row {
+  }
+
+  &_col {
+    margin-bottom: 30px;
+  }
+}
+
+.accmainitm {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 280px;
+  height: 100%;
+
+  padding: 48px 48px 58px 48px;
+
+  border: 1px solid rgba(35, 31, 32, 0.1);
+
+  background: #ffffff;
+
+  transition: all 250ms linear;
+
+  &:hover {
+    background: #0051ff;
+    color: #fff;
+
+    .accmainitm_icon {
+      path {
+        fill: #fff;
+      }
+
+      &-fill {
+        path {
+          stroke: #fff;
+          fill: transparent;
+        }
+      }
+    }
+
+    .accmainitm_title {
+      color: #fff;
+    }
+
+    .accmainitm_desc {
+      color: #fff;
+    }
+  }
+
+  &_wrapicon {
+    margin-bottom: 32px;
+  }
+
+  &_icon {
+    path {
+      fill: #0051ff;
+    }
+
+    &-fill {
+      path {
+        stroke: #0051ff;
+        fill: transparent;
+      }
+    }
+  }
+
+  &_title {
+    margin-bottom: 22px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &_desc {
+    margin: 0;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #76818b;
+  }
+}
+
+//////////////////////////
+.accinfocont {
+  padding: 10px 0 32px 0;
+  &_row {
+  }
+}
+
+.accinfocontform {
+  margin-bottom: 32px;
+
+  .form_conbox {
+    margin-bottom: 40px;
+  }
+
+  .form_title {
+    margin-bottom: 26px;
+  }
+
+  .form_conbox-changepass {
+    margin-bottom: 30px;
+  }
+
+  .form_submit {
+    width: 123px;
+    margin-left: auto;
+  }
+}
+
+.deleteacc {
+  &_title {
+    margin-bottom: 14px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &_desc {
+    margin-bottom: 26px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #76818b;
+  }
+
+  &_btn {
+    width: 171px;
+    border: 1px solid rgba(35, 31, 32, 0.1);
+
+    &:hover {
+      @extend .m-button-black;
+    }
+  }
+}
+
+///////////////////////
+.accorder {
+  padding: 22px 0 56px;
+  &_row {
+  }
+}
+
+.accorderitm {
+  position: relative;
+
+  padding-bottom: 25px;
+  margin-bottom: 31px;
+  border-bottom: 1px solid #f5f5f5;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: transparent;
+  }
+
+  &_info {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &_itm {
+    &-minf {
+      margin-right: 145px;
+    }
+
+    &-count {
+      margin-right: 63px;
+    }
+
+    &-status {
+      position: relative;
+      flex-basis: 98px;
+      top: -4px;
+      margin-right: 55px;
+    }
+
+    &-deliv {
+    }
+
+    &-price {
+      margin-left: auto;
+    }
+  }
+
+  &_numbord {
+    margin-bottom: 4px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &_date {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #adb8c1;
+  }
+
+  &_count {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: 1px solid rgba(35, 31, 32, 0.3);
+
+    &:hover {
+      color: #0051ff;
+      border-color: rgba(0, 81, 255, 0.3);
+    }
+  }
+
+  &_status {
+    padding: 10px 12px;
+    text-align: center;
+
+    border-radius: 2px;
+
+    font-weight: normal;
+    font-size: 12px;
+
+    &-performed {
+      color: #4bab00;
+      background: rgba(75, 171, 0, 0.1);
+    }
+
+    &-completed {
+      background: #f5f5f5;
+      color: #adb8c1;
+    }
+  }
+
+  &_deliv {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &_price {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  ///////////////////
+  &_action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &_btnacction {
+    border: 1px solid rgba(35, 31, 32, 0.1);
+    border-radius: 4px;
+    margin-right: 8px;
+
+    &:hover {
+      border-color: #0051ff;
+      color: $accent;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &-reqdocum {
+      width: 206px;
+    }
+
+    &-reporder {
+      width: 167px;
+    }
+  }
+}
+
+/////////////////
+.accfeefback {
+  padding: 16px 0 31px;
+
+  &_title {
+    margin-bottom: 34px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.accfebackform {
+  .form_submit {
+    width: 153px;
+    margin-left: auto;
+  }
+}
+
+///////////////////
+.accincome {
+  padding: 16px 0 31px;
+  &_row {
+  }
+
+  &_messages {
+  }
+}
+
+.accincomemess {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 40px 48px 48px 48px;
+
+  background: #f5f5f5;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_title {
+    margin-bottom: 9px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &_date {
+    margin-bottom: 33px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #76818b;
+  }
+
+  &_desc {
+  }
+
+  &_text {
+    margin-bottom: 12px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #76818b;
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+  // ACC ORDERS //
+  .accorder {
+    padding: 22px 0 23px;
+  }
+
+  .accorderitm_itm-minf {
+    margin-right: 66px;
+  }
+
+  .accorderitm_itm-count {
+    margin-right: 33px;
+  }
+
+  .accorderitm_itm-status {
+    margin-right: 32px;
+  }
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+  // ACC INF CONTACT //
+  .accinfocont {
+    padding: 10px 0 23px 0;
+  }
+
+  // ACC ORDERS //
+  .accorder {
+    padding: 22px 0 58px;
+  }
+}
+
+// ≥992px
+@media (max-width: 992px) {
+  // MAIN //
+  .accmain_row {
+    margin: 0 -8px;
+  }
+
+  .accmain_col {
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .accmainitm {
+    min-height: 272px;
+
+    padding: 40px 32px 42px 32px;
+  }
+
+  // ACC ORDERS //
+  .accorderitm_itm-minf {
+    margin-right: 28px;
+  }
+
+  // ACC FEEDBACK //
+  .accfeefback_title {
+    br {
+      display: none;
+    }
+  }
+}
+
+// ≥850px
+@media (max-width: 850px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+  .account_title {
+    margin-bottom: 24px;
+  }
+
+  .accountnav {
+    position: relative;
+  }
+
+  // Main Acc //
+  .accmainitm {
+    padding: 39px 32px 42px 32px;
+  }
+
+  .accmainitm_wrapicon {
+    margin-bottom: 23px;
+  }
+
+  .accmainitm_title {
+    margin-bottom: 15px;
+  }
+
+  // ACC CONT INF //
+  .accinfocont {
+    padding: 6px 0 16px 0;
+  }
+
+  .accinfocontform {
+    .form_conbox {
+      margin-bottom: 30px;
+    }
+  }
+
+  // ACC ORDERS //
+  .accorder {
+    padding: 14px 0 17px;
+  }
+
+  .accorderitm {
+    margin-bottom: 21px;
+  }
+
+  .accorderitm_info {
+    flex-wrap: wrap;
+  }
+
+  .accorderitm_itm-minf {
+    flex-basis: 100%;
+    margin-bottom: 16px;
+  }
+
+  .accorderitm_itm-count {
+    margin-right: 24px;
+  }
+
+  .accorderitm_itm-status {
+    margin-right: 25px;
+  }
+
+  .accorderitm_action {
+    margin-top: 13px;
+  }
+
+  .accorderitm_btnacction {
+    width: 100%;
+  }
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+  // ACC ORDERS //
+  .accorderitm_numbord {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .accorderitm_itm-status {
+    margin-right: 18px;
+  }
+
+  .accorderitm_itm-price {
+    flex-basis: 100%;
+    margin-top: 8px;
+  }
+
+  .accorderitm_count,
+  .accorderitm_deliv {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(35, 31, 32, 0.5);
+  }
+
+  .accorderitm_status {
+    padding: 5px 8px;
+  }
+
+  .accorderitm_action {
+    flex-wrap: wrap;
+  }
+
+  .accorderitm_btnacction-reqdocum {
+    margin-right: 0;
+    margin-bottom: 7px;
+  }
+
+  // ACC INCOME //
+  .accincomemess_title {
+  }
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  .account {
+    margin-bottom: 30px;
+  }
+
+  .account_title {
+    margin-bottom: 16px;
+  }
+
+  // Main Acc //
+  .accmain_col {
+    margin-bottom: 10px;
+    &:last-child {
+      .accmainitm {
+        padding: 29px 20px 30px 31px;
+        &_title {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .accmainitm {
+    padding: 29px 20px 35px 31px;
+
+    min-height: 190px;
+  }
+
+  .accmainitm_title {
+    margin-bottom: 17px;
+  }
+
+  .accmainitm_desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  // ACC CONT INF //
+  .accinfocont {
+    padding: 2px 0 11px 0;
+  }
+
+  .accinfocontform {
+    margin-bottom: 38px;
+
+    .form_conbox-address {
+      margin-bottom: 35px;
+    }
+
+    .form_title {
+      margin-bottom: 29px;
+    }
+
+    .form_conbox-changepass {
+      margin-bottom: 20px;
+    }
+
+    .form_box-changepass {
+      margin-bottom: 20px;
+    }
+
+    .form_actions {
+      margin-top: 22px;
+    }
+  }
+
+  .deleteacc_desc {
+    margin-bottom: 21px;
+  }
+
+  .deleteacc_btn {
+    width: 100%;
+  }
+
+  // ACC ORDERS //
+  .accorder {
+    padding: 3px 0 12px;
+  }
+
+  .accorderitm {
+    padding-bottom: 27px;
+  }
+
+  .accorderitm_itm-minf {
+    margin-bottom: 9px;
+  }
+
+  .accorderitm_itm-count {
+    margin-right: 16px;
+  }
+
+  .accorderitm_itm-status {
+    flex-basis: 88px;
+    top: -2px;
+    margin-right: 15px;
+  }
+
+  .accorderitm_itm-price {
+    margin-top: 6px;
+  }
+
+  // ACC FEEDBACK //
+  .accfeefback {
+    padding: 3px 0 12px;
+  }
+
+  .accfeefback_title {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  // ACC INCOME //
+  .accincome {
+    padding: 3px 0 12px;
+  }
+
+  .accincomemess {
+    padding: 30px 30px 32px 30px;
+  }
+
+  .accincomemess_title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .accincomemess_date {
+    margin-bottom: 22px;
+  }
+
+  .accincomemess_text {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+  // ACC FEEDBACK //
+  .accfeefback_title {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+// ≥360px
+@media (max-width: 360px) {
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

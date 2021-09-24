@@ -1,0 +1,138 @@
+<div class="goodsslid_carousel">
+
+  <div class="swiper-container goodsslid goodsslid-youprevwed js-product-slidtemplatesale-initial">
+    <div class="swiper-wrapper">
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-1.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-2.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-3.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-4.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-5.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-6.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-5.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+      <a href="#!" class="swiper-slide goodsslid_itm carditm">
+        <div class="carditm_picture">
+          <img class="carditm_image" src="img/goods-itm-image-6.png" alt="Alpet R">
+        </div>
+        <h4 class="carditm_title">Alpet R</h4>
+        <p class="carditm_desc">
+          Дезинфицирующее средство для
+          поверхностей 1л
+        </p>
+        <div class="carditm_price">960 ₽</div>
+        <div class="carditm_deliv">
+          <img class="carditm_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+          <span class="carditm_deliv_text">Доставим завтра</span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="swiper-button-prev goodsslid_btn goodsslid_btn-prev js-slidtemplatesale-btn-prev">
+    <svg class="goodsslid_btn_icon" data-src="img/icon-arrow-slider-prev.svg" width="11" height="18"></svg>
+  </div>
+  <div class="swiper-button-next goodsslid_btn goodsslid_btn-next js-slidtemplatesale-btn-next">
+    <svg class="goodsslid_btn_icon" data-src="img/icon-arrow-slider-next.svg" width="11" height="18"></svg>
+  </div>
+
+</div>

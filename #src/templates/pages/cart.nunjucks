@@ -1,0 +1,263 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Корзина" %}
+{% set css = "cart" %}
+
+{% block content %}
+
+<div class="page-wrapper cartpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Корзина</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="cart">
+        <div class="container">
+          <div class="cart_wrap">
+
+            <h2 class="cart_title title-comp-bold title-comp-other">Корзина</h2>
+
+            <div class="cart_row row">
+              <div class="cart_col cart_col-lists col-xl-8">
+                <div class="cartlists">
+                  <div class="cartitm">
+                    <a href="#!card-itm" class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-1.png" alt="alt">
+                    </a>
+                    <div class="cartitm_main">
+                      <a href="#!card-itm" class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </a>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div>
+                  <div class="cartitm">
+                    <a href="#!card-itm" class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-2.png" alt="alt">
+                    </a>
+                    <div class="cartitm_main">
+                      <a href="#!card-itm" class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </a>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div>
+                  <div class="cartitm">
+                    <a href="#!card-itm" class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-3.png" alt="alt">
+                    </a>
+                    <div class="cartitm_main">
+                      <a href="#!card-itm" class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </a>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div>
+                  {# <div class="cartitm">
+                    <div class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-2.png" alt="alt">
+                    </div>
+                    <div class="cartitm_main">
+                      <p class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </p>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscount js-goods-count">
+                          <div class="goodscount_main js-goods-count-trigger">
+                            <span class="goodscount_main_label">Кол-во</span>
+                            <input class="goodscount_main_input" type="text" name="goodscount-change" value="1" disabled>
+                            <div class="goodscount_main_iconwrap">
+                              <svg class="goodscount_main_icon" data-src="img/icon-arrow-down.svg" width="14" height="9"></svg>
+                            </div>
+                          </div>
+                          <div class="goodscount_drop js-goods-count-drop">
+                            <div class="goodscount_drop_itm is-disabled">1</div>
+                            <div class="goodscount_drop_itm">2</div>
+                            <div class="goodscount_drop_itm">3</div>
+                            <div class="goodscount_drop_itm">4</div>
+                            <div class="goodscount_drop_itm">5</div>
+                            <div class="goodscount_drop_itm">6</div>
+                            <div class="goodscount_drop_itm">7</div>
+                            <div class="goodscount_drop_itm">8</div>
+                            <div class="goodscount_drop_itm">9</div>
+                            <div class="goodscount_drop_itm">10</div>
+                          </div>
+                        </div>
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div>
+                  <div class="cartitm">
+                    <div class="cartitm_picture">
+                      <img class="cartitm_image" src="img/catalog-image-3.png" alt="alt">
+                    </div>
+                    <div class="cartitm_main">
+                      <p class="cartitm_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </p>
+                      <div class="cartitm_box">
+                        <div class="cartitm_goodscount goodscount js-goods-count">
+                          <div class="goodscount_main js-goods-count-trigger">
+                            <span class="goodscount_main_label">Кол-во</span>
+                            <input class="goodscount_main_input" type="text" name="goodscount-change" value="1" disabled>
+                            <div class="goodscount_main_iconwrap">
+                              <svg class="goodscount_main_icon" data-src="img/icon-arrow-down.svg" width="14" height="9"></svg>
+                            </div>
+                          </div>
+                          <div class="goodscount_drop js-goods-count-drop">
+                            <div class="goodscount_drop_itm is-disabled">1</div>
+                            <div class="goodscount_drop_itm">2</div>
+                            <div class="goodscount_drop_itm">3</div>
+                            <div class="goodscount_drop_itm">4</div>
+                            <div class="goodscount_drop_itm">5</div>
+                            <div class="goodscount_drop_itm">6</div>
+                            <div class="goodscount_drop_itm">7</div>
+                            <div class="goodscount_drop_itm">8</div>
+                            <div class="goodscount_drop_itm">9</div>
+                            <div class="goodscount_drop_itm">10</div>
+                          </div>
+                        </div>
+                        <div class="cartitm_price">960 ₽</div>
+                      </div>
+                    </div>
+                    <button class="cartitm_delete">
+                      <svg class="cartitm_delete_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                    </button>
+                  </div> #}
+                </div>
+              </div>
+              <div class="cart_col cart_col-info col-xl-4">
+                <div class="cartout">
+                  <ul class="cartout_inf">
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Товаров</span><span class="cartout_inf_numb">45</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">На сумму</span><span class="cartout_inf_numb">15 555 ₽</span>
+                    </li>
+                    <li class="cartout_inf_itm">
+                      <span class="cartout_inf_name">Скидка</span><span class="cartout_inf_numb">0 ₽</span>
+                    </li>
+                  </ul>
+                  <div class="cartout_infout">
+                    <div class="cartout_infout_title">Итого:</div>
+                    <div class="cartout_price">15 555 ₽</div>
+                    <div class="cartout_sale">До скидки 3% еще 328 ₽</div>
+                  </div>
+                  <div class="cartout_links">
+                    <a class="cartout_checkout m-button m-button-card" href="#!checkout">Оформить заказ</a>
+                    <a class="cartout_buyclick m-button m-button-buyclick" href="#!buyoneclick">Купить в 1 клик</a>
+                  </div>
+                  <a class="cartout_contshopping" href="#!continue-shopping">Продолжить покупки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer-sm.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

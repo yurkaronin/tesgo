@@ -1,0 +1,225 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Контакты" %}
+{% set css = "contact" %}
+
+{% block content %}
+
+<div class="page-wrapper contactpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="breadcrumbsblock">
+      <div class="container">
+        <div class="breadcrumbsblock_wrap">
+          <nav class="breadcrumbs">
+            <a class="breadcrumbs_moblink" href="/">Главная</a>
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs_list_itm is-current">
+                <a class="breadcrumbs_list_link" href="/">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact_wrap">
+          <h2 class="contact_title title-comp-bold title-comp-other">Контакты</h2>
+
+          <div class="contact_row row">
+
+            <div class="contact_col contact_col-maininf col-xl-4 col-lg-4 col-md-4">
+              <div class="cont_nav">
+                <div class="cont_navitm">
+                  <div class="cont_navitm_title">Краснодарский край</div>
+                  <nav class="cont_navitm_menu">
+                    <a class="cont_navitm_link" href="#!">Адлер</a>
+                    <a class="cont_navitm_link" href="#!">Анапа</a>
+                    <a class="cont_navitm_link" href="#!">Геленджик</a>
+                    <a class="cont_navitm_link is-active" href="#!">Краснодар</a>
+                    <a class="cont_navitm_link" href="#!">Новороссийск</a>
+                    <a class="cont_navitm_link" href="#!">Сочи</a>
+                    <a class="cont_navitm_link" href="#!">Большой Сочи</a>
+                  </nav>
+                </div>
+                <div class="cont_navitm">
+                  <div class="cont_navitm_title">Ростовская область</div>
+                  {# <nav class="cont_navitm_menu">
+                    <a class="cont_navitm_link" href="#!">Адлер</a>
+                    <a class="cont_navitm_link" href="#!">Анапа</a>
+                    <a class="cont_navitm_link" href="#!">Геленджик</a>
+                    <a class="cont_navitm_link" href="#!">Краснодар</a>
+                    <a class="cont_navitm_link" href="#!">Новороссийск</a>
+                    <a class="cont_navitm_link" href="#!">Сочи</a>
+                    <a class="cont_navitm_link" href="#!">Большой Сочи</a>
+                  </nav> #}
+                </div>
+                <div class="cont_navitm">
+                  <div class="cont_navitm_title">Ставропольский край</div>
+                  {# <nav class="cont_navitm_menu">
+                    <a class="cont_navitm_link" href="#!">Адлер</a>
+                    <a class="cont_navitm_link" href="#!">Анапа</a>
+                    <a class="cont_navitm_link" href="#!">Геленджик</a>
+                    <a class="cont_navitm_link" href="#!">Краснодар</a>
+                    <a class="cont_navitm_link" href="#!">Новороссийск</a>
+                    <a class="cont_navitm_link" href="#!">Сочи</a>
+                    <a class="cont_navitm_link" href="#!">Большой Сочи</a>
+                  </nav> #}
+                </div>
+              </div>
+            </div>
+
+            <div class="contact_col contact_col-blcont col-xl-8 col-lg-8 col-md-8">
+
+              <div class="contcity">
+                <div class="contcity_text">Ваш город: <span class="contcity_city">Краснодар</span></div>
+              </div>
+
+              <div class="contmap" style="background-image: url('img/map-background.png');"></div>
+
+              <div class="contcallback">
+                <a class="contcallback_link m-button m-button-card" data-micromodal-trigger="modal-callback" role="button">
+                  Связаться с нами
+                </a>
+                <p class="contcallback_desc">
+                  Остались вопросы? Свяжитесь с нами, и персональный менеджер ответит Вам в ближайшее время.
+                </p>
+              </div>
+
+              <div class="blcont contactblinfo">
+                <div class="blcont_title">Склад</div>
+                <div class="blcont_list">
+                  <div class="blcont_list_itm">
+                    <span class="blcont_list_label">Адрес:</span>
+                    <p class="blcont_list_text">
+                      Краснодар: ул. Тихорецкая, 6
+                    </p>
+                  </div>
+                  <div class="blcont_list_itm">
+                    <span class="blcont_list_label">Телефон:</span>
+                    <a class="blcont_list_link" href="tel:+79002909017">+7 900 290-90-17</a>
+                  </div>
+                  <div class="blcont_list_itm">
+                    <span class="blcont_list_label">E-mail:</span>
+                    <a class="blcont_list_link" href="mailto:info@tesgo.ru">info@tesgo.ru</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="ourrepr">
+                <h3 class="ourrepr_title">Наши представители</h3>
+                <div class="ourrepr_list">
+                  <div class="ourrepr_itm">
+                    <div class="ourrepr_itm_picture">
+                      <img class="ourrepr_itm_img" src="img/ourrepr-1.png" alt="alt">
+                    </div>
+                    <div class="ourrepr_itm_inf">
+                      <div class="ourrepr_itm_name">Ткаченко Роман Алексеевич</div>
+                      <div class="ourrepr_itm_cont">
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">Телефон:</div>
+                          <a class="ourrepr_itm_link" href="tel:+79002909017">+7 900 290-90-17</a>
+                        </div>
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">E-mail:</div>
+                          <a class="ourrepr_itm_link" href="mailto:1849013@tesgo.ru">1849013@tesgo.ru</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ourrepr_itm">
+                    <div class="ourrepr_itm_picture">
+                      <img class="ourrepr_itm_img" src="img/ourrepr-2.png" alt="alt">
+                    </div>
+                    <div class="ourrepr_itm_inf">
+                      <div class="ourrepr_itm_name">Безвершенко Дмитрий Владимирович</div>
+                      <div class="ourrepr_itm_cont">
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">Телефон:</div>
+                          <a class="ourrepr_itm_link" href="tel:+79002909017">+7 900 290-90-17</a>
+                        </div>
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">E-mail:</div>
+                          <a class="ourrepr_itm_link" href="mailto:1849013@tesgo.ru">1849013@tesgo.ru</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ourrepr_itm">
+                    <div class="ourrepr_itm_picture">
+                      <img class="ourrepr_itm_img" src="img/ourrepr-3.png" alt="alt">
+                    </div>
+                    <div class="ourrepr_itm_inf">
+                      <div class="ourrepr_itm_name">Баранов Владимир Александрович</div>
+                      <div class="ourrepr_itm_cont">
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">Телефон:</div>
+                          <a class="ourrepr_itm_link" href="tel:+79002909017">+7 900 290-90-17</a>
+                        </div>
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">E-mail:</div>
+                          <a class="ourrepr_itm_link" href="mailto:1849013@tesgo.ru">1849013@tesgo.ru</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ourrepr_itm">
+                    <div class="ourrepr_itm_picture">
+                      <img class="ourrepr_itm_img" src="img/ourrepr-4.png" alt="alt">
+                    </div>
+                    <div class="ourrepr_itm_inf">
+                      <div class="ourrepr_itm_name">Иванова Анастасия Вячеславовна</div>
+                      <div class="ourrepr_itm_cont">
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">Телефон:</div>
+                          <a class="ourrepr_itm_link" href="tel:+79002909017">+7 900 290-90-17</a>
+                        </div>
+                        <div class="ourrepr_itm_contbox">
+                          <div class="ourrepr_itm_type">E-mail:</div>
+                          <a class="ourrepr_itm_link" href="mailto:1849013@tesgo.ru">1849013@tesgo.ru</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

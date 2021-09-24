@@ -1,0 +1,651 @@
+<header class="header" id="header">
+  <div class="headtop">
+    <div class="container">
+      <div class="headtop_wrap">
+        <div class="citytel">
+          <div class="citytel_name">Краснодар</div>
+          <a class="citytel_link" href="tel:88000000000">8-800-000-00-00</a>
+        </div>
+        <div class="linkauth">
+          <a class="linkauth_link linkauth_link-help" href="#!">Помощь</a>
+          <span class="linkauth_separator"></span>
+          <a class="linkauth_link linkauth_link-signin" data-micromodal-trigger="modal-signin" role="button">Вход</a>
+          {# <div class="authuser">
+            <button class="authuser_btn">
+              <svg class="authuser_btn_icon" data-src="img/icon-user.svg" width="16" height="16"></svg>
+            </button>
+            <div class="authuser_content">
+              <ul class="authuser_list">
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Профиль</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Заказы</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link is-active" href="#!">Избранное</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Входящие</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Обратная связь</a>
+                </li>
+                <li class="authuser_list_itm">
+                  <a class="authuser_list_link" href="#!">Выход</a>
+                </li>
+              </ul>
+            </div>
+          </div> #}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="headmid-hidden"></div>
+  <div class="headmid">
+    <div class="container">
+      <div class="headmid_wrap">
+
+        <a class="logo" href="/">
+          <svg class="logo_img" data-src="img/logo.svg" width="125" height="48"></svg>
+        </a>
+
+        <nav class="nav headmid_nav">
+          <ul class="nav_menu">
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="category.html">
+                Химия
+              </a>
+              <div class="dropmnpc headmid_navdrop">
+                
+                <div class="dropmnpc_content">
+                  <div class="dropmnpc_row">
+                    <div class="dropmnpc_col dropmnpc_col-nav">
+                      <div class="dropmnpc_navtitle">Весь товар</div>
+                      <div class="dropmnpc_nav">
+                        <button class="dropmnpc_link is-active" type="button" data-tabbtn="1">Жидкое Мыло / Пена для рук</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="2">для Сантехники</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="3">для Полов</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="4">для Посуды</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="5">для удаления Жира и Нагара</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="6">для Стирки</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="7">для Дезинфекции</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="8">Специальные средства</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="9">Разное</button>
+                      </div>
+                    </div>
+                    <div class="dropmnpc_col dropmnpc_col-prod">
+                      <div class="dropmnpc_prods is-active" data-tabcontent="1">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                      <div class="dropmnpc_prods" data-tabcontent="2">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня1</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Бумага</a>
+              <div class="dropmnpc headmid_navdrop">
+                <div class="dropmnpc_content">
+                  <div class="dropmnpc_row">
+                    <div class="dropmnpc_col dropmnpc_col-nav">
+                      <div class="dropmnpc_navtitle">Весь товар</div>
+                      <div class="dropmnpc_nav">
+                        <button class="dropmnpc_link is-active" type="button" data-tabbtn="1">Жидкое Мыло / Пена для рук</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="2">для Сантехники</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="3">для Полов</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="4">для Посуды</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="5">для удаления Жира и Нагара</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="6">для Стирки</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="7">для Дезинфекции</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="8">Специальные средства</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="9">Разное</button>
+                      </div>
+                    </div>
+                    <div class="dropmnpc_col dropmnpc_col-prod">
+                      <div class="dropmnpc_prods is-active" data-tabcontent="1">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                      <div class="dropmnpc_prods" data-tabcontent="2">
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня1</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-1.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-2.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <div class="dropmnpc_cardwrap">
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-3.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                          <a href="#!" class="dropmnpc_card dropmnpc_card-sm">
+                            <div class="dropmnpc_card_picture">
+                              <img class="dropmnpc_card_image" src="img/dropmenu-image-sm-4.png"
+                                alt="Alpet R дезинфицирующее">
+                            </div>
+                            <div class="dropmnpc_card_price">960 ₽</div>
+                            <p class="dropmnpc_card_desc">
+                              Alpet R дезинфицирующее средство...
+                            </p>
+                          </a>
+                        </div>
+                        <a href="#!" class="dropmnpc_card dropmnpc_card-big">
+                          <div class="dropmnpc_card_prodofday">Товар дня</div>
+                          <div class="dropmnpc_card_picture">
+                            <img class="dropmnpc_card_image" src="img/dropmenu-image-big.png"
+                              alt="Alpet R дезинфицирующее">
+                          </div>
+                          <p class="dropmnpc_card_desc">
+                            Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                          </p>
+                          <div class="dropmnpc_card_price">960 ₽</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">СИЗ</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Хозтовары</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Общепит</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Гостиница</a>
+            </li>
+            <li class="nav_menu_itm js-nav-link-pc">
+              <a class="nav_link" href="#!">Бакалея</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="control">
+
+          <div class="search control_search">
+            <div class="search_trig js-search-trigger">
+              <span class="search_trig_text">Поиск</span>
+              <img class="search_trig_img" src="img/icon-search.svg" alt="поиск">
+            </div>
+          </div>
+
+          {# <div class="search control_search">
+            <input class="search_input" type="text" name="search" placeholder="Поиск">
+            <img class="search_icon" src="img/icon-search.svg" alt="поиск">
+          </div> #}
+
+          <div class="actions control_actions">
+            <a class="actions_link actions_link-compar circle-dot" href="comparison.html">
+              <svg class="actions_link_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+            </a>
+            <a class="actions_link actions_link-like" href="#!">
+              <svg class="actions_link_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+            </a>
+            <a class="actions_link actions_link-basket" href="cart.html">
+              <svg class="actions_link_icon" data-src="img/icon-basket.svg" width="24" height="24"></svg>
+            </a>
+          </div>
+
+          <button class="btnmenu js-btnmenu">
+            {# <img class="actions_link_icon" src="img/icon-burger.svg" alt="кнопка меню"> #}
+            <svg class="actions_link_icon" data-src="img/icon-burger.svg" width="24" height="24"></svg>
+          </button>
+
+        </div>
+
+      </div>
+      {# <div class="headmid_row row align-items-center">
+        <div class="headmid_col headmid_col-logo col-xl-3">
+          <a class="logo" href="/">
+            <img class="logo_img" src="img/logo.svg" alt="Tesgo">
+          </a>
+        </div>
+        <div class="headmid_col headmid_col-nav col-xl-6">
+          <nav class="nav">
+            <a class="nav_link" href="#!">Химия</a>
+            <a class="nav_link" href="#!">Бумага</a>
+            <a class="nav_link" href="#!">СИЗ</a>
+            <a class="nav_link" href="#!">Хозтовары</a>
+            <a class="nav_link" href="#!">Общепит</a>
+            <a class="nav_link" href="#!">Гостиница</a>
+            <a class="nav_link" href="#!">Бакалея</a>
+          </nav>
+        </div>
+        <div class="headmid_col headmid_col-control col-xl-3">
+          <div class="control">
+            <div class="search control_search">
+              <input class="search_input" type="text" name="search" placeholder="Поиск">
+              <img class="search_icon" src="img/icon-search.svg" alt="поиск">
+            </div>
+            <div class="actions control_actions">
+              <a class="actions_link actions_link-compar" href="#!">
+                <img class="actions_link_icon" src="img/icon-comparison.svg" alt="сравнение">
+              </a>
+              <a class="actions_link actions_link-like" href="#!">
+                <img class="actions_link_icon" src="img/icon-like.svg" alt="нравится">
+              </a>
+              <a class="actions_link actions_link-basket" href="#!">
+                <img class="actions_link_icon" src="img/icon-basket.svg" alt="корзина">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> #}
+    </div>
+  </div>
+
+  <div class="boxinfo">
+    <div class="container">
+      <div class="boxinfo_wrap">
+        <p class="boxinfo_desc">COVID-19: <a href="#!">информация о работе магазинов</a> и службы
+          доставки Tesgo.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="searchbox">
+  <div class="searchbox_wrap searchbox_wrap-top">
+    <div class="container">
+      <div class="searchbox_row row align-items-center">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6 searchbox_topcol searchbox_topcol-logo">
+          <a class="logo searchbox_logo" href="/">
+            <svg class="logo_img" data-src="img/logo.svg" width="125" height="48"></svg>
+          </a>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-12 searchbox_topcol searchbox_topcol-search">
+          <div class="searchbox_fieled">
+            <input class="searchbox_input" type="text" name="search" placeholder="Поиск">
+            <img class="searchbox_iconsearch" src="img/icon-search.svg" alt="поиск">
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-1 col-6 searchbox_topcol searchbox_topcol-close">
+          <button class="searchbox_close js-searchbox-close">
+            <svg class="searchbox_close_icon" data-src="img/icon-close.svg"></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="searchbox_wrap searchbox_wrap-bot">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 col-12">
+          <div class="searchbox_title">Популярные поисковые запросы</div>
+          <ul class="searchbox_list">
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Популярный запрос</a>
+            </li>
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Пример популярного запроса</a>
+            </li>
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Популярный запрос</a>
+            </li>
+            <li class="searchbox_list_itm">
+              <a class="searchbox_link" href="#!">Пример популярного запроса</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menumob js-menumob">
+  <div class="menumob_overlay js-menumob-overlay"></div>
+  <div class="menumob_content">
+    <div class="menumob_box menumob_box-main js-menumob-box-main">
+
+      <div class="muserauth">
+        <div class="muserauth_main">
+          <div class="muserauth_main_iconwrap">
+            <svg class="muserauth_main_icon" data-src="img/icon-user.svg"></svg>
+          </div>
+          <div class="muserauth_main_text">Привет, <span class="muserauth_main_name">Андрей</span></div>
+          <svg class="muserauth_main_iconarrow" data-src="img/icon-arrow-right-sm.svg"></svg>
+        </div>
+      </div>
+
+      <div class="mcatmenu">
+        <div class="mcatmenu_itm js-mdropmenu" data-label="0">
+          <span class="mcatmenu_itm_name">Химия</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="1">
+          <span class="mcatmenu_itm_name">Бумага</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="2">
+          <span class="mcatmenu_itm_name">СИЗ</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="3">
+          <span class="mcatmenu_itm_name">Хозтовары</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="4">
+          <span class="mcatmenu_itm_name">Общепит</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="5">
+          <span class="mcatmenu_itm_name">Гостиница</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+        <div class="mcatmenu_itm js-mdropmenu" data-label="6">
+          <span class="mcatmenu_itm_name">Акции</span>
+          <img class="mcatmenu_itm_icon" src="img/icon-arrow-right.svg" alt="иконка">
+        </div>
+      </div>
+      <div class="mdesctext">
+        <p class="mdesctext_text">
+          Не только в вакууме, но и в любой нейтральной среде относительно низкой плотности
+          кристаллическая решетка квазипериодично облучает поток. <a href="#!">Подробнее</a>
+        </p>
+      </div>
+      <div class="mauth">
+        <a class="mauth_link mauth_link-signin m-button" href="#!">ВХОД</a>
+      </div>
+      <div class="mactions">
+        <a class="mactions_link mactions_link-comp" href="comparison.html">
+          <div class="mactions_link_wrapicon circle-dot">
+            <svg class="mactions_link_icon" data-src="img/icon-comparison.svg"></svg>
+          </div>
+          <span class="mactions_link_text">Сравнение</span>
+        </a>
+        <a class="mactions_link mactions_link-like" href="#!">
+          <div class="mactions_link_wrapicon">
+            <svg class="mactions_link_icon" data-src="img/icon-like.svg"></svg>
+          </div>
+          <span class="mactions_link_text">Избранное</span>
+        </a>
+        <a class="mactions_link mactions_link-help" href="#!">
+          <div class="mactions_link_wrapicon">
+            <svg class="mactions_link_icon" data-src="img/icon-help.svg"></svg>
+          </div>
+          <span class="mactions_link_text">Помощь</span>
+        </a>
+      </div>
+      <div class="mcitytel">
+        <div class="mcitytel_name">Краснодар</div>
+        <a class="mcitytel_link" href="tel:88000000000">8-800-000-00-00</a>
+      </div>
+    </div>
+
+    <div class="menumob_box menumob_box-other" data-mboxother="0">
+      <button class="menumob_btndopclose js-menumob-btnclose-drop" aria-labelledby="Назад">
+        <img class="menumob_btndopclose_icon" src="img/icon-arrow-left-sm.svg" alt="иконка назад">
+        <span class="menumob_btndopclose_text">Назад</span>
+      </button>
+      <div class="menumob_dopcontent">
+        <div class="menumob_dopcontent_title">Химия</div>
+        <nav class="menumob_dopcontent_nav">
+          <a class="menumob_dopcontent_link" href="#!">Весь товар</a>
+          <a class="menumob_dopcontent_link" href="#!">Мыло Пена для рук</a>
+          <a class="menumob_dopcontent_link" href="#!">для Сантехники</a>
+          <a class="menumob_dopcontent_link" href="#!">для Полов</a>
+          <a class="menumob_dopcontent_link" href="#!">для удаления Жира и Нагара</a>
+          <a class="menumob_dopcontent_link" href="#!">для Стирки</a>
+          <a class="menumob_dopcontent_link" href="#!">для Стекол</a>
+          <a class="menumob_dopcontent_link" href="#!">для Дезинфекции</a>
+          <a class="menumob_dopcontent_link" href="#!">Специальные средства</a>
+          <a class="menumob_dopcontent_link" href="#!">Разное</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="menumob_box menumob_box-other" data-mboxother="1">
+      <button class="menumob_btndopclose js-menumob-btnclose-drop" aria-labelledby="Назад">
+        <img class="menumob_btndopclose_icon" src="img/icon-arrow-left-sm.svg" alt="иконка назад">
+        <span class="menumob_btndopclose_text">Назад</span>
+      </button>
+      <div class="menumob_dopcontent">
+        <div class="menumob_dopcontent_title">Бумага</div>
+        <nav class="menumob_dopcontent_nav">
+          <a class="menumob_dopcontent_link" href="#!">Весь товар</a>
+          <a class="menumob_dopcontent_link" href="#!">Мыло Пена для рук</a>
+          <a class="menumob_dopcontent_link" href="#!">для Сантехники</a>
+          <a class="menumob_dopcontent_link" href="#!">для Полов</a>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+</div>
+

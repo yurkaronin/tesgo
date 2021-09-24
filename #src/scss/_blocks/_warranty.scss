@@ -1,0 +1,261 @@
+.warranty {
+  padding: 0 0 68px;
+
+  &_title {
+    margin-bottom: 34px;
+  }
+
+  &_ingblock {
+  }
+
+  &_text {
+    margin-bottom: 34px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    &-bold {
+      font-weight: bold;
+    }
+  }
+
+  &_linkbuy {
+    width: 275px;
+
+    margin-bottom: 36px;
+
+    &:hover {
+      background: #ff4d00;
+    }
+  }
+
+  &_picture {
+    margin-bottom: 69px;
+  }
+
+  &_image {
+    display: block;
+    max-width: 100%;
+  }
+
+  &_faq {
+    &_title {
+      margin-bottom: 32px;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &_bl {
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &_title {
+        margin-bottom: 4px;
+
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      &_desc {
+        margin: 0;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+.warranty_blcont {
+  margin-left: auto;
+  margin-top: 68px;
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+  .warranty {
+    padding: 0 0 51px;
+  }
+
+  .warranty_text {
+    margin-bottom: 27px;
+  }
+
+  .warranty_text {
+    &:last-child {
+      margin-top: 38px;
+    }
+  }
+
+  .warranty_linkbuy {
+    margin-bottom: 54px;
+  }
+
+  .warranty_faq_bl {
+    margin-bottom: 36px;
+  }
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+  .warranty {
+    padding: 0 0 65px;
+  }
+
+  .warranty_picture {
+    margin-bottom: 50px;
+  }
+
+  .warranty_blcont {
+    margin-top: 44px;
+  }
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+}
+
+// ≥992px
+@media (max-width: 992px) {
+}
+
+// ≥850px
+@media (max-width: 850px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+  .warranty {
+    padding: 0 0 53px;
+  }
+
+  .warranty_linkbuy {
+    margin-bottom: 46px;
+  }
+
+  .warranty_blcont {
+    margin-top: 29px;
+  }
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  .warranty {
+    padding: 0 0 41px;
+  }
+
+  .warranty_ingblock {
+    margin-bottom: 40px;
+  }
+
+  .warranty_text {
+    margin-bottom: 21px;
+  }
+
+  .warranty_text-bold {
+    line-height: 28px;
+  }
+
+  .warranty_linkbuy {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+
+  .warranty_picture {
+    height: 172px;
+    margin-bottom: 35px;
+  }
+
+  .warranty_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .warranty_faq_title {
+    margin-bottom: 19px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .warranty_faq_bl {
+    margin-bottom: 46px;
+  }
+
+  .warranty_faq_bl_desc {
+    line-height: 24px;
+  }
+
+  ///////////////////////
+  .warranty_col-blcont {
+    padding: 0;
+    margin: 0 -15px;
+    width: 100vw;
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

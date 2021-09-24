@@ -1,0 +1,345 @@
+<div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <h3 class="modal_title">Связаться с нами</h3>
+
+      <form class="form accinfocontform">
+        <div class="form_conbox">
+          <div class="form_box">
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо"
+                required>
+              <span class="form_inpt_name">Имя</span>
+            </div>
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона"
+                required>
+              <span class="form_inpt_name">Телефон</span>
+            </div>
+            <div class="form_inpt form_textarea form_inpt-full">
+              <textarea class="form_inpt_el form_textarea_el" name="message"
+                placeholder="Введите текст" required></textarea>
+              <span class="form_inpt_name form_textarea_name">Текст сообщения</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form_blpolit">
+          <p class="form_politica">
+            Нажимая Отправить, Вы принимаете
+            <a class="form_politica_link" href="#!">Политику конфиденциальности</a>
+            и
+            <a class="form_politica_link" href="#!">Условия использования</a>
+          </p>
+        </div>
+
+        <div class="form_actions">
+          <button class="form_submit m-button m-button-black" type="submit">Отправить</button>
+        </div>
+      </form>
+
+      <button class="modal_btnclose" data-micromodal-close aria-label="закрыть попап">
+        <svg class="modal_btnclose_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-signin" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+
+      <div class="modal_logo">
+        <img class="modal_logo_icon" src="img/logo-modal.svg" alt="TESGO">
+      </div>
+
+      <h3 class="modal_titlesignin">
+        Авторизуйтесь и получите множество возможностей
+      </h3>
+
+      <form class="form accinfocontform">
+        <div class="form_conbox">
+          <div class="form_box">
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта"
+                required>
+              <span class="form_inpt_name">Email</span>
+            </div>
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="password" name="password" autocomplete="off" placeholder="Введите пароль" required>
+              <span class="form_inpt_name">Пароль</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form_modalblk">
+          <label class="form_checkbox">
+            <input class="form_checkbox_input" type="checkbox" name="sevelogged" checked>
+            <span class="form_checkbox_status">
+              <span class="form_checkbox_status-sheck">
+                <img src="img/icon-checkbtn.svg" alt="check">
+              </span>
+            </span>
+            <span class="form_checkbox_cont">
+              <span class="form_checkbox_title">Не выходить из системы</span>
+            </span>
+          </label>
+          <a class="form_forgotpass" href="#!">Забыли пароль?</a>
+        </div>
+
+        <div class="form_blpolit">
+          <p class="form_politica">
+            Выполняя вход, Вы принимаете
+            <a class="form_politica_link" href="#!">Политику конфиденциальности</a>
+            и
+            <a class="form_politica_link" href="#!">Условия использования</a>
+          </p>
+        </div>
+
+        <div class="form_actions">
+          <button class="form_submit m-button m-button-black" type="submit">Войти</button>
+        </div>
+
+        <div class="form_notacc">
+          У Вас еще нет личного кабинета?
+          <a class="form_notacc_link" data-micromodal-trigger="modal-signup"
+            href="#!">Зарегистрируйтесь</a>
+        </div>
+      </form>
+
+      <button class="modal_btnclose" data-micromodal-close aria-label="закрыть попап">
+        <svg class="modal_btnclose_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-signup" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true">
+
+      <div class="modal_logo">
+        <img class="modal_logo_icon" src="img/logo.svg" alt="TESGO">
+      </div>
+
+      <h3 class="modal_title">
+        Регистрация
+      </h3>
+
+      <p class="modal_desc">
+        Зарегистрируйтесь на сайте Tesgo и получи доступ к лучшим товарам, а также возможность
+        следить за заказами, получать уведомления и многое другое.
+      </p>
+
+      <form class="form accinfocontform">
+
+        <div class="form_conbox form_conbox-continf">
+          <div class="form_box form_box-business">
+            <label class="form_radio">
+              <input class="form_radio_input js-radio-bus-business" type="radio" name="business" value="Физлицо" checked>
+              <span class="form_radio_status">
+                <span class="form_radio_status-check"></span>
+              </span>
+              <span class="form_radio_cont">
+                <span class="form_radio_title">Физлицо</span>
+              </span>
+            </label>
+            <label class="form_radio">
+              <input class="form_radio_input js-radio-bus-business" id="form-radio-organiz"
+                type="radio" name="business" value="Организация">
+              <span class="form_radio_status">
+                <span class="form_radio_status-check"></span>
+              </span>
+              <span class="form_radio_cont">
+                <span class="form_radio_title">Организация</span>
+              </span>
+            </label>
+          </div>
+
+          <div class="form_box form_box-legalcomp js-form-box-organization">
+            <div class="form_inpt form_inpt-full form_inpt-company">
+              <input class="form_inpt_el" type="text" name="company" placeholder="Название организации">
+              <span class="form_inpt_name">Компания</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-inn">
+              <input class="form_inpt_el" type="text" name="inn">
+              <span class="form_inpt_name">ИНН</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-kpp">
+              <input class="form_inpt_el" type="text" name="kpp" placeholder="" КПП>
+              <span class="form_inpt_name">КПП</span>
+            </div>
+
+            <div class="form_inpt form_inpt-full form_inpt-legaddrs">
+              <input class="form_inpt_el" type="text" name="legaddrs" placeholder="Введите адрес полностью">
+              <span class="form_inpt_name">Юридический адрес</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-bik">
+              <input class="form_inpt_el" type="text" name="bik">
+              <span class="form_inpt_name">БИК</span>
+            </div>
+            <div class="form_inpt form_inpt-full form_inpt-checaccount">
+              <input class="form_inpt_el" type="text" name="checaccount">
+              <span class="form_inpt_name">Расчетный счет</span>
+            </div>
+          </div>
+
+          <div class="form_box form_box-physicalperson js-form-box-physicalperson">
+            <div class="form_inpt">
+              <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо">
+              <span class="form_inpt_name">Имя</span>
+            </div>
+            <div class="form_inpt">
+              <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона">
+              <span class="form_inpt_name">Телефон</span>
+            </div>
+            <div class="form_inpt">
+              <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта">
+              <span class="form_inpt_name">Email</span>
+            </div>
+          </div>
+
+        </div>
+
+        {# <div class="form_conbox">
+          <div class="form_box">
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта" required>
+              <span class="form_inpt_name">Email</span>
+            </div>
+            <div class="form_inpt form_inpt-full">
+              <input class="form_inpt_el" type="password" name="password" placeholder="Введите пароль" required>
+              <span class="form_inpt_name">Телефон</span>
+            </div>
+          </div>
+        </div> #}
+
+        <div class="form_blpolit">
+          <p class="form_politica">
+            Регистрируясь, Вы принимаете
+            <a class="form_politica_link" href="#!">Политику конфиденциальности</a>
+            и
+            <a class="form_politica_link" href="#!">Условия использования</a>
+          </p>
+        </div>
+
+        <div class="form_actions">
+          <button class="form_submit m-button m-button-black"
+            type="submit">зарегистрироваться</button>
+        </div>
+      </form>
+
+      <button class="modal_btnclose" data-micromodal-close aria-label="закрыть попап">
+        <svg class="modal_btnclose_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+{# <div id="popup-politica" class="zoom-anim-dialog mfp-hide popup polpopup">
+  <div class="polpopup_container">
+    <h3 class="polpopup_container_title text-center">Политика конфиденциальности</h3>
+    <div class="polpopup_container_desc">
+      <h4>Политика конфиденциальности</h4>
+      <p class="polpopup_container_txt">
+        Данная Политика Конфиденциальности применима ко всей личной информации и полученными
+        или использованными данными на настоящем сайте и всех сайтах, на которые ссылается
+        настоящий сайт.
+      </p>
+
+      <h4>Сбор вашей личной информации</h4>
+      <p class="polpopup_container_txt">
+        Мы храним и обрабатываем предоставленную Вами информацию с тем уровнем достаточной
+        защиты, которая представляется достаточной и доступной. Мы не передаем предоставленную
+        информацию третьим лицами за исключением случаев, предусмотренных законодательством
+        Российской Федерации.
+        Мы можем попросить Вас предоставить контактную информацию, такую, как адрес электронной
+        почты, ФИО, номер телефона, ссылки на аккаунты в социальных сетях или прочих контактов,
+        необходимых для осуществления наших услуг.
+        Отказ от предоставления данной информации является достаточным условием для отказа или
+        прекращения оказания всех или части наших услуг. Для Вашего удобства эти данные могут быть
+        получены в автоматическом режиме с уведомлением Вас перед отправкой запроса на его
+        получение.
+        Мы можем объединять информацию, предоставленную Вами на нашем сайте, с другой
+        информацией, полученной нами от Вас вне рамок сайта или от сторонних лиц для более
+        эффективной работы нашего сайта, услуг или наших предложений.
+        Если Вы предоставляете нам свою информацию, Вы имеете право, предварительно уведомив нас,
+        проверить, изменить, исправить или удалить эту информацию.
+        Мы оставляем за собой право выбора способа и метода проверки предоставленной Вами
+        информации. Проверка производится в рамках действующего законодательства той страны, в
+        пределах которой Вы воспользовались нашими услугами.
+        Заполняя наши электронные формы, анкеты, передавая нам информацию иными способами, Вы
+        соглашаетесь с нашей политикой конфиденциальности.
+      </p>
+
+      <h4>Использование вашей личной информации</h4>
+      <p class="polpopup_container_txt">
+        Мы используем Вашу личную информацию исключительно для предоставления Вам услуг и
+        сервисов, указанных на нашем сайте.
+        В частности, мы используем Вашу информацию, чтобы связаться с вами удобным для вас
+        способом, для предоставления услуг и поддержки, передачи полезных материалов, технической
+        информации и т.д.
+        Мы также можем связаться с Вами для предоставления информации об услугах и других
+        мероприятиях или предложениях представляющих для Вас интерес. Вы имеете право решить и
+        уведомить нас, хотите ли вы получать такую информацию, с помощью запроса по электронной
+        почте или по иным каналам связи, указанных на нашем сайте.
+      </p>
+
+      <h4>Передача вашей личной информации</h4>
+      <p class="polpopup_container_txt">
+        Мы обязуемся не передавать вашу личную информацию другим лицам за исключением случаев,
+        когда Вы запросите товары или услуги, выполнение которых требует обращение к нашим
+        партнерам или подрядчикам, с вашим предварительным согласием на передачу такой
+        информации.
+        Мы сотрудничаем со сторонними компаниями для предоставления услуг и решений для наших
+        клиентов; наши партнеры, подрядчики и поставщики услуг берут обязательства хранить
+        конфиденциальность информации, полученной от нашего имени и не использовать ее для какихлибо иных целей, кроме
+        предоставления услуг для наших клиентов.
+        Мы обязуемся не передавать Вашу личную информацию, предоставленную Вами, сторонним
+        лицам, за исключением: вашего согласия; ответа на официальный и юридически правильно
+        оформленный запрос правительственных органов; следования нормам законодательства, акта,
+        повестки в суд или судебного решения; помощи в предотвращении мошенничества, защите прав
+        и имущества нашей компании; защиты личной безопасности или имущества наших сотрудников,
+        пользователей или общественности; обработки Вашего заказа или запроса, или обработки нашего
+        счета-фактуры; передачи лицам или компаниям, которых мы нанимаем для выполнения
+        внутренних операций компании.
+      </p>
+
+      <h4>Безопасность вашей личной информации</h4>
+      <p class="polpopup_container_txt">
+        Мы гарантируем защиту информации, которую Вы нам предоставляете. Хотя мы не может
+        гарантировать отсутствие попыток несанкционированного доступа, Вы все равно можете быть
+        уверены, что мы прилагаем максимум усилий для защиты Вашей личной информации и
+        предотвращения несанкционированного доступа к ней с помощью соответствующих технологий и
+        внутренних процедур.
+      </p>
+
+      <h4>Согласие на обработку данных</h4>
+      <p class="polpopup_container_txt">
+        Предоставляя любые личные данные на нашем сайте, все наши клиенты четко понимают, что это
+        необходимо для должного уровня обеспечения нами заявленных услуг и/или сервиса и,
+        безусловно, соглашаются на сбор и обработку такой информации в рамках данной Политики
+        конфиденциальности.
+        Вы имеете право в любой момент отказаться от наших услуг и удалить ваши данные из нашей
+        базы – однако мы оставляем за собой право хранить введенную вами контактную и прочую
+        информацию в архивах для сбора статистики и улучшения качества наших сервисов и услуг.
+      </p>
+
+      <h4>Изменения в политике конфиденциальности</h4>
+      <p class="polpopup_container_txt">
+        Условия данной Политики конфиденциальности являются правилом для сбора и использования
+        любой собранной на настоящем сайте и страницах настоящего сайта информации.
+        Мы оставляем за собой право в любое время изменять или обновлять условия данной Политики
+        конфиденциальности. В случае изменения каких-либо материалов, мы публикуем таковые
+        изменения и обновляем номер версии в документе. Изменения в Политике конфиденциальности
+        вступают в силу с момента публикации на этом сайте, а Ваше дальнейшее пользование нашими
+        услугами и сервисами означает Ваше принятие и согласие на эти изменения.
+        Если у Вас есть комментарии или вопросы о нашей Политике конфиденциальности, пожалуйста,
+        присылайте Ваши замечания или предложения по электронной почте или по другим каналам
+        связи, указанных на настоящем сайте.
+      </p>
+
+    </div>
+  </div>
+</div> #}

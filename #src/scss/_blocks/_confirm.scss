@@ -1,0 +1,209 @@
+.confirm {
+  margin-bottom: 60px;
+
+  &_title {
+    margin-bottom: 28px;
+  }
+
+  &_col {
+    &-form {
+      flex: 0 0 63%;
+      max-width: 63%;
+    }
+
+    &-info {
+      flex: 0 0 37%;
+      max-width: 37%;
+    }
+  }
+}
+
+// form //
+.confform {
+  max-width: 580px;
+}
+
+// cartinfo //
+.cartout {
+  position: relative;
+
+  padding: 37px 29px 32px;
+
+  border: 1px solid rgba(35, 31, 32, 0.1);
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  &_inf {
+    margin: 0 0 22px 0;
+    padding: 0;
+    list-style: none;
+
+    &_itm {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &_name {
+      flex-grow: 1;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: #76818b;
+    }
+
+    &_numb {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &_infout {
+    &_title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &_price {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+  .confirm_col-form {
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+
+  .confirm_col-info {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+}
+
+// ≥992px
+@media (max-width: 992px) {
+}
+
+// ≥850px
+@media (max-width: 850px) {
+  .confirm_col-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .confirm_col-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  ////////////////
+
+  .confform {
+    max-width: 100%;
+  }
+
+  .confirm_col-info {
+    margin-top: 40px;
+  }
+}
+
+// ≥768px
+@media (max-width: 768px) {
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  .confirm {
+    margin-bottom: 30px;
+  }
+
+  .confirm_title {
+    margin-bottom: 20px;
+  }
+
+  .cartout {
+    padding: 22px 31px 32px;
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

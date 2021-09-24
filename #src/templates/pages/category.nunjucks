@@ -1,0 +1,869 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Категория" %}
+{% set css = "category" %}
+
+{% block content %}
+
+<div class="page-wrapper categorypage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="breadcrumbsblock">
+      <div class="container">
+        <div class="breadcrumbsblock_wrap">
+          <nav class="breadcrumbs">
+            <a class="breadcrumbs_moblink" href="#!">Каталог</a>
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Каталог</a>
+              </li>
+              <li class="breadcrumbs_list_itm is-current">
+                <a class="breadcrumbs_list_link" href="/">Моющие средства</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="category">
+      <div class="container">
+        <div class="category_wrap">
+          <h2 class="category_title title-comp-bold title-comp-other">Моющие средства</h2>
+
+          <div class="category_row row">
+            <div class="category_col category_col-filter catfiltmob col-xl-2 js-category-filter">
+              {# <div class="catfiltmob_top">
+                <h3 class="catfiltmob_title">Фильтры</h3>
+                <button class="catfiltmob_close js-catfiltmob-close">
+                  <svg class="actions_link_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                </button>
+              </div> #}
+              <div class="category_filters filters">
+                <div class="catfiltmob_top">
+                  <h3 class="catfiltmob_title">Фильтры</h3>
+                  <button class="catfiltmob_close js-catfiltmob-close">
+                    <svg class="actions_link_icon" data-src="img/icon-close.svg" width="24" height="24"></svg>
+                  </button>
+                </div>
+                <div class="filters_box filters_box-links">
+                  <div class="filters_name">Категории</div>
+                  <nav class="filters_nav">
+                    <ul class="filters_nav_list">
+                      <li class="filters_nav_itm">
+                        <a class="filters_nav_link" href="#!">Антижир</a>
+                      </li>
+                      <li class="filters_nav_itm">
+                        <a class="filters_nav_link is-active" href="#!">Посуда</a>
+                      </li>
+                      <li class="filters_nav_itm">
+                        <a class="filters_nav_link" href="#!">Жидкое мыло</a>
+                      </li>
+                      <li class="filters_nav_itm">
+                        <a class="filters_nav_link" href="#!">Сантехника</a>
+                      </li>
+                      <li class="filters_nav_itm">
+                        <a class="filters_nav_link" href="#!">Стирка</a>
+                      </li>
+                      <li class="filters_nav_itm">
+                        <a class="filters_nav_link" href="#!">Стекла</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="filters_box filters_box-range">
+                  <div class="filters_name">Цена, руб.</div>
+                  <div class="filters_range">
+                    <div class="filters_range_box">
+                      <div class="filters_range_itm">
+                        <span class="filters_range_label">От</span>
+                        <input class="filters_range_input js-filters-range-from" type="text" value="250" disabled>
+                      </div>
+                      <div class="filters_range_itm">
+                        <span class="filters_range_label">До</span>
+                        <input class="filters_range_input js-filters-range-to" type="text" value="2530" disabled>
+                      </div>
+                    </div>
+                    <div class="filters_rangebox">
+                      <div class="filters_rangeinput js-filters-rangeinput" data-filtrange-start="200" data-filtrange-end="2000" data-filtrange-min="0" data-filtrange-max="2530"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters_box filters_box-checkbox">
+                  <div class="filters_name">Бренды</div>
+                  <div class="filters_checkbox">
+                    <div class="filters_checkbox_wrap">
+                      <label class="checkbox">
+                        <input class="checkbox_input" name="brands" value="Procter & Gamble" type="checkbox">
+                        <span class="checkbox_main">
+                          <span class="checkbox_status"></span>
+                        </span>
+                        <span class="checkbox_text">Procter & Gamble</span>
+                      </label>
+                    </div>
+                    <div class="filters_checkbox_wrap">
+                      <label class="checkbox">
+                        <input class="checkbox_input" name="brands" value="Unilever" type="checkbox" checked>
+                        <span class="checkbox_main">
+                          <span class="checkbox_status"></span>
+                        </span>
+                        <span class="checkbox_text">Unilever</span>
+                      </label>
+                    </div>
+                    <div class="filters_checkbox_wrap">
+                      <label class="checkbox">
+                        <input class="checkbox_input" name="brands" value="New Progress" type="checkbox">
+                        <span class="checkbox_main">
+                          <span class="checkbox_status"></span>
+                        </span>
+                        <span class="checkbox_text">New Progress</span>
+                      </label>
+                    </div>
+                    <div class="filters_checkbox_wrap">
+                      <label class="checkbox">
+                        <input class="checkbox_input" name="brands" value="New Progress" type="checkbox">
+                        <span class="checkbox_main">
+                          <span class="checkbox_status"></span>
+                        </span>
+                        <span class="checkbox_text">New Progress</span>
+                      </label>
+                    </div>
+                    <div class="filters_checkbox_wrap">
+                      <label class="checkbox">
+                        <input class="checkbox_input" name="brands" value="Procter & Gamble" type="checkbox">
+                        <span class="checkbox_main">
+                          <span class="checkbox_status"></span>
+                        </span>
+                        <span class="checkbox_text">Procter & Gamble</span>
+                      </label>
+                    </div>
+                    <div class="filters_checkbox_wrap is-hidden is-display-none">
+                      <label class="checkbox">
+                        <input class="checkbox_input" name="brands" value="New Progress" type="checkbox">
+                        <span class="checkbox_main">
+                          <span class="checkbox_status"></span>
+                        </span>
+                        <span class="checkbox_text">New Progress</span>
+                      </label>
+                    </div>
+                    <div class="filters_checkbox_wrap is-hidden is-display-none">
+                      <label class="checkbox">
+                        <input class="checkbox_input" name="brands" value="Procter & Gamble" type="checkbox">
+                        <span class="checkbox_main">
+                          <span class="checkbox_status"></span>
+                        </span>
+                        <span class="checkbox_text">Procter & Gamble</span>
+                      </label>
+                    </div>
+                    
+                  </div>
+                  <button class="filters_morebtn js-filters-morebtn">
+                    <svg class="filters_morebtn_icon" data-src="img/icon-burgermore.svg" width="16" height="9"></svg>
+                    <span class="filters_morebtn_text">Показать все</span>
+                  </button>
+                </div>
+                {# <div class="catfiltmob_bottom">
+                  <button class="catfiltmob_actinbtn catfiltmob_actinbtn-reset m-button m-button-black">
+                    очистить <span>(1)</span>
+                  </button>
+                  <button class="catfiltmob_actinbtn catfiltmob_actinbtn-view m-button m-button-card">
+                    ПОКАЗАТЬ
+                  </button>
+                </div> #}
+              </div>
+              <div class="catfiltmob_bottom">
+                <button class="catfiltmob_actinbtn catfiltmob_actinbtn-reset m-button m-button-black">
+                  очистить <span>(1)</span>
+                </button>
+                <button class="catfiltmob_actinbtn catfiltmob_actinbtn-view m-button m-button-card">
+                  ПОКАЗАТЬ
+                </button>
+              </div>
+            </div>
+            <div class="category_col category_col-goods col-xl-10 js-category-goods">
+              <div class="category_panel panelaction">
+                <div class="panelaction_itm panelaction_view">
+                  <div class="panelaction_text panelaction_view_text">Показывать:</div>
+                  <button type="button" class="panelaction_view_btn">
+                    <span class="panelaction_text panelaction_view_btn_text">Плиткой</span>
+                    <svg class="panelaction_view_btn_icon" data-src="img/icon-arrow-down-accent.svg" width="16" height="8"></svg>
+                  </button>
+                </div>
+                <button type="button" class="panelaction_itm panelaction_hideshowfolter js-panelaction-hideshowfilter">
+                  <span class="panelaction_text panelaction_hideshowfolter_text">Скрыть фильтры:</span>
+                  <svg class="panelaction_hideshowfolter_icon" data-src="img/icon-filter.svg" width="16" height="18"></svg>
+                </button>
+                <div class="panelaction_itm panelaction_sort">
+                  <button type="button" class="panelaction_sort_btn">
+                    <span class="panelaction_text panelaction_sort_btn_text">Сортировка</span>
+                    <svg class="panelaction_sort_btn_icon" data-src="img/icon-arrow-down-accent.svg" width="16" height="8"></svg>
+                  </button>
+                  <div class="panelaction_sort_content">
+                    <ul class="panelaction_sort_list">
+                      <li class="panelaction_sort_itm">
+                        <a class="panelaction_sort_link" href="#!">Пункт 1</a>
+                      </li>
+                      <li class="panelaction_sort_itm">
+                        <a class="panelaction_sort_link" href="#!">Пункт 2</a>
+                      </li>
+                      <li class="panelaction_sort_itm">
+                        <a class="panelaction_sort_link" href="#!">Пункт 3</a>
+                      </li>
+                      <li class="panelaction_sort_itm">
+                        <a class="panelaction_sort_link" href="#!">Пункт 4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category_row_goods catview-tiles row">
+
+                <div class="category_col_card col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                  <div class="category_itm categorycard">
+
+                    <a href="#!" class="categorycard_picture">
+                      <img class="categorycard_image" src="img/catalog-image-1.png" alt="Alpet R">
+                    </a>
+
+                    <a href="#!" class="categorycard_desc">
+                      Alpet R дезинфицирующее средство
+                      для поверхностей 500мл спрей
+                    </a>
+
+                    <div class="categorycard_box">
+                      <div class="categorycard_price">960 ₽</div>
+                      <div class="categorycard_actions">
+                        <button type="button" class="categorycard_alink categorycard_alink-like">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                        </button>
+                        <button type="button" class="categorycard_alink categorycard_alink-compar">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="categorycard_addcardbl">
+                      <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                        <div class="goodscounts_main">
+                          <span class="goodscounts_main_label">Кол-во</span>
+                          <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                          <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6+">6+</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <button class="categorycard_btncard m-button m-button-card">В корзину</button>
+                    </div>
+
+                    <div class="categorycard_buydeliv">
+                      <a class="categorycard_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      <div class="categorycard_deliv">
+                        {# <img class="categorycard_deliv_icon" src="img/icon-delivery.svg" alt="иконка"> #}
+                        <svg class="categorycard_deliv_icon" data-src="img/icon-delivery.svg" width="20" height="20"></svg>
+                        <span class="categorycard_deliv_text">Доставим завтра</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="category_col_card col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                  <div class="category_itm categorycard">
+
+                    <a href="#!" class="categorycard_picture">
+                      <img class="categorycard_image" src="img/catalog-image-2.png" alt="Alpet R">
+                    </a>
+
+                    <a href="#!" class="categorycard_desc">
+                      Alpet R дезинфицирующее средство
+                      для поверхностей 500мл спрей
+                    </a>
+
+                    <div class="categorycard_box">
+                      <div class="categorycard_price">960 ₽</div>
+                      <div class="categorycard_actions">
+                        <button type="button" class="categorycard_alink categorycard_alink-like">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                        </button>
+                        <button type="button" class="categorycard_alink categorycard_alink-compar">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="categorycard_addcardbl">
+                      <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                        <div class="goodscounts_main">
+                          <span class="goodscounts_main_label">Кол-во</span>
+                          <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                          <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6+">6+</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <button class="categorycard_btncard m-button m-button-card">В корзину</button>
+                    </div>
+
+                    <div class="categorycard_buydeliv">
+                      <a class="categorycard_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      <div class="categorycard_deliv">
+                        {# <img class="categorycard_deliv_icon" src="img/icon-delivery.svg" alt="иконка"> #}
+                        <svg class="categorycard_deliv_icon" data-src="img/icon-delivery.svg" width="20" height="20"></svg>
+                        <span class="categorycard_deliv_text">Доставим завтра</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="category_col_card col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                  <div class="category_itm categorycard">
+
+                    <a href="#!" class="categorycard_picture">
+                      <img class="categorycard_image" src="img/catalog-image-3.png" alt="Alpet R">
+                    </a>
+
+                    <a href="#!" class="categorycard_desc">
+                      Alpet R дезинфицирующее средство
+                      для поверхностей 500мл спрей
+                    </a>
+
+                    <div class="categorycard_box">
+                      <div class="categorycard_price">960 ₽</div>
+                      <div class="categorycard_actions">
+                        <button type="button" class="categorycard_alink categorycard_alink-like">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                        </button>
+                        <button type="button" class="categorycard_alink categorycard_alink-compar">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="categorycard_addcardbl">
+                      <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                        <div class="goodscounts_main">
+                          <span class="goodscounts_main_label">Кол-во</span>
+                          <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                          <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6+">6+</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <button class="categorycard_btncard m-button m-button-card">В корзину</button>
+                    </div>
+
+                    <div class="categorycard_buydeliv">
+                      <a class="categorycard_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      <div class="categorycard_deliv">
+                        {# <img class="categorycard_deliv_icon" src="img/icon-delivery.svg" alt="иконка"> #}
+                        <svg class="categorycard_deliv_icon" data-src="img/icon-delivery.svg" width="20" height="20"></svg>
+                        <span class="categorycard_deliv_text">Доставим завтра</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="category_col_card col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                  <div class="category_itm categorycard">
+
+                    <a href="#!" class="categorycard_picture">
+                      <img class="categorycard_image" src="img/catalog-image-4.png" alt="Alpet R">
+                    </a>
+
+                    <a href="#!" class="categorycard_desc">
+                      Alpet R дезинфицирующее средство
+                      для поверхностей 500мл спрей
+                    </a>
+
+                    <div class="categorycard_box">
+                      <div class="categorycard_price">960 ₽</div>
+                      <div class="categorycard_actions">
+                        <button type="button" class="categorycard_alink categorycard_alink-like">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                        </button>
+                        <button type="button" class="categorycard_alink categorycard_alink-compar">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="categorycard_addcardbl">
+                      <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                        <div class="goodscounts_main">
+                          <span class="goodscounts_main_label">Кол-во</span>
+                          <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                          <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6+">6+</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <button class="categorycard_btncard m-button m-button-card">В корзину</button>
+                    </div>
+
+                    <div class="categorycard_buydeliv">
+                      <a class="categorycard_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      <div class="categorycard_deliv">
+                        {# <img class="categorycard_deliv_icon" src="img/icon-delivery.svg" alt="иконка"> #}
+                        <svg class="categorycard_deliv_icon" data-src="img/icon-delivery.svg" width="20" height="20"></svg>
+                        <span class="categorycard_deliv_text">Доставим завтра</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="category_col_card col-xl-3 col-lg-4 col-md-4 col-sm-4">
+                  <div class="category_itm categorycard">
+
+                    <a href="#!" class="categorycard_picture">
+                      <img class="categorycard_image" src="img/catalog-image-5.png" alt="Alpet R">
+                    </a>
+
+                    <a href="#!" class="categorycard_desc">
+                      Alpet R дезинфицирующее средство
+                      для поверхностей 500мл спрей
+                    </a>
+
+                    <div class="categorycard_box">
+                      <div class="categorycard_price">960 ₽</div>
+                      <div class="categorycard_actions">
+                        <button type="button" class="categorycard_alink categorycard_alink-like">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                        </button>
+                        <button type="button" class="categorycard_alink categorycard_alink-compar">
+                          <svg class="categorycard_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="categorycard_addcardbl">
+                      <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                        <div class="goodscounts_main">
+                          <span class="goodscounts_main_label">Кол-во</span>
+                          <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                          <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6+">6+</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <button class="categorycard_btncard m-button m-button-card">В корзину</button>
+                    </div>
+
+                    <div class="categorycard_buydeliv">
+                      <a class="categorycard_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      <div class="categorycard_deliv">
+                        {# <img class="categorycard_deliv_icon" src="img/icon-delivery.svg" alt="иконка"> #}
+                        <svg class="categorycard_deliv_icon" data-src="img/icon-delivery.svg" width="20" height="20"></svg>
+                        <span class="categorycard_deliv_text">Доставим завтра</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+               
+              </div>
+
+              {# <div class="category_row_goods catview-lists row">
+
+                <div class="category_col_card col-12">
+                  <div class="category_itm catcardlist">
+                    <a class="catcardlist_linkcat" href="#!all"></a>
+
+                    <div class="catcardlist_picture">
+                      <img class="catcardlist_image" src="img/catalog-image-1.png" alt="Alpet R">
+                    </div>
+                    
+                    <div class="catcardlist_main">
+                      <p class="catcardlist_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </p>
+                      <div class="catcardlist_box">
+                        <div class="catcardlist_instock">В наличии</div>
+                        <div class="catcardlist_deliv">
+                          <img class="catcardlist_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+                          <span class="catcardlist_deliv_text">Доставим завтра</span>
+                        </div>
+                      </div>
+                      <div class="catcardlist_actions">
+                        <button class="catcardlist_alink catcardlist_alink-like" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">В Избранное</span>
+                        </button>
+                        <button class="catcardlist_alink catcardlist_alink-compar" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">Сравнить</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="catcardlist_info">
+                      <div class="catcardlist_price">960 ₽</div>
+                      <div class="catcardlist_addcardbl">
+                        <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="catcardlist_btncard m-button m-button-card">В корзину</button>
+                      </div>
+                      <div class="catcardlist_buywrap">
+                        <a class="catcardlist_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+                <div class="category_col_card col-12">
+                  <div class="category_itm catcardlist">
+                    <a class="catcardlist_linkcat" href="#!all"></a>
+
+                    <div class="catcardlist_picture">
+                      <img class="catcardlist_image" src="img/catalog-image-2.png" alt="Alpet R">
+                    </div>
+                    
+                    <div class="catcardlist_main">
+                      <p class="catcardlist_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </p>
+                      <div class="catcardlist_box">
+                        <div class="catcardlist_instock">В наличии</div>
+                        <div class="catcardlist_deliv">
+                          <img class="catcardlist_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+                          <span class="catcardlist_deliv_text">Доставим завтра</span>
+                        </div>
+                      </div>
+                      <div class="catcardlist_actions">
+                        <button class="catcardlist_alink catcardlist_alink-like" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">В Избранное</span>
+                        </button>
+                        <button class="catcardlist_alink catcardlist_alink-compar" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">Сравнить</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="catcardlist_info">
+                      <div class="catcardlist_price">960 ₽</div>
+                      <div class="catcardlist_addcardbl">
+                        <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="catcardlist_btncard m-button m-button-card">В корзину</button>
+                      </div>
+                      <div class="catcardlist_buywrap">
+                        <a class="catcardlist_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+                <div class="category_col_card col-12">
+                  <div class="category_itm catcardlist">
+                    <a class="catcardlist_linkcat" href="#!all"></a>
+
+                    <div class="catcardlist_picture">
+                      <img class="catcardlist_image" src="img/catalog-image-3.png" alt="Alpet R">
+                    </div>
+                    
+                    <div class="catcardlist_main">
+                      <p class="catcardlist_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </p>
+                      <div class="catcardlist_box">
+                        <div class="catcardlist_instock">В наличии</div>
+                        <div class="catcardlist_deliv">
+                          <img class="catcardlist_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+                          <span class="catcardlist_deliv_text">Доставим завтра</span>
+                        </div>
+                      </div>
+                      <div class="catcardlist_actions">
+                        <button class="catcardlist_alink catcardlist_alink-like" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">В Избранное</span>
+                        </button>
+                        <button class="catcardlist_alink catcardlist_alink-compar" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">Сравнить</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="catcardlist_info">
+                      <div class="catcardlist_price">960 ₽</div>
+                      <div class="catcardlist_addcardbl">
+                        <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="catcardlist_btncard m-button m-button-card">В корзину</button>
+                      </div>
+                      <div class="catcardlist_buywrap">
+                        <a class="catcardlist_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+                <div class="category_col_card col-12">
+                  <div class="category_itm catcardlist">
+                    <a class="catcardlist_linkcat" href="#!all"></a>
+
+                    <div class="catcardlist_picture">
+                      <img class="catcardlist_image" src="img/catalog-image-4.png" alt="Alpet R">
+                    </div>
+                    
+                    <div class="catcardlist_main">
+                      <p class="catcardlist_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </p>
+                      <div class="catcardlist_box">
+                        <div class="catcardlist_instock">В наличии</div>
+                        <div class="catcardlist_deliv">
+                          <img class="catcardlist_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+                          <span class="catcardlist_deliv_text">Доставим завтра</span>
+                        </div>
+                      </div>
+                      <div class="catcardlist_actions">
+                        <button class="catcardlist_alink catcardlist_alink-like" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">В Избранное</span>
+                        </button>
+                        <button class="catcardlist_alink catcardlist_alink-compar" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">Сравнить</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="catcardlist_info">
+                      <div class="catcardlist_price">960 ₽</div>
+                      <div class="catcardlist_addcardbl">
+                        <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="catcardlist_btncard m-button m-button-card">В корзину</button>
+                      </div>
+                      <div class="catcardlist_buywrap">
+                        <a class="catcardlist_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+                <div class="category_col_card col-12">
+                  <div class="category_itm catcardlist">
+                    <a class="catcardlist_linkcat" href="#!all"></a>
+
+                    <div class="catcardlist_picture">
+                      <img class="catcardlist_image" src="img/catalog-image-5.png" alt="Alpet R">
+                    </div>
+                    
+                    <div class="catcardlist_main">
+                      <p class="catcardlist_desc">
+                        Alpet R дезинфицирующее средство для поверхностей 500мл спрей (16шт-уп)
+                      </p>
+                      <div class="catcardlist_box">
+                        <div class="catcardlist_instock">В наличии</div>
+                        <div class="catcardlist_deliv">
+                          <img class="catcardlist_deliv_icon" src="img/icon-delivery.svg" alt="иконка">
+                          <span class="catcardlist_deliv_text">Доставим завтра</span>
+                        </div>
+                      </div>
+                      <div class="catcardlist_actions">
+                        <button class="catcardlist_alink catcardlist_alink-like" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-like.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">В Избранное</span>
+                        </button>
+                        <button class="catcardlist_alink catcardlist_alink-compar" type="button">
+                          <div class="catcardlist_alink_iconwrap">
+                            <svg class="catcardlist_alink_icon" data-src="img/icon-comparison.svg" width="24" height="24"></svg>
+                          </div>
+                          <span class="catcardlist_alink_text">Сравнить</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="catcardlist_info">
+                      <div class="catcardlist_price">960 ₽</div>
+                      <div class="catcardlist_addcardbl">
+                        <div class="categorycard_goodscount goodscounts js-goodscount-select">
+                          <div class="goodscounts_main">
+                            <span class="goodscounts_main_label">Кол-во</span>
+                            <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                            <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6+">6+</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="catcardlist_btncard m-button m-button-card">В корзину</button>
+                      </div>
+                      <div class="catcardlist_buywrap">
+                        <a class="catcardlist_buyoneclick" href="#!buyclick">Купить в 1 клик</a>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+               
+              </div> #}
+
+              <button class="category_btnmoreload showitmsmore" type="button">Показать еще</button>
+              <div class="category_pagination pagination">
+                <a class="pagination_prev" href="#!prev">
+                  Предыдущая
+                </a>
+                <div class="pagination_listpage">
+                  <a class="pagination_linkpage pagination_linkpage-1 is-active" href="#!1">1</a>
+                  <a class="pagination_linkpage pagination_linkpage-2" href="#!2">2</a>
+                  <a class="pagination_linkpage pagination_linkpage-3" href="#!3">3</a>
+                  <a class="pagination_linkpage pagination_linkpage-4" href="#!4">4</a>
+                  <a class="pagination_linkpage pagination_linkpage-5" href="#!5">5</a>
+                  <a class="pagination_linkpage pagination_linkpage-6" href="#!6">6</a>
+                  <a class="pagination_linkpage pagination_linkpage-7" href="#!7">7</a>
+                  <a class="pagination_linkpage pagination_linkpage-8" href="#!8">8</a>
+                  <a class="pagination_linkpage pagination_linkpage-9" href="#!9">9</a>
+                  <div class="pagination_dots">...</div>
+                  <a class="pagination_linkpage pagination_linkpage-10" href="#!216">216</a>
+                </div>
+                <a class="pagination_next" href="#!next">
+                  Следующая
+                </a>
+              </div>
+
+              <div class="youprevwed">
+                <h2 class="youprevwed_title title-comp">Вы ранее смотрели</h2>
+                {% include "parts/goodssliderpreview.nunjucks" %}
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {% include "blocks/articlebl.nunjucks" %}
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

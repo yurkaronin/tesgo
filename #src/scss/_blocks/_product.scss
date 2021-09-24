@@ -1,0 +1,412 @@
+.product {
+  margin-bottom: 39px;
+  &_wrap {
+    position: relative;
+  }
+}
+
+.product__img {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-wrapper {
+    flex-direction: column;
+  }
+
+  @media (max-width: 450px) {
+    .swiper-wrapper {
+      flex-direction: unset;
+    }
+  }
+}
+
+@import "_other/card_product";
+@import "_other/video";
+@import "_other/modal";
+@import "_other/magnifier";
+
+/////////// RIGHT BLOCK ---
+
+.prodaside {
+  position: relative;
+
+  padding: 30px 32px 31px;
+
+  border: 1px solid rgba(35, 31, 32, 0.1);
+  background: #ffffff;
+
+  &_top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 19px;
+  }
+
+  &_price {
+    margin-right: 65px;
+  }
+
+  &_pricsale {
+    margin-bottom: 3px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: line-through;
+    color: #ff4d00;
+  }
+
+  &_pricemain {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  &_instock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+
+    background: #f5f5f5;
+    border-radius: 2px;
+
+    font-weight: normal;
+    font-size: 12px;
+
+    color: rgba(35, 31, 32, 0.6);
+  }
+
+  /////////////////////////
+
+  &_addcardbl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &_goodscount {
+    width: 100%;
+    margin-right: 16px;
+  }
+
+  &_btncard {
+    width: 100%;
+  }
+
+  &_buyclick {
+    width: 100%;
+    background: rgba(0, 81, 255, 0.1);
+
+    color: #0051ff;
+
+    &:hover {
+      background: #0051ff;
+      color: #fff;
+    }
+  }
+
+  ///////////////////////////////
+  &_bot {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+
+  &_laction {
+    display: flex;
+    align-items: center;
+    margin-right: 64px;
+    margin-bottom: 15px;
+
+    &-compar {
+      margin-right: 0;
+    }
+
+    &:hover {
+      .prodaside_laction_text {
+        color: #0051ff;
+      }
+    }
+
+    &_icon {
+      margin-right: 16px;
+      path {
+        stroke: #231f20;
+      }
+    }
+
+    &_text {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+
+  &_deliv {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    &_icon {
+      margin-right: 16px;
+      path {
+        fill: #231f20;
+      }
+    }
+
+    &_cont {
+    }
+
+    &_title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+
+      color: #231f20;
+    }
+
+    &_desc {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+
+      color: #76818b;
+    }
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+  .product {
+    margin-bottom: 17px;
+  }
+
+  // INFO BLOCK RIGHT //
+  .prodaside_price {
+    margin-bottom: 12px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .prodaside_top {
+    margin-bottom: 22px;
+  }
+
+  .prodaside_addcardbl {
+    margin-bottom: 16px;
+  }
+
+  .prodaside_goodscount {
+    margin-right: 8px;
+  }
+
+  .prodaside_laction-like {
+    margin-right: 28px;
+  }
+
+  .prodaside_laction_icon {
+    margin-right: 10px;
+  }
+
+  .prodaside_laction {
+    margin-bottom: 17px;
+  }
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+  .prodaside {
+    width: 50%;
+    margin-left: auto;
+  }
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+  .product {
+    margin-bottom: 44px;
+  }
+
+  // RIGHT BLOCK INFO //
+
+  .prodaside {
+    width: 48.3%;
+  }
+
+  .prodaside_top {
+    margin-bottom: 38px;
+  }
+
+  .prodaside_price {
+    margin-bottom: 0;
+    margin-right: 52px;
+  }
+
+  .prodaside_btncard {
+    width: 46%;
+  }
+
+  .prodaside_price {
+    width: auto;
+  }
+
+  .prodaside_laction-compar {
+    margin-left: auto;
+  }
+
+  .prodaside_laction_icon {
+    margin-right: 12px;
+  }
+
+  .prodaside_deliv_icon {
+    margin-right: 11px;
+  }
+}
+
+// ≥992px
+@media (max-width: 992px) {
+  .prodaside {
+    width: 100%;
+  }
+
+  .prodaside_btncard {
+    width: 100%;
+  }
+
+  .prodaside_goodscount {
+    margin-right: 15px;
+  }
+}
+
+// ≥850px
+@media (max-width: 850px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+  .product {
+    margin-bottom: 39px;
+  }
+
+  // PROD SIDE //
+  .prodaside_top {
+    margin-bottom: 30px;
+  }
+
+  .prodaside_addcardbl {
+    margin-bottom: 16px;
+  }
+
+  .prodaside_laction_icon {
+    margin-right: 10px;
+  }
+
+  .prodaside_laction {
+    margin-right: 89px;
+    margin-bottom: 16px;
+  }
+
+  .prodaside_deliv_icon {
+    margin-right: 11px;
+  }
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+}
+
+// ≥480px
+@media (max-width: 480px) {
+}
+
+// ≥425px
+@media (max-width: 425px) {
+  .product {
+    margin-bottom: 25px;
+  }
+
+  .prodaside_top {
+    margin-bottom: 21px;
+  }
+
+  .prodaside_price {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 14px;
+  }
+
+  .prodaside_laction {
+    margin-right: 0;
+    margin-bottom: 19px;
+  }
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+  .prodaside_laction-compar {
+    margin-left: 0;
+  }
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

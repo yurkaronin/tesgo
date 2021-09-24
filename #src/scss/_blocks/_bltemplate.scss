@@ -1,0 +1,175 @@
+.bltemplate {
+  margin: 32px 0;
+
+  &_row {
+  }
+
+  &_col {
+  }
+
+  &_itm {
+    position: relative;
+
+    padding: 160px 100px 32px 36px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_title {
+      margin-bottom: 24px;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+
+      color: #fff;
+
+      &-br {
+        display: none;
+      }
+    }
+
+    &_link {
+    }
+
+    &:hover {
+      .bltemplate_itm_link {
+        @extend .m-button-black;
+      }
+    }
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+  .bltemplate_itm {
+    padding: 24px 100px 168px 36px;
+  }
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+}
+
+// ≥992px
+@media (max-width: 992px) {
+  .bltemplate_itm {
+    padding: 24px 32px 72px 32px;
+  }
+
+  .bltemplate_itm_title {
+    &-br {
+      display: block;
+    }
+  }
+}
+
+// ≥850px
+@media (max-width: 850px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+  .bltemplate {
+    margin: 40px 0 30px;
+  }
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+  .bltemplate_col {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .bltemplate_itm {
+    padding: 22px 30px 100px 30px;
+  }
+
+  .bltemplate_itm_title {
+    &-br {
+      display: none;
+    }
+  }
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  .bltemplate {
+    margin: 40px 0 20px;
+  }
+
+  .bltemplate_itm_title {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .bltemplate_itm_link {
+    width: 125px;
+    min-height: 40px;
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

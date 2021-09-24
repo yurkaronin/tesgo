@@ -1,0 +1,168 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Личный кабинет | Заказы" %}
+{% set css = "account" %}
+
+{% block content %}
+
+<div class="page-wrapper accountpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Личный кабинет</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="account">
+        <div class="container">
+          <div class="account_wrap">
+
+            <h2 class="account_title title-comp-bold title-comp-other">Личный кабинет</h2>
+
+            <nav class="accountnav">
+              <div class="accountnav_container">
+                <ul class="accountnav_list">
+                  <li class="accountnav_list_itm is-active">
+                    <a class="accountnav_link" href="#!">Профиль</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Заказы</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Избранное</a>
+                  </li>
+                  <li class="accountnav_list_itm is-notific">
+                    <a class="accountnav_link" href="#!">Входящие</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Обратная связь</a>
+                  </li>
+                </ul>
+                <a class="accountnav_signout" href="#!">Выход</a>
+              </div>
+            </nav>
+
+            <div class="accorder">
+              <div class="accorder_row">
+                <div class="accorderitm">
+                  <div class="accorderitm_info">
+                    <div class="accorderitm_itm accorderitm_itm-minf">
+                      <div class="accorderitm_numbord">Заказ № T2C37625</div>
+                      <div class="accorderitm_date">14 апреля 2021</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-count">
+                      <a class="accorderitm_count" href="#!">26 товаров</a>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-status">
+                      <div class="accorderitm_status accorderitm_status-performed">Выполняется</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-deliv">
+                      <div class="accorderitm_deliv">Доставка</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-price">
+                      <div class="accorderitm_price">2 617 263 ₽</div>
+                    </div>
+                  </div>
+                  <div class="accorderitm_action">
+                    <a class="accorderitm_btnacction accorderitm_btnacction-reqdocum m-button" href="#!">Запросить документы</a>
+                    <a class="accorderitm_btnacction accorderitm_btnacction-reporder m-button" href="#!">Повторить заказ</a>
+                  </div>
+                </div>
+                <div class="accorderitm">
+                  <div class="accorderitm_info">
+                    <div class="accorderitm_itm accorderitm_itm-minf">
+                      <div class="accorderitm_numbord">Заказ № T2C37625</div>
+                      <div class="accorderitm_date">14 апреля 2021</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-count">
+                      <a class="accorderitm_count" href="#!">26 товаров</a>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-status">
+                      <div class="accorderitm_status accorderitm_status-performed">Выполняется</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-deliv">
+                      <div class="accorderitm_deliv">Доставка</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-price">
+                      <div class="accorderitm_price">2 617 263 ₽</div>
+                    </div>
+                  </div>
+                  <div class="accorderitm_action">
+                    <a class="accorderitm_btnacction accorderitm_btnacction-reqdocum m-button" href="#!">Запросить документы</a>
+                    <a class="accorderitm_btnacction accorderitm_btnacction-reporder m-button" href="#!">Повторить заказ</a>
+                  </div>
+                </div>
+                <div class="accorderitm">
+                  <div class="accorderitm_info">
+                    <div class="accorderitm_itm accorderitm_itm-minf">
+                      <div class="accorderitm_numbord">Заказ № T2C37625</div>
+                      <div class="accorderitm_date">14 апреля 2021</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-count">
+                      <a class="accorderitm_count" href="#!">26 товаров</a>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-status">
+                      {# <div class="accorderitm_status accorderitm_status-performed">Выполняется</div> #}
+                      <div class="accorderitm_status accorderitm_status-completed">Выполнен</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-deliv">
+                      <div class="accorderitm_deliv">Самовывоз</div>
+                    </div>
+                    <div class="accorderitm_itm accorderitm_itm-price">
+                      <div class="accorderitm_price">3 614 ₽</div>
+                    </div>
+                  </div>
+                  <div class="accorderitm_action">
+                    <a class="accorderitm_btnacction accorderitm_btnacction-reqdocum m-button" href="#!">Запросить документы</a>
+                    <a class="accorderitm_btnacction accorderitm_btnacction-reporder m-button" href="#!">Повторить заказ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

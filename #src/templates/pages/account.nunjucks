@@ -1,0 +1,158 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Личный кабинет" %}
+{% set css = "account" %}
+
+{% block content %}
+
+<div class="page-wrapper accountpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Личный кабинет</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="account">
+        <div class="container">
+          <div class="account_wrap">
+
+            <h2 class="account_title title-comp-bold title-comp-other">Личный кабинет</h2>
+
+            <nav class="accountnav">
+              <div class="accountnav_container">
+                <ul class="accountnav_list">
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Профиль</a>
+                  </li>
+                  <li class="accountnav_list_itm is-active">
+                    <a class="accountnav_link" href="#!">Заказы</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Избранное</a>
+                  </li>
+                  <li class="accountnav_list_itm is-notific">
+                    <a class="accountnav_link" href="#!">Входящие</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Обратная связь</a>
+                  </li>
+                </ul>
+                <a class="accountnav_signout" href="#!">Выход</a>
+              </div>
+            </nav>
+
+            <div class="accmain">
+              <div class="accmain_row row">
+                <div class="accmain_col col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <a class="accmainitm" href="#!">
+                    <div class="accmainitm_wrapicon">
+                      <svg class="accmainitm_icon" data-src="img/icon-account-1.svg" width="40" height="40"></svg>
+                    </div>
+                    <h4 class="accmainitm_title">Контактная информация</h4>
+                    <p class="accmainitm_desc">
+                      Здесь вы можете просмотреть свои персональные данные, поменять пароль или удалить свой аккаунт
+                    </p>
+                  </a>
+                </div>
+                <div class="accmain_col col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <a class="accmainitm" href="#!">
+                    <div class="accmainitm_wrapicon">
+                      <svg class="accmainitm_icon" data-src="img/icon-account-2.svg" width="40" height="40"></svg>
+                    </div>
+                    <h4 class="accmainitm_title">Заказы</h4>
+                    <p class="accmainitm_desc">
+                      Просмотр статуса текущих и всей истории заказов. Также можно запрость акты сверки
+                    </p>
+                  </a>
+                </div>
+                <div class="accmain_col col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <a class="accmainitm" href="#!">
+                    <div class="accmainitm_wrapicon">
+                      <svg class="accmainitm_icon accmainitm_icon-fill" data-src="img/icon-account-3.svg" width="40" height="40"></svg>
+                    </div>
+                    <h4 class="accmainitm_title">Избранное</h4>
+                    <p class="accmainitm_desc">
+                      Товары, которые ждут своего часа
+                    </p>
+                  </a>
+                </div>
+                <div class="accmain_col col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <a class="accmainitm" href="#!">
+                    <div class="accmainitm_wrapicon">
+                      <svg class="accmainitm_icon" data-src="img/icon-account-4.svg" width="40" height="40"></svg>
+                    </div>
+                    <h4 class="accmainitm_title">Входящие</h4>
+                    <p class="accmainitm_desc">
+                      Уведомления от Администрации сайта. Здесь можно обратиться к своему персональномук менеджеру
+                    </p>
+                  </a>
+                </div>
+                <div class="accmain_col col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <a class="accmainitm" href="#!">
+                    <div class="accmainitm_wrapicon">
+                      <svg class="accmainitm_icon" data-src="img/icon-account-5.svg" width="40" height="40"></svg>
+                    </div>
+                    <h4 class="accmainitm_title">Обратная связь</h4>
+                    <p class="accmainitm_desc">
+                      Есть вопросы? Хотите помочь нам стать лучше? Пишите сюда, мы все читаем
+                    </p>
+                  </a>
+                </div>
+                <div class="accmain_col col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                  <a class="accmainitm" href="#!">
+                    <div class="accmainitm_wrapicon">
+                      <svg class="accmainitm_icon" data-src="img/icon-account-6.svg" width="40" height="40"></svg>
+                    </div>
+                    <h4 class="accmainitm_title">Выход из Личного кабинета</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

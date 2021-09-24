@@ -1,0 +1,245 @@
+.goodsslid_carousel {
+  position: relative;
+}
+
+.goodsslid {
+}
+
+.goodsslid_btn {
+  position: absolute;
+  top: 36%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  z-index: 2;
+
+  transition: all 250ms ease-in;
+
+  cursor: pointer;
+
+  &.swiper-button-disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: #231f20;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .goodsslid_btn_icon {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &_icon {
+    position: relative;
+    path {
+      stroke: #231f20;
+      transition: all 250ms ease-in;
+    }
+  }
+
+  &-prev {
+    .goodsslid_btn_icon {
+      left: -2px;
+    }
+  }
+
+  &-next {
+    right: 0;
+    .goodsslid_btn_icon {
+      left: 2px;
+    }
+  }
+}
+
+.carditm {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 18px 24px;
+
+  &:hover {
+    .carditm_title {
+      color: $accent;
+    }
+  }
+
+  &_picture {
+    margin-bottom: 24px;
+  }
+
+  &_image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &_title {
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    transition: all 250ms ease-in;
+  }
+
+  &_desc {
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #adb8c1;
+  }
+
+  &_price {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &_deliv {
+    display: flex;
+    align-items: center;
+    &_icon {
+      margin-right: 16px;
+    }
+
+    &_text {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+///////////////
+.goodsslid-youprevwed {
+  .carditm_picture {
+    height: 188px;
+  }
+
+  .carditm_image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+}
+
+// ≥992px
+@media (max-width: 992px) {
+}
+
+// ≥850px
+@media (max-width: 850px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  .goodsslid_btn-next,
+  .goodsslid_btn-prev {
+    display: none;
+  }
+
+  ///////////////
+  .goodsslid-youprevwed {
+    .carditm_desc {
+      margin-bottom: 29px;
+    }
+  }
+
+  .goodsslid {
+    overflow: initial;
+    &_itm {
+      width: 234px;
+    }
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

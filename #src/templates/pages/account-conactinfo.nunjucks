@@ -1,0 +1,220 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Личный кабинет | Контактная информация" %}
+{% set css = "account" %}
+
+{% block content %}
+
+<div class="page-wrapper accountpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Личный кабинет</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="account">
+        <div class="container">
+          <div class="account_wrap">
+
+            <h2 class="account_title title-comp-bold title-comp-other">Личный кабинет</h2>
+
+            <nav class="accountnav">
+              <div class="accountnav_container">
+                <ul class="accountnav_list">
+                  <li class="accountnav_list_itm is-active">
+                    <a class="accountnav_link" href="#!">Профиль</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Заказы</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Избранное</a>
+                  </li>
+                  <li class="accountnav_list_itm is-notific">
+                    <a class="accountnav_link" href="#!">Входящие</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Обратная связь</a>
+                  </li>
+                </ul>
+                <a class="accountnav_signout" href="#!">Выход</a>
+              </div>
+            </nav>
+
+            <div class="accinfocont">
+              <div class="accinfocont_row">
+
+                <form class="form accinfocontform">
+                  <div class="form_conbox form_conbox-continf">
+                    <div class="form_box form_box-business">
+                      <label class="form_radio">
+                        <input class="form_radio_input js-radio-bus-business" type="radio" name="business" value="Физлицо" checked>
+                        <span class="form_radio_status">
+                          <span class="form_radio_status-check"></span>
+                        </span>
+                        <span class="form_radio_cont">
+                          <span class="form_radio_title">Физлицо</span>
+                        </span>
+                      </label>
+                      <label class="form_radio">
+                        <input class="form_radio_input js-radio-bus-business" id="form-radio-organiz" type="radio" name="business" value="Организация">
+                        <span class="form_radio_status">
+                          <span class="form_radio_status-check"></span>
+                        </span>
+                        <span class="form_radio_cont">
+                          <span class="form_radio_title">Организация</span>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="form_box form_box-legalcomp js-form-box-organization">
+                      <div class="form_inpt form_inpt-full form_inpt-company">
+                        <input class="form_inpt_el" type="text" name="company" placeholder="Название организации">
+                        <span class="form_inpt_name">Компания</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-one form_inpt-inn">
+                        <input class="form_inpt_el" type="text" name="inn" placeholder="ИНН">
+                        <span class="form_inpt_name">ИНН</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-two form_inpt-kpp">
+                        <input class="form_inpt_el" type="text" name="kpp" placeholder=""КПП>
+                        <span class="form_inpt_name">КПП</span>
+                      </div>
+
+                      <div class="form_inpt form_inpt-full form_inpt-legaddrs">
+                        <input class="form_inpt_el" type="text" name="legaddrs" placeholder="Введите адрес полностью">
+                        <span class="form_inpt_name">Юридический адрес</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-one form_inpt-bik">
+                        <input class="form_inpt_el" type="text" name="bik" placeholder="БИК">
+                        <span class="form_inpt_name">БИК</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-two form_inpt-checaccount">
+                        <input class="form_inpt_el" type="text" name="checaccount" placeholder="Расчетный счет">
+                        <span class="form_inpt_name">Расчетный счет</span>
+                      </div>
+                    </div>
+
+                    <div class="form_box form_box-physicalperson js-form-box-physicalperson">
+                      <div class="form_inpt form_inpt-name">
+                        <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо">
+                        <span class="form_inpt_name">Имя</span>
+                      </div>
+                      <div class="form_inpt form_inpt-tel">
+                        <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона">
+                        <span class="form_inpt_name">Телефон</span>
+                      </div>
+                      <div class="form_inpt form_inpt-email">
+                        <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта">
+                        <span class="form_inpt_name">Email</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form_conbox form_conbox-address">
+                    <div class="form_title">Адрес</div>
+                    <div class="form_box">
+                      <div class="form_inpt form_inpt-index">
+                        <input class="form_inpt_el" type="text" name="index" placeholder="350000">
+                        <span class="form_inpt_name">Индекс</span>
+                      </div>
+                      <div class="form_select form_select-city">
+                        <select class="form_select_el js-select-all" name="city">
+                          <option value="Краснодар">Краснодар</option>
+                          <option value="город-2">город-2</option>
+                          <option value="город-3">город-3</option>
+                          <option value="город-4">город-4</option>
+                        </select>
+                        <span class="form_select_name">Город</span>
+                      </div>
+                      <div class="form_select form_select-deladdress">
+                        <select class="form_select_el js-select-all" name="delivery-address">
+                          <option data-placeholder="true">Улица, дом, квартира (офис, помещение)</option>
+                          <option value="город-2">офис-1</option>
+                          <option value="город-3">офис-2</option>
+                          <option value="город-4">офис-3</option>
+                        </select>
+                        <span class="form_select_name">Адрес доставки</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form_conbox form_conbox-changepass">
+                    <div class="form_title">Сменить пароль</div>
+                    <div class="form_box form_box-changepass js-form-box-organization">
+                      <div class="form_inpt form_inpt-double form_inpt-double-one form_inpt-pass">
+                        <input class="form_inpt_el" type="password" name="password" placeholder="Придумайте пароль">
+                        <span class="form_inpt_name">Пароль</span>
+                      </div>
+                      <div class="form_inpt form_inpt-double form_inpt-double-two form_inpt-passconfirm">
+                        <input class="form_inpt_el" type="password" name="passwordconfirm" placeholder="Введите пароль еще раз">
+                        <span class="form_inpt_name">Подтвердите пароль</span>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="form_actions">
+                    <button class="form_submit m-button m-button-card" type="submit">Сохранить</button>
+                  </div>
+                </form>
+
+                <div class="deleteacc">
+                  <h3 class="deleteacc_title">Удалить профиль</h3>
+                  <p class="deleteacc_desc">
+                    Эта операция не может быть отменена. Если вы по какой-то причине решили удалить свой профиль на нашем сайте, то вы потеряете все нкопленные проценты Программы лояльности. Не принимайте поспешных решений
+                  </p>
+                  <button class="deleteacc_btn m-button">Удалить профиль</button>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

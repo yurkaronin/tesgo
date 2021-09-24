@@ -1,0 +1,340 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Сравнить товары" %}
+{% set css = "comparison" %}
+
+{% block content %}
+
+<div class="page-wrapper comparisonpage">
+
+	{# <div class="container-fullhd"></div> #}
+
+	{# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+	<!-- HEADER -->
+	{% include "parts/header-other.nunjucks" %}
+
+	<!-- MAIN -->
+	<div class="main">
+
+    <div class="breadcrumbsblock">
+      <div class="container">
+        <div class="breadcrumbsblock_wrap">
+          <nav class="breadcrumbs">
+            <a class="breadcrumbs_moblink" href="#!">Главная</a>
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs_list_itm is-current">
+                <a class="breadcrumbs_list_link" href="/">Сравнить товары</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+		
+		<section class="comparprod">
+			<div class="container">
+				<div class="comparprod_wrap">
+          <div class="comparprod_top">
+            <h2 class="comparprod_title title-comp-bold title-comp-other">Сравнить товары</h2>
+            <div class="comparprod_checkboxbtn checkboxbtn">
+              <label class="checkboxbtn_label">
+                <input class="checkboxbtn_input" type="checkbox">
+                <span  class="checkboxbtn_main">
+                  <span  class="checkboxbtn_status"></span >
+                </span >
+                <span class="checkboxbtn_text">Только различия</span>
+              </label>
+            </div>
+          </div>
+          <div class="comparprod_gds">
+
+            <div class="swiper-container comparprodslider js-comparprod-initial">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-1.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+
+                {# <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-1.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+                    <div class="comparprodcard_goodscount goodscount js-goods-count">
+                      <div class="goodscount_main js-goods-count-trigger">
+                        <span class="goodscount_main_label">Кол-во</span>
+                        <input class="goodscount_main_input" type="text" name="goodscount-change" value="1" disabled>
+                        <div class="goodscount_main_iconwrap">
+                          <svg class="goodscount_main_icon" data-src="img/icon-arrow-down.svg" width="14" height="9"></svg>
+                        </div>
+                      </div>
+                      <div class="goodscount_drop js-goods-count-drop">
+                        <div class="goodscount_drop_itm is-disabled">1</div>
+                        <div class="goodscount_drop_itm">2</div>
+                        <div class="goodscount_drop_itm">3</div>
+                        <div class="goodscount_drop_itm">4</div>
+                        <div class="goodscount_drop_itm">5</div>
+                        <div class="goodscount_drop_itm">6</div>
+                        <div class="goodscount_drop_itm">7</div>
+                        <div class="goodscount_drop_itm">8</div>
+                        <div class="goodscount_drop_itm">9</div>
+                        <div class="goodscount_drop_itm">10</div>
+                      </div>
+                    </div>
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div> #}
+
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-2.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-3.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-4.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-5.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number" name="goodscounts-change-input" value="7" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active" name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev comparprodslider_btn comparprodslider_btn-prev js-comparprodslider-btn-prev">
+                <svg class="comparprodslider_btn_icon" data-src="img/icon-arrow-slider-prev.svg" width="11" height="18"></svg>
+              </div>
+              <div class="swiper-button-next comparprodslider_btn comparprodslider_btn-next js-comparprodslider-btn-next">
+                <svg class="comparprodslider_btn_icon" data-src="img/icon-arrow-slider-next.svg" width="11" height="18"></svg>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="comparprod_info">
+          
+            <div class="swiper-container comparprodsliderinf js-comparprodsliderinf-initial">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_name">Назначение</div>
+                    <div class="comparprod_info_text">Для пола</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_name">В упаковке</div>
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_name">В упаковке</div>
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+			</div>
+		</section>
+
+
+	</div>
+
+	<!-- FOOTER -->
+	{% include "parts/footer.nunjucks" %}
+
+	<!-- POPUPS -->
+	{% include "modules/popups.nunjucks" %}
+
+	<div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

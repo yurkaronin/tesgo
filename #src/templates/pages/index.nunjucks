@@ -1,0 +1,215 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo 2" %}
+{% set css = "home" %}
+
+{% block content %}
+
+<div class="page-wrapper homepage">
+
+	{# <div class="container-fullhd"></div> #}
+
+	{# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+	{# <svg class="actions_link_icon" data-src="img/icon-basket.svg" width="24" height="24"></svg> #}
+
+	<!-- HEADER -->
+	{% include "parts/header.nunjucks" %}
+
+	<!-- MAIN -->
+	<div class="main">
+
+		<section class="mainslider">
+			<div class="container-fullhd">
+				<div class="mainslider_row">
+					<div class="swiper-container mainslid js-mainslider-initial">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide mainslid_itm">
+								<div class="mainslid_itm_picturewrap">
+									<div class="mainslid_itm_image" style="background-image: url('img/mainslider-image-1.jpg');"></div>
+								</div>
+
+								<div class="mainslid_itm_content">
+									<h2 class="mainslid_itm_title">
+										CLEAN & GREEN<br>
+										HYGIENE <br>
+										SOLUTIONS
+									</h2>
+									<p class="mainslid_itm_desc">
+										В литературе неоднократно описано, как <br>
+										неоднородность эксперментально верифицируема
+									</p>
+									<a class="mainslid_itm_link m-button" href="#!">Узнать больше</a>
+								</div>
+							</div>
+							<div class="swiper-slide mainslid_itm">
+								<div class="mainslid_itm_picturewrap">
+									<div class="mainslid_itm_image" style="background-image: url('img/mainslider-image-1.jpg');"></div>
+								</div>
+
+								<div class="mainslid_itm_content">
+									<h2 class="mainslid_itm_title">
+										CLEAN & GREEN<br>
+										HYGIENE <br>
+										SOLUTIONS 2
+									</h2>
+									<p class="mainslid_itm_desc">
+										В литературе неоднократно описано, как <br>
+										неоднородность эксперментально верифицируема
+									</p>
+									<a class="mainslid_itm_link m-button" href="#!">Узнать больше</a>
+								</div>
+							</div>
+							<div class="swiper-slide mainslid_itm">
+								<div class="mainslid_itm_picturewrap">
+									<div class="mainslid_itm_image" style="background-image: url('img/mainslider-image-1.jpg');"></div>
+								</div>
+
+								<div class="mainslid_itm_content">
+									<h2 class="mainslid_itm_title">
+										CLEAN & GREEN<br>
+										HYGIENE <br>
+										SOLUTIONS 3
+									</h2>
+									<p class="mainslid_itm_desc">
+										В литературе неоднократно описано, как <br>
+										неоднородность эксперментально верифицируема
+									</p>
+									<a class="mainslid_itm_link m-button" href="#!">Узнать больше</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-pagination mainslid_pagination js-mainslider-pagination"></div>
+
+						<div class="swiper-button-prev mainslid_btnprev js-mainslider-btn-prev">
+							<img class="mainslid_btnprev_icon" src="img/icon-arrow-slider-prev.svg" alt="назад">
+						</div>
+						<div class="swiper-button-next mainslid_btnnext js-mainslider-btn-next">
+							<img class="mainslid_btnprev_icon" src="img/icon-arrow-slider-next.svg" alt="вперёд">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bltemplate">
+			<div class="container">
+				<div class="row bltemplate_row">
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 bltemplate_col bltemplate_col-left">
+						<div class="bltemplate_itm" style="background-image: url('img/bltemplate-image-1.jpg');">
+							<h3 class="bltemplate_itm_title">Доставим <br class="bltemplate_itm_title-br"> бесплатно</h3>
+							<a class="bltemplate_itm_link m-button" href="#!">Подробнее</a>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 bltemplate_col bltemplate_col-right">
+						<div class="bltemplate_itm" style="background-image: url('img/bltemplate-image-2.jpg');">
+							<h3 class="bltemplate_itm_title">Программа <br class="bltemplate_itm_title-br"> лояльности</h3>
+							<a class="bltemplate_itm_link m-button" href="#!">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="popularcat">
+			<div class="container">
+				<h2 class="popularcat_title title-comp">Популярные категории</h2>
+				<div class="row popularcat_row">
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 popularcat_col popularcat_col-1">
+						<a href="#!" class="popularcat_itm catblock">
+							<div class="catblock_picture">
+								<img class="catblock_image" src="img/popularcat-image-1.png" alt="Химия">
+							</div>
+							<div class="catblock_content">
+								<div class="catblock_name">Химия</div>
+								<div class="catblock_count">256 товаров</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 popularcat_col popularcat_col-2">
+						<a href="#!" class="popularcat_itm catblock">
+							<div class="catblock_picture">
+								<img class="catblock_image" src="img/popularcat-image-2.png" alt="Бумага">
+							</div>
+							<div class="catblock_content">
+								<div class="catblock_name">Бумага</div>
+								<div class="catblock_count">17 товаров</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 popularcat_col popularcat_col-3">
+						<a href="#!" class="popularcat_itm catblock">
+							<div class="catblock_picture">
+								<img class="catblock_image" src="img/popularcat-image-3.png"
+									alt="Средства индивидуальной защиты">
+							</div>
+							<div class="catblock_content">
+								<div class="catblock_name">Средства индивидуальной защиты</div>
+								<div class="catblock_count">1 480 товаров</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 popularcat_col popularcat_col-4">
+						<a href="#!" class="popularcat_itm catblock">
+							<div class="catblock_picture">
+								<img class="catblock_image" src="img/popularcat-image-4.png" alt="Хозтовары">
+							</div>
+							<div class="catblock_content">
+								<div class="catblock_name">Хозтовары</div>
+								<div class="catblock_count">16 товаров</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 popularcat_col popularcat_col-5">
+						<a href="#!" class="popularcat_itm catblock">
+							<div class="catblock_picture">
+								<img class="catblock_image" src="img/popularcat-image-5.png" alt="Общепит">
+							</div>
+							<div class="catblock_content">
+								<div class="catblock_name">Общепит</div>
+								<div class="catblock_count">32 товара</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 popularcat_col popularcat_col-6">
+						<a href="#!" class="popularcat_itm catblock">
+							<div class="catblock_picture">
+								<img class="catblock_image" src="img/popularcat-image-6.png" alt="Гостиница">
+							</div>
+							<div class="catblock_content">
+								<div class="catblock_name">Гостиница</div>
+								<div class="catblock_count">256 товаров</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="especyou">
+			<div class="container">
+				<h2 class="especyou_title title-comp">Специально для вас</h2>
+				{% include "parts/goodsslider.nunjucks" %}
+			</div>
+		</section>
+
+		{% include "blocks/articlebl.nunjucks" %}
+
+	</div>
+
+	<!-- FOOTER -->
+	{% include "parts/footer.nunjucks" %}
+
+	<!-- POPUPS -->
+	{% include "modules/popups.nunjucks" %}
+
+	<div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

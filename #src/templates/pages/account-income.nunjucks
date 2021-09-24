@@ -1,0 +1,115 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Личный кабинет | Входящие" %}
+{% set css = "account" %}
+
+{% block content %}
+
+<div class="page-wrapper accountpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="block-maxwidth-container">
+
+      <div class="breadcrumbsblock">
+        <div class="container">
+          <div class="breadcrumbsblock_wrap">
+            <nav class="breadcrumbs">
+              <a class="breadcrumbs_moblink" href="#!">Главная</a>
+              <ul class="breadcrumbs_list">
+                <li class="breadcrumbs_list_itm">
+                  <a class="breadcrumbs_list_link" href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs_list_itm is-current">
+                  <a class="breadcrumbs_list_link" href="/">Личный кабинет</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <section class="account">
+        <div class="container">
+          <div class="account_wrap">
+
+            <h2 class="account_title title-comp-bold title-comp-other">Личный кабинет</h2>
+
+            <nav class="accountnav">
+              <div class="accountnav_container">
+                <ul class="accountnav_list">
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Профиль</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Заказы</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Избранное</a>
+                  </li>
+                  <li class="accountnav_list_itm is-active">
+                    <a class="accountnav_link" href="#!">Входящие</a>
+                  </li>
+                  <li class="accountnav_list_itm">
+                    <a class="accountnav_link" href="#!">Обратная связь</a>
+                  </li>
+                </ul>
+                <a class="accountnav_signout" href="#!">Выход</a>
+              </div>
+            </nav>
+
+            <div class="accincome">
+              <div class="accincome_row">
+                <div class="accincome_messages">
+                  <div class="accincomemess">
+                    <h3 class="accincomemess_title">Уведомление от Администрации</h3>
+                    <div class="accincomemess_date">8 июня 2021 г.</div>
+                    <div class="accincomemess_desc">
+                      <p class="accincomemess_text">
+                        Струя, на первый взгляд, расщепляет квазар. Еще в ранних работах Л.Д.Ландау показано, что вихрь представляет собой нестационарный взрыв, в итоге возможно появление обратной связи и самовозбуждение системы. Тело возбуждает субсветовой гидродинамический удар.
+                      </p>
+                    </div>
+                  </div>
+                  {# <div class="accincomemess">
+                    <h3 class="accincomemess_title">Уведомление от Администрации</h3>
+                    <div class="accincomemess_date">8 июня 2021 г.</div>
+                    <div class="accincomemess_desc">
+                      <p class="accincomemess_text">
+                        Струя, на первый взгляд, расщепляет квазар. Еще в ранних работах Л.Д.Ландау показано, что вихрь представляет собой нестационарный взрыв, в итоге возможно появление обратной связи и самовозбуждение системы. Тело возбуждает субсветовой гидродинамический удар.
+                      </p>
+                    </div>
+                  </div> #}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}

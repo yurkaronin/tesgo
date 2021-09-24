@@ -1,0 +1,402 @@
+.comparprod {
+  margin-bottom: 65px;
+
+  &_wrap {
+  }
+
+  &_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+  }
+
+  &_gds,
+  &_info {
+    max-width: 1500px;
+  }
+
+  &_checkboxbtn {
+    position: relative;
+    top: 6px;
+  }
+
+  &_title {
+    margin-bottom: 0;
+  }
+
+  &_info {
+    position: relative;
+    margin-top: 26px;
+
+    z-index: 0;
+
+    &_itm {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      min-height: 69px;
+
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -32px;
+        bottom: -1px;
+        width: 32px;
+        height: 1px;
+        background: rgba(196, 196, 196, 0.3);
+      }
+    }
+
+    &_name {
+      margin-bottom: 6px;
+
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &_text {
+      margin-top: auto;
+
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: #76818b;
+    }
+  }
+}
+
+.comparprodslider {
+  overflow: initial;
+}
+
+.comparprodslider_btn {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  z-index: 2;
+
+  transition: all 250ms ease-in;
+
+  cursor: pointer;
+
+  &.swiper-button-disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: #231f20;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .comparprodslider_btn_icon {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &_icon {
+    position: relative;
+    path {
+      stroke: #231f20;
+      transition: all 250ms ease-in;
+    }
+  }
+
+  &-prev {
+    .comparprodslider_btn_icon {
+      left: -2px;
+    }
+  }
+
+  &-next {
+    right: 0;
+    .goodsslid_btn_icon {
+      left: 2px;
+    }
+  }
+}
+
+.comparprodcard {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    .comparprodcard_title {
+      color: $accent;
+    }
+  }
+
+  &_picture {
+    margin-bottom: 24px;
+    height: 118px;
+  }
+
+  &_image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &_title {
+    margin-bottom: 6px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    transition: all 250ms ease-in;
+  }
+
+  &_desc {
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #adb8c1;
+  }
+
+  &_price {
+    margin-bottom: 17px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &_addcardbl {
+    display: flex;
+    align-items: center;
+  }
+
+  &_goodscount {
+    flex-basis: 50%;
+    margin-right: 8px;
+  }
+
+  &_btncard {
+    flex-basis: 50%;
+  }
+}
+
+/*==========  Desktop First  ==========*/
+// ≥1920px
+@media (min-width: 1920px) {
+}
+
+// ≥1800px
+@media (max-width: 1800px) {
+}
+
+// ≥1700px
+@media (max-width: 1700px) {
+}
+
+// ≥1440px
+@media (max-width: 1440px) {
+  .comparprod {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 33px;
+      height: 100%;
+      background: #fff;
+
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 33px;
+      height: 100%;
+      background: #fff;
+
+      z-index: 2;
+    }
+  }
+
+  .comparprodslider_btn {
+    display: flex;
+  }
+
+  // CARD ITEMS //
+
+  .comparprodcard_goodscount {
+    flex-basis: 63%;
+  }
+}
+
+// ≥1400px
+@media (max-width: 1400px) {
+}
+
+// ≥1280px
+@media (max-width: 1280px) {
+}
+
+// ≥1250px
+@media (max-width: 1250px) {
+}
+
+// ≥1200px
+@media (max-width: 1200px) {
+  // CARD ITEMS //
+  .comparprodcard_goodscount {
+    flex-basis: 43%;
+  }
+
+  .comparprodcard_btncard {
+    flex-basis: 53%;
+  }
+}
+
+// ≥1024px
+@media (max-width: 1024px) {
+}
+
+// ≥992px
+@media (max-width: 992px) {
+  .comparprod::after {
+    width: 45px;
+  }
+
+  .comparprod::before {
+    width: 45px;
+  }
+
+  // CARD ITEMS //
+  .comparprodcard_goodscount {
+    flex-basis: 50%;
+  }
+
+  .comparprodcard_btncard {
+    flex-basis: 50%;
+  }
+}
+
+// ≥850px
+@media (max-width: 850px) {
+}
+
+// ≥768px
+@media (max-width: 768px) {
+  .comparprod::after,
+  .comparprod::before {
+    display: none;
+  }
+
+  // CARD ITM //
+  .comparprodcard_desc {
+    br {
+      display: none;
+    }
+  }
+}
+
+// ≥650px
+@media (max-width: 650px) {
+}
+
+// ≥576px
+@media (max-width: 576px) {
+  .comparprod {
+    margin-bottom: 50px;
+  }
+
+  .comparprod_top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .comparprod_top {
+    margin-bottom: 38px;
+  }
+
+  .comparprod_title {
+    margin-bottom: 24px;
+  }
+
+  // SLIDER //
+  .comparprodsliderinf {
+    overflow: initial;
+  }
+}
+
+// ≥480px
+@media (max-width: 480px) {
+  // CARD ITM //
+  .comparprodslider_btn {
+    display: none;
+  }
+
+  .comparprodslider,
+  .comparprodsliderinf {
+    overflow: initial;
+    &_itm {
+      width: 234px;
+    }
+  }
+
+  .comparprodcard_btncard {
+    flex-basis: auto;
+    width: 108px;
+  }
+}
+
+// ≥425px
+@media (max-width: 425px) {
+}
+
+// ≥414px
+@media (max-width: 414px) {
+}
+
+// ≥400px
+@media (max-width: 400px) {
+}
+
+// ≥375px
+@media (max-width: 375px) {
+}
+
+// ≥360px
+@media (max-width: 360px) {
+}
+
+// ≥350px
+@media (max-width: 350px) {
+}
+
+// ≥320px
+@media (max-width: 320px) {
+}

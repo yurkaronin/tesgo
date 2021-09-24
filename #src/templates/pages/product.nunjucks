@@ -1,0 +1,1062 @@
+{% extends "layout.nunjucks" %}
+{% set title = "Tesgo - Категория" %}
+{% set css = "product" %}
+{% set pageproduct = "true" %}
+
+{% block content %}
+
+<div class="page-wrapper productpage">
+
+  {# <div class="container-fullhd"></div> #}
+
+  {# <picture>
+		<source srcset="img/isscreen-mainimg-mob.png" media="(max-width: 425px)">
+		<source srcset="img/isscreen-mainimg-table.png" media="(max-width: 1200px)">
+		<img class="isscreen_mainimg" src="img/isscreen-mainimg-big.png" alt="image">
+	</picture> #}
+
+  <!-- HEADER -->
+  {% include "parts/header-other.nunjucks" %}
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="breadcrumbsblock">
+      <div class="container">
+        <div class="breadcrumbsblock_wrap">
+          <nav class="breadcrumbs">
+            <a class="breadcrumbs_moblink" href="#!">Дезинфекция</a>
+            <ul class="breadcrumbs_list">
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Главная</a>
+              </li>
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Жидкие моющие средства</a>
+              </li>
+              <li class="breadcrumbs_list_itm">
+                <a class="breadcrumbs_list_link" href="/">Дезинфекция</a>
+              </li>
+              <li class="breadcrumbs_list_itm is-current">
+                <a class="breadcrumbs_list_link" href="/">Alsoft R Кожный Антисептик 5л (3шт-уп)</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="product">
+      <div class="container">
+        <div class="product_wrap">
+          <div class="wrap-main__head">
+            <h1 class="product__title">Alsoft R Кожный Антисептик 5л (3шт-уп)</h1>
+            <div class="product__rating">
+              <svg class="product__rating_icon product__rating_icon-accent">
+                <path id="icon-starbig-heade" d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z"></path>
+              </svg>
+              <svg class="product__rating_icon product__rating_icon-accent">
+                <use xlink:href="#icon-starbig-heade"></use>
+              </svg>
+              <svg class="product__rating_icon product__rating_icon-accent">
+                <use xlink:href="#icon-starbig-heade"></use>
+              </svg>
+              <svg class="product__rating_icon product__rating_icon-accent">
+                <use xlink:href="#icon-starbig-heade"></use>
+              </svg>
+              <svg class="product__rating_icon">
+                <use xlink:href="#icon-starbig-heade"></use>
+              </svg>
+            </div>
+            <span class="product__rew">
+              68 оценок
+            </span>
+          </div>
+          <div class="row product_row">
+
+            {# <div class="magnifier-preview" id="preview"></div> #}
+
+            <div class="col-xl-9 product_col">
+
+              <div class="wrap-main__content">
+
+                <div class="product__img proimgstatic">
+
+                  <!-- Все слайды -->
+                  <div class="product__img-slider product__img-slider--1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product__img-slide product__img-slide--active" data-slide='1'>
+                          <img src="img/product/product-img-1-thumb.png" alt="image product">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__img-slide" data-slide='2'>
+                          <img src="img/product/product-img-2-thumb.png" alt="image product">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__img-slide" data-slide='3'>
+                          <img src="img/product/product-img-1-thumb.png" alt="image product">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__img-slide" data-slide='4'>
+                          <img src="img/product/product-img-2-thumb.png" alt="image product">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product__img-slide" data-slide='5'>
+                          <img src="img/product/product-img-1-thumb.png" alt="image product">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="product__img-slide" data-slide='6'>
+                          <img src="img/product/product-img-3-thumb.png" alt="image product">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Выбранный слайд -->
+                  <div class="product__img-target">
+                    <div class="product__img-target-parent">
+                      <div class="product__img-target-item product__img-target-item--active" data-slide='1'>
+                        <a class="magnifier-thumb-wrapper" href="#">
+                          <img class="thumb" src="img/product/product-img-1.png" alt="image big product">
+                        </a>
+                      </div>
+                      <div class="product__img-target-item" data-slide='2'>
+                        <a class="magnifier-thumb-wrapper" href="#">
+                          <img class="thumb" src="img/product/product-img-2.png" alt="image big product">
+                        </a>
+                      </div>
+                      <div class="product__img-target-item" data-slide='3'>
+                        <a class="magnifier-thumb-wrapper" href="#">
+                          <img class="thumb" src="img/product/product-img-1.png" alt="image big product">
+                        </a>
+                      </div>
+                      <div class="product__img-target-item" data-slide='4'>
+                        <a class="magnifier-thumb-wrapper" href="#">
+                          <img class="thumb" src="img/product/product-img-2.png" alt="image big product">
+                        </a>
+                      </div>
+                      <div class="product__img-target-item" data-slide='5'>
+                        <a class="magnifier-thumb-wrapper" href="#">
+                          <img class="thumb" src="img/product/product-img-1.png" alt="image big product">
+                        </a>
+                      </div>
+                      <div class="product__img-target-item" data-slide='6'>
+                        <div>
+                          <img src="https://i.ytimg.com/vi/XKXtfvGqSSc/maxresdefault.jpg" alt="альт">
+                        </div>
+                      </div>
+                      <div class="magnifier-preview" id="preview"></div>
+                    </div>
+                    <span class="product__img-target__lup">
+                      <svg class="product__img-target__lup-icon" data-src="img/icon-loop.svg" width="16" height="16"></svg>
+                      Наведите, чтобы рассмотреть
+                    </span>
+                  </div>
+                </div>
+
+                <div class="product__info">
+                  <div class="product__info-prcie">
+                    <div class="product__info-prcie-item">
+                      <span>Цена без скидки</span>
+                      <span class="strong">2 399 ₽</span>
+                    </div>
+                    <div class="product__info-prcie-item">
+                      <span>Со скидкой -3%</span>
+                      <span class="strong">2 327.03 ₽</span>
+                    </div>
+                    <div class="product__info-prcie-item">
+                      <span>Экономия</span>
+                      <span class="strong">71.97 ₽</span>
+                    </div>
+                  </div>
+
+
+                  <div class="product__specifications">
+                    <p class="product__specifications-title">Характеристики:</p>
+                    <ul class="product__specifications-list">
+                      <li class="product__specifications-item">
+                        <p>Количество в упаковке</p>
+                        <p class="strong">12</p>
+                      </li>
+                      <li class="product__specifications-item">
+                        <p>Бренд</p>
+                        <p class="strong">Saraya</p>
+                      </li>
+                      <li class="product__specifications-item">
+                        <p>Объем</p>
+                        <p class="strong">1 л.</p>
+                      </li>
+                      <li class="product__specifications-item">
+                        <p>Страна-производитель</p>
+                        <p class="strong">Китай</p>
+                      </li>
+                      <li class="product__specifications-item">
+                        <p>Вес упаковки</p>
+                        <p class="strong">13.5 кг</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="product__descr">
+                    <p class="product__descr-title">Описание:</p>
+                    <p class="product__descr-text">
+                      Погранслой по определению инвариантен относительно сдвига. Турбулентность
+                      тормозит
+                      экситон. Исследователями из разных лабораторий неоднократно наблюдалось, как
+                      ударная
+                      волна восстанавливает фронт, в итоге возможно появление обратной связи и
+                      самовозбуждение системы. Химическое соединение, как неоднократно наблюдалось
+                      при
+                      постоянном воздействии ультрафиолетового облучения, трансформирует
+                      плоскополяризованный поток. Не только в вакууме, но и в любой нейтральной
+                      среде
+                      относительно низкой плотности расслоение недетерминировано излучает
+                      гидродинамический
+                      удар только в отсутствие тепло- и массообмена с окружающей средой. Жидкость, в
+                      отличие
+                      от классического случая, стохастично притягивает экранированный экситон
+                      независимо от
+                      расстояния до горизонта событий.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-xl-3 product_col">
+              <div class="prodaside">
+                <div class="prodaside_top">
+                  <div class="prodaside_price">
+                    <div class="prodaside_pricsale">2 399 ₽</div>
+                    <div class="prodaside_pricemain">2 327.03 ₽</div>
+                  </div>
+                  <div class="prodaside_instock">В наличии</div>
+                </div>
+                <div class="prodaside_addcardbl">
+
+                  <div class="prodaside_goodscount goodscounts js-goodscount-select">
+                    <div class="goodscounts_main">
+                      <span class="goodscounts_main_label">Кол-во</span>
+                      <input class="goodscounts_main_input" type="number"
+                        name="goodscounts-change-input" value="7"
+                        onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                      <select class="goodscounts_main_select js-select-all is-active"
+                        name="goodscounts-change-select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6+">6+</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <button class="prodaside_btncard m-button m-button-card">В корзину</button>
+
+                </div>
+                <a class="prodaside_buyclick m-button" href="#!">Купить в 1 клик</a>
+                <div class="prodaside_bot">
+                  <a class="prodaside_laction prodaside_laction-like" href="#!">
+                    <svg class="prodaside_laction_icon" data-src="img/icon-like.svg" width="24"
+                      height="24"></svg>
+                    {# <img class="prodaside_laction_icon" src="img/icon-like.svg" alt="alt"> #}
+                    <span class="prodaside_laction_text">В Избранное</span>
+                  </a>
+                  <a class="prodaside_laction prodaside_laction-compar" href="#!">
+                    <svg class="prodaside_laction_icon" data-src="img/icon-comparison.svg"
+                      width="24" height="24"></svg>
+                    {# <img class="prodaside_laction_icon" src="img/icon-comparison.svg" alt="alt"> #}
+                    <span class="prodaside_laction_text">Сравнить</span>
+                  </a>
+                  <div class="prodaside_deliv">
+                    <svg class="prodaside_deliv_icon" data-src="img/icon-delivery.svg" width="24"
+                      height="24"></svg>
+                    {# <img class="prodaside_deliv_icon" src="img/icon-delivery.svg" alt="alt"> #}
+                    <div class="prodaside_deliv_cont">
+                      <div class="prodaside_deliv_title">Доставка</div>
+                      <div class="prodaside_deliv_desc">по Краснодару завтра до 16:00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="simprod">
+      <div class="container">
+        <div class="simprod_wrap">
+          <h2 class="simprod_title title-comp-other">Похожие товары</h2>
+
+          <div class="simprod_gds comparprod_gds">
+
+            <div class="swiper-container comparprodslider simprodprodslider js-product-initial">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-1.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number"
+                          name="goodscounts-change-input" value="7"
+                          onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active"
+                          name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-2.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number"
+                          name="goodscounts-change-input" value="7"
+                          onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active"
+                          name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-3.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number"
+                          name="goodscounts-change-input" value="7"
+                          onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active"
+                          name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-4.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number"
+                          name="goodscounts-change-input" value="7"
+                          onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active"
+                          name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+                <div class="swiper-slide comparprodslider_itm comparprodcard">
+                  <div class="comparprodcard_picture">
+                    <img class="comparprodcard_image" src="img/goods-itm-image-5.png" alt="Alpet R">
+                  </div>
+                  <h4 class="comparprodcard_title">Alpet R</h4>
+                  <p class="comparprodcard_desc">
+                    Дезинфицирующее средство для<br>
+                    поверхностей 1л (10шт-уп)
+                  </p>
+                  <div class="comparprodcard_price">960 ₽</div>
+                  <div class="comparprodcard_addcardbl">
+
+                    <div class="comparprodcard_goodscount goodscounts js-goodscount-select">
+                      <div class="goodscounts_main">
+                        <span class="goodscounts_main_label">Кол-во</span>
+                        <input class="goodscounts_main_input" type="number"
+                          name="goodscounts-change-input" value="7"
+                          onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                        <select class="goodscounts_main_select js-select-all is-active"
+                          name="goodscounts-change-select">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6+">6+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button class="comparprodcard_btncard m-button m-button-card">В корзину</button>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="swiper-button-prev comparprodslider_btn comparprodslider_btn-prev js-productslider-btn-prev">
+                <svg class="comparprodslider_btn_icon" data-src="img/icon-arrow-slider-prev.svg"
+                  width="11" height="18"></svg>
+              </div>
+              <div
+                class="swiper-button-next comparprodslider_btn comparprodslider_btn-next js-productslider-btn-next">
+                <svg class="comparprodslider_btn_icon" data-src="img/icon-arrow-slider-next.svg"
+                  width="11" height="18"></svg>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="simprod_info comparprod_info">
+
+            <div class="swiper-container comparprodsliderinf js-productsliderinf-initial">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_name">Назначение</div>
+                    <div class="comparprod_info_text">Для пола</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_name">В упаковке</div>
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  {# <div class="comparprod_info_itm">
+                    <div class="comparprod_info_name">В упаковке</div>
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div> #}
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  {# <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div> #}
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  {# <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div> #}
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  {# <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div> #}
+                </div>
+                <div class="swiper-slide comparprodsliderinf_itm">
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">Универсальное</div>
+                  </div>
+                  <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div>
+                  {# <div class="comparprod_info_itm">
+                    <div class="comparprod_info_text">10 шт.</div>
+                  </div> #}
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="prodfaq">
+      <div class="container">
+        <div class="prodfaq_wrap">
+          <h2 class="prodfaq_title title-comp-other">Вопрос-ответ</h2>
+          <div class="prodfaqlist">
+            <div class="prodfaqlist_itm">
+              <div class="prodfaqlist_itm_iconwrap">
+                <img class="prodfaqlist_itm_icon" src="img/icon-quest.svg" alt="иконка вопрос">
+              </div>
+              <div class="prodfaqlist_itm_info">
+                <h4 class="prodfaqlist_itm_title">Тело противоречиво излучает тангенциальный
+                  пульсар?</h4>
+                <p class="prodfaqlist_itm_desc">
+                  Не только в вакууме, но и в любой нейтральной среде относительно низкой <br>
+                  плотности кристаллическая решетка квазипериодично облучает поток.
+                </p>
+              </div>
+            </div>
+            <div class="prodfaqlist_itm">
+              <div class="prodfaqlist_itm_iconwrap">
+                <img class="prodfaqlist_itm_icon" src="img/icon-quest.svg" alt="иконка вопрос">
+              </div>
+              <div class="prodfaqlist_itm_info">
+                <h4 class="prodfaqlist_itm_title">Межядерный кварк: суспензия или электрон?</h4>
+                <p class="prodfaqlist_itm_desc">
+                  Погранслой по определению инвариантен относительно сдвига. <br>
+                  Турбулентность тормозит экситон. Исследователями из разных <br>
+                  лабораторий неоднократно наблюдалось, как ударная волна <br>
+                  восстанавливает фронт, в итоге возможно появление обратной связи и <br>
+                  самовозбуждение системы
+                </p>
+              </div>
+            </div>
+            <div class="prodfaqlist_itm">
+              <div class="prodfaqlist_itm_iconwrap">
+                <img class="prodfaqlist_itm_icon" src="img/icon-quest.svg" alt="иконка вопрос">
+              </div>
+              <div class="prodfaqlist_itm_info">
+                <h4 class="prodfaqlist_itm_title">Тело противоречиво излучает тангенциальный
+                  пульсар?</h4>
+                <p class="prodfaqlist_itm_desc">
+                  Не только в вакууме, но и в любой нейтральной среде относительно низкой <br>
+                  плотности кристаллическая решетка квазипериодично облучает поток.
+                </p>
+              </div>
+            </div>
+            <div class="prodfaqlist_itm">
+              <div class="prodfaqlist_itm_iconwrap">
+                <img class="prodfaqlist_itm_icon" src="img/icon-quest.svg" alt="иконка вопрос">
+              </div>
+              <div class="prodfaqlist_itm_info">
+                <h4 class="prodfaqlist_itm_title">Межядерный кварк: суспензия или электрон?</h4>
+                <p class="prodfaqlist_itm_desc">
+                  Погранслой по определению инвариантен относительно сдвига. <br>
+                  Турбулентность тормозит экситон. Исследователями из разных <br>
+                  лабораторий неоднократно наблюдалось, как ударная волна <br>
+                  восстанавливает фронт, в итоге возможно появление обратной связи и <br>
+                  самовозбуждение системы
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prodreview">
+      <div class="container">
+        <div class="prodreview_wrap">
+          <h2 class="prodreview_title title-comp-other">Отзывы об Alsoft R Кожный Антисептик 5л
+            (3шт-уп)</h2>
+          <div class="prodreviewlist">
+            <div class="prodreviewlist_itm">
+              <div class="prodreviewlist_iconwrap prodreviewlist_userpc">
+                <span>F</span>
+              </div>
+              <div class="prodreviewlist_inf">
+                <div class="prodreviewlist_top">
+                  <div class="prodreviewlist_iconwrap prodreviewlist_usermob">
+                    <span>F</span>
+                  </div>
+                  <div class="prodreviewlist_top_cont">
+                    <div class="prodreviewlist_username">Friendly Fyodor</div>
+                    <div class="prodreviewlist_top_blck">
+
+                      <time class="prodreviewlist_date">3 июня 2021</time>
+                      <div class="prodreviewlist_rating">
+                        <svg class="ratingitm ratingitm-full">
+                          <path id="icon-star"
+                            d="M8 1.61803L9.32058 5.68237L9.43284 6.02786H9.79611H14.0696L10.6123 8.53976L10.3184 8.75329L10.4306 9.09878L11.7512 13.1631L8.29389 10.6512L8 10.4377L7.70611 10.6512L4.24877 13.1631L5.56936 9.09878L5.68162 8.75329L5.38772 8.53976L1.93039 6.02786H6.20389H6.56716L6.67942 5.68237L8 1.61803Z" />
+                        </svg>
+                        <svg class="ratingitm ratingitm-full">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                        <svg class="ratingitm ratingitm-full">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                        <svg class="ratingitm ratingitm-full">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                        <svg class="ratingitm">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="prodreviewlist_cont">
+                  <div class="prodreviewlist_blck">
+                    <div class="prodreviewlist_blck_benefit prodreviewlist_blck_benefit-pros">Плюсы:
+                    </div>
+                    <p class="prodreviewlist_blck_desc">
+                      Возмущение плотности синфазно. Возмущение плотности бифокально тормозит
+                      вращательный эксимер одинаково по всем направлениям
+                    </p>
+                  </div>
+                  <div class="prodreviewlist_blck">
+                    <div class="prodreviewlist_blck_benefit prodreviewlist_blck_benefit-minuses">
+                      Минусы:</div>
+                    <p class="prodreviewlist_blck_desc">
+                      Экситон расщепляет поток. В литературе неоднократно описано, как возмущение
+                      плотности притягивает кристалл - все дальнейшее далеко выходит за рамки
+                      текущего исследования и не будет здесь рассматриваться
+                    </p>
+                  </div>
+                  <div class="prodreviewlist_blck">
+                    <div class="prodreviewlist_blck_benefit prodreviewlist_blck_review">Отзыв:</div>
+                    <p class="prodreviewlist_blck_desc">
+                      Экситон расщепляет поток. В литературе неоднократно описано, как возмущение
+                      плотности притягивает кристалл - все дальнейшее далеко выходит за рамки
+                      текущего исследования и не будет здесь рассматриваться
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="prodreviewlist_itm">
+              <div class="prodreviewlist_iconwrap prodreviewlist_userpc">
+                <span>B</span>
+              </div>
+              <div class="prodreviewlist_inf">
+                <div class="prodreviewlist_top">
+                  <div class="prodreviewlist_iconwrap prodreviewlist_usermob">
+                    <span>F</span>
+                  </div>
+                  <div class="prodreviewlist_top_cont">
+                    <div class="prodreviewlist_username">Friendly Fyodor</div>
+                    <div class="prodreviewlist_top_blck">
+
+                      <time class="prodreviewlist_date">3 июня 2021</time>
+                      <div class="prodreviewlist_rating">
+                        <svg class="ratingitm ratingitm-full">
+                          <path id="icon-star"
+                            d="M8 1.61803L9.32058 5.68237L9.43284 6.02786H9.79611H14.0696L10.6123 8.53976L10.3184 8.75329L10.4306 9.09878L11.7512 13.1631L8.29389 10.6512L8 10.4377L7.70611 10.6512L4.24877 13.1631L5.56936 9.09878L5.68162 8.75329L5.38772 8.53976L1.93039 6.02786H6.20389H6.56716L6.67942 5.68237L8 1.61803Z" />
+                        </svg>
+                        <svg class="ratingitm ratingitm-full">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                        <svg class="ratingitm ratingitm-full">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                        <svg class="ratingitm ratingitm-full">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                        <svg class="ratingitm">
+                          <use xlink:href="#icon-star"></use>
+                        </svg>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="prodreviewlist_cont">
+                  <div class="prodreviewlist_blck">
+                    <div class="prodreviewlist_blck_benefit prodreviewlist_blck_benefit-pros">Плюсы:
+                    </div>
+                    <p class="prodreviewlist_blck_desc">
+                      Возмущение плотности синфазно. Возмущение плотности бифокально тормозит
+                      вращательный эксимер одинаково по всем направлениям
+                    </p>
+                  </div>
+                  <div class="prodreviewlist_blck">
+                    <div class="prodreviewlist_blck_benefit prodreviewlist_blck_benefit-minuses">
+                      Минусы:</div>
+                    <p class="prodreviewlist_blck_desc">
+                      Экситон расщепляет поток. В литературе неоднократно описано, как возмущение
+                      плотности притягивает кристалл - все дальнейшее далеко выходит за рамки
+                      текущего исследования и не будет здесь рассматриваться
+                    </p>
+                  </div>
+                  <div class="prodreviewlist_blck">
+                    <div class="prodreviewlist_blck_benefit prodreviewlist_blck_review">Отзыв:</div>
+                    <p class="prodreviewlist_blck_desc">
+                      Экситон расщепляет поток. В литературе неоднократно описано, как возмущение
+                      плотности притягивает кристалл - все дальнейшее далеко выходит за рамки
+                      текущего исследования и не будет здесь рассматриваться
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="writfback">
+      <div class="container">
+        <div class="writfback_wrap">
+          <h2 class="writfback_title title-comp-other">Написать отзыв</h2>
+          <form class="form writfbackform">
+            <div class="form_rating form_rating-review">
+              <div class="form_rating_title">Оцените товар</div>
+              <div class="form_rating_estimate">
+
+                <input class="form_rateinp" type="radio" id="rate-5" name="rating" value="rate-5">
+                <label class="form_ratelabel" for="rate-5">
+                  <svg class="form_ratelabel_icon ratingitm">
+                    <path id="icon-starbig"
+                      d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z" />
+                  </svg>
+                </label>
+
+                <input class="form_rateinp" type="radio" id="rate-4" name="rating" value="rate-4">
+                <label class="form_ratelabel" for="rate-4">
+                  <svg class="form_ratelabel_icon ratingitm">
+                    <path id="icon-starbig"
+                      d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z" />
+                  </svg>
+                </label>
+
+                <input class="form_rateinp" type="radio" id="rate-3" name="rating" value="rate-3">
+                <label class="form_ratelabel" for="rate-3">
+                  <svg class="form_ratelabel_icon ratingitm">
+                    <path id="icon-starbig"
+                      d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z" />
+                  </svg>
+                </label>
+
+                <input class="form_rateinp" type="radio" id="rate-2" name="rating" value="rate-2">
+                <label class="form_ratelabel" for="rate-2">
+                  <svg class="form_ratelabel_icon ratingitm">
+                    <path id="icon-starbig"
+                      d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z" />
+                  </svg>
+                </label>
+
+                <input class="form_rateinp" type="radio" id="rate-1" name="rating" value="rate-1">
+                <label class="form_ratelabel" for="rate-1">
+                  <svg class="form_ratelabel_icon ratingitm">
+                    <path id="icon-starbig"
+                      d="M20 0L24.4903 13.8197H39.0211L27.2654 22.3607L31.7557 36.1803L20 27.6393L8.2443 36.1803L12.7346 22.3607L0.97887 13.8197H15.5097L20 0Z" />
+                  </svg>
+                </label>
+
+              </div>
+            </div>
+            <div class="form_conbox">
+              <div class="form_box">
+                <div class="form_inpt form_inpt-double form_inpt-double-one">
+                  <input class="form_inpt_el" type="text" name="pros"
+                    placeholder="Что вам понравилось?" required>
+                  <span class="form_inpt_name">Плюсы</span>
+                </div>
+                <div class="form_inpt form_inpt-double form_inpt-double-two">
+                  <input class="form_inpt_el" type="text" name="minuses"
+                    placeholder="Что не понравилось?" required>
+                  <span class="form_inpt_name">Минусы</span>
+                </div>
+              </div>
+              <div class="form_box">
+                <div class="form_othertitle">Оцените свой опыт использования</div>
+                <div class="form_inpt form_textarea form_inpt-full">
+                  <textarea class="form_inpt_el form_textarea_el" name="review"
+                    placeholder="Текст отзыва" required></textarea>
+                  <span class="form_inpt_name form_textarea_name">Комментарий</span>
+                </div>
+              </div>
+              <div class="form_box">
+                <div class="form_othertitle">Представьтесь пожалуйста</div>
+                <div class="form_inpt form_inpt-double form_inpt-double-one">
+                  <input class="form_inpt_el" type="text" name="name" placeholder="Как вас зовут?"
+                    required>
+                  <span class="form_inpt_name">Имя</span>
+                </div>
+                <div class="form_inpt form_inpt-double form_inpt-double-two">
+                  <input class="form_inpt_el" type="email" name="email"
+                    placeholder="Электронная почта" required>
+                  <span class="form_inpt_name">Email</span>
+                </div>
+              </div>
+            </div>
+            <div class="form_revirebot">
+              <label class="form_checkbox">
+                <input class="form_checkbox_input" type="checkbox" name="sevelogged" checked>
+                <span class="form_checkbox_status">
+                  <span class="form_checkbox_status-sheck"></span>
+                </span>
+                <span class="form_checkbox_cont">
+                  <span class="form_checkbox_title">
+                    Я принимаю условия <a href="#!">Политики конфиденциальности</a> и разрешаю
+                    обработку <br>
+                    своих персональных данных
+                  </span>
+                </span>
+              </label>
+              <button class="form_submit m-button m-button-card" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="prodslids prodfrequ">
+      <div class="container">
+        <div class="prodslids_wrap">
+          <h2 class="prodslids_titlw title-comp">С этим товаром часто покупают</h2>
+          {% include "parts/goodssliderpreview.nunjucks" %}
+        </div>
+      </div>
+    </section>
+
+    <section class="prodslids prodsale">
+      <div class="container">
+        <div class="prodslids_wrap">
+          <h2 class="prodslids_titlw title-comp">Акции</h2>
+          {% include "parts/goodssliderpreviewother.nunjucks" %}
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  {% include "parts/footer.nunjucks" %}
+
+  <!-- POPUPS -->
+  {% include "modules/popups.nunjucks" %}
+
+  <!-- Модальное окно -->
+	<div class="modalprod">
+		<div class="modalprod-overlay"></div>
+
+		<div class="modalprod-window modalprod-window--overview">
+			<div class="close">
+        <img src="img/icon-close.svg" alt="закрыть">
+			</div>
+			<div class="modalprod-window--overview-left">
+				<div class="modalprod-product__img-target product__img-target">
+					<div class="product__img-target-item product__img-target-item--active" data-slide='1'>
+						<img src="img/product/product-img-1.png" alt="image product">
+					</div>
+					<div class="product__img-target-item" data-slide='2'>
+						<img src="img/product/product-img-2.png" alt="image product">
+					</div>
+          <div class="product__img-target-item" data-slide='3'>
+						<img src="img/product/product-img-1.png" alt="image product">
+					</div>
+					<div class="product__img-target-item" data-slide='4'>
+						<img src="img/product/product-img-2.png" alt="image product">
+					</div>
+          <div class="product__img-target-item" data-slide='5'>
+						<img src="img/product/product-img-1.png" alt="image product">
+					</div>
+
+					<div class="product__img-target-item" data-slide='6'>
+						<div class="video-box">
+							<a class="video__link" href="https://youtu.be/XKXtfvGqSSc">
+								<picture>
+									<source srcset="https://i.ytimg.com/vi_webp/XKXtfvGqSSc/maxresdefault.webp"
+										type="image/webp">
+									<img class="video__media"
+										src="https://i.ytimg.com/vi/XKXtfvGqSSc/maxresdefault.jpg"
+										alt="1. Пилот, разборы, ответы и лайвы">
+								</picture>
+							</a>
+							<div class="for-who-box__circle-decore for-who-box__circle-decore--big">
+								<a class="for-who-box__circle for-who-box__circle--big" href="#"></a>
+							</div>
+						</div>
+					</div>
+          
+				</div>
+			</div>
+			<div class="modalprod-window--overview-right">
+				<h2 class="modalprod-product__title">Alsoft R Кожный Антисептик 5л (3шт-уп)</h2>
+				<p class="modalprod-product__descr">
+					Фронт возбуждает изобарический электрон. Магнит гомогенно растягивает изотопный
+					сверхпроводник,
+					в итоге возможно появление обратной связи и самовозбуждение системы. Плазменное
+					образование
+					асферично сжимает экранированный погранслой
+				</p>
+				<div class="modalprod-product__price">2 327.03 ₽</div>
+
+				<div class="product__img-slider product__img-slider--2">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="product__img-slide product__img-slide--active" data-slide='1'>
+								<img src="img/product/product-img-1-thumb.png" alt="image product">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="product__img-slide " data-slide='2'>
+								<img src="img/product/product-img-2-thumb.png" alt="image product">
+							</div>
+						</div>
+						
+
+            <div class="swiper-slide">
+							<div class="product__img-slide" data-slide='3'>
+								<img src="img/product/product-img-1-thumb.png" alt="image product">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="product__img-slide" data-slide='4'>
+								<img src="img/product/product-img-2-thumb.png" alt="image product">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="product__img-slide " data-slide='5'>
+								<img src="img/product/product-img-1-thumb.png" alt="image product">
+							</div>
+						</div>
+
+            {# <div class="swiper-slide">
+							<div class="product__img-slide" data-slide='3'>
+								<img src="img/product/product-img-1-thumb.png" alt="image product">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="product__img-slide" data-slide='4'>
+								<img src="img/product/product-img-2-thumb.png" alt="image product">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="product__img-slide " data-slide='5'>
+								<img src="img/product/product-img-1-thumb.png" alt="image product">
+							</div>
+						</div> #}
+
+            <div class="swiper-slide">
+							<div class="product__img-slide " data-slide='6'>
+								<img src="img/product/product-img-3-thumb.png" alt="image product">
+							</div>
+						</div>
+
+            {# <div class="swiper-slide">
+							<div class="product__img-slide" data-slide='4'>
+								<img src="img/product/product-img-1-thumb.png" alt="image product">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="product__img-slide " data-slide='5'>
+								<img src="img/product/product-img-2-thumb.png" alt="image product">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="product__img-slide " data-slide='6'>
+								<img src="img/product/product-img-3-thumb.png" alt="image product">
+							</div>
+						</div> #}
+
+					</div>
+				</div>
+        
+
+			</div>
+		</div>
+	</div>
+
+  <div class="overlay-bg"></div>
+
+</div>
+
+{% endblock %}
+
+{# <div class="comparprodcard_goodscount goodscount js-goods-count">
+  <div class="goodscount_main js-goods-count-trigger">
+    <span class="goodscount_main_label">Кол-во</span>
+    <input class="goodscount_main_input" type="text" name="goodscount-change"
+      value="1" disabled>
+    <div class="goodscount_main_iconwrap">
+      <svg class="goodscount_main_icon" data-src="img/icon-arrow-down.svg"
+        width="14" height="9"></svg>
+    </div>
+  </div>
+  <div class="goodscount_drop js-goods-count-drop">
+    <div class="goodscount_drop_itm is-disabled">1</div>
+    <div class="goodscount_drop_itm">2</div>
+    <div class="goodscount_drop_itm">3</div>
+    <div class="goodscount_drop_itm">4</div>
+    <div class="goodscount_drop_itm">5</div>
+    <div class="goodscount_drop_itm">6</div>
+    <div class="goodscount_drop_itm">7</div>
+    <div class="goodscount_drop_itm">8</div>
+    <div class="goodscount_drop_itm">9</div>
+    <div class="goodscount_drop_itm">10</div>
+  </div>
+</div> #}

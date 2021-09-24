@@ -1,0 +1,173 @@
+//===============================================//
+/*Vars Page All*/
+//===============================================//
+@import "vars";
+
+//===============================================//
+/*Fonts Style*/
+//===============================================//
+
+// @import "_mixins/font-fase";
+// @include font("AcariSans", normal, 400, "../fonts/AcariSans-Regular.woff2");
+
+//===============================================//
+/*LIBS Packege*/
+//===============================================//
+@import "./node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "./node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./node_modules/bootstrap/scss/utilities/sizing";
+
+@import "./node_modules/swiper/swiper.min";
+@import "./node_modules/nouislider/dist/nouislider.min";
+
+//===============================================//
+/*Base Style Page*/
+//===============================================//
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: $default-font;
+  font-weight: 400;
+
+  color: $text;
+  background-color: $background-color;
+
+  // input,
+  // textarea {
+  //   border: #666 1px solid;
+  //   outline: none;
+  //   box-shadow: none;
+
+  //   &:focus:required:invalid {
+  //     border-color: transparent;
+  //     box-shadow: none;
+  //   }
+
+  //   &:required:valid {
+  //     border-color: transparent;
+  //     box-shadow: none;
+  //   }
+  // }
+}
+
+//===============================================//
+/*DEFAULT STYLE*/
+//===============================================//
+a {
+  text-decoration: none;
+  color: $text;
+
+  &:hover {
+    text-decoration: none;
+    color: $text;
+  }
+}
+
+button {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+section {
+  position: relative;
+}
+
+//===============================================//
+/* Class repead -- static style*/
+//===============================================//
+
+// TEXT--------------------
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// DISPLAY BLOCK--------------------
+.display-block {
+  display: block;
+}
+
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+// DISPLAY INLINE--------------------
+.display-inlblock {
+  display: inline-block;
+}
+
+// COLOR--------------------
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #fff;
+}
+
+// BACKGROUND COLOR--------------------
+.bg-color-white {
+  color: #fff;
+}
+
+.bg-color-black {
+  color: #000;
+}
+
+// BACKGROUND IMAGE--------------------
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// IMAGE--------------------
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &.img-width {
+    width: 100%;
+  }
+}
+
+// ICON--------------------
+.icon {
+  display: inline-block;
+}
+
+//===============================================//
+/* Libs Style All */
+//===============================================//
