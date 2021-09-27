@@ -8,7 +8,7 @@ function init() {
 	changeFiledInput();
 	goodsCountSelect();
 	scrollBarSartEnd();
-	
+
 	goodsCountChange('.js-goods-count');
 
 	if(window.matchMedia("(max-width: 1200px)").matches) {
@@ -29,7 +29,7 @@ function init() {
 		footerNavMobAccordion();
 
 		document.querySelectorAll('.navfblock_list_itm.is-display-none').forEach(itm => itm.classList.remove('is-display-none'));
-	} 
+	}
 
 	if(window.matchMedia("(min-width: 1199px)").matches) {
 		hoverMenu();
@@ -101,12 +101,12 @@ function moreFooterLinks() {
 		if(!this.classList.contains('is-active')) {
 			document.querySelectorAll('.navfblock_list_itm.is-hidden').forEach(itm => itm.classList.remove('is-display-none'));
 			document.querySelectorAll('.navfblock_list_itm.is-hidden').forEach(itm => slidetoggle.show(itm, 300));
-			
+
 
 			// button state
 			this.querySelector('.btnnavmore_text').innerHTML = 'Свернуть';
 			this.classList.add('is-active');
-		
+
 		} else {
 			document.querySelectorAll('.navfblock_list_itm.is-hidden').forEach(itm => itm.classList.add('is-display-none'))
 			document.querySelectorAll('.navfblock_list_itm.is-hidden').forEach(itm => slidetoggle.hide(itm, 300));
@@ -125,8 +125,8 @@ function footerNavMobAccordion() {
 			e.preventDefault();
 
 			const contentHidden = btn.nextElementSibling;
-			
-		
+
+
 			if(contentHidden.classList.contains('is-active')) {
 				contentHidden.classList.remove('is-active');
 				slidetoggle.hide(contentHidden, 300);
@@ -177,7 +177,7 @@ function hoverMenu() {
 	const mainWrap = document.querySelector('.main');
 
 	hoverEL.forEach(el => {
-		
+
 		el.addEventListener('mouseover', function() {
 
 			if(el.querySelector('.dropmnpc') == null) return;
@@ -276,7 +276,7 @@ function goodsCountChange(wrapper) {
 			if(!this.classList.contains('is-active')) {
 				this.classList.add('is-active');
 				drop.classList.add('is-active');
-			
+
 			} else {
 				this.classList.remove('is-active');
 				drop.classList.remove('is-active');
@@ -298,12 +298,12 @@ function goodsCountChange(wrapper) {
 
 				trigger.classList.remove('is-active');
 				drop.classList.remove('is-active');
-	
+
 			})
-		});		
+		});
 
 	})
-	
+
 }
 
 function goodsCountSelect() {
@@ -333,7 +333,7 @@ function goodsCountSelect() {
 			if(e.target.value < 6) {
 				input.classList.remove('is-active');
 				select.classList.add('is-active');
-				
+
 				// Default value
 				select.value = 1;
 			}
@@ -353,12 +353,12 @@ function moreFilterCheckbox() {
 		if(!this.classList.contains('is-active')) {
 			document.querySelectorAll('.filters_checkbox_wrap.is-hidden').forEach(itm => itm.classList.remove('is-display-none'));
 			document.querySelectorAll('.filters_checkbox_wrap.is-hidden').forEach(itm => slidetoggle.show(itm, 300));
-			
+
 
 			// button state
 			this.querySelector('.filters_morebtn_text').innerHTML = 'Показать меньше';
 			this.classList.add('is-active');
-		
+
 		} else {
 			document.querySelectorAll('.filters_checkbox_wrap.is-hidden').forEach(itm => itm.classList.add('is-display-none'))
 			document.querySelectorAll('.filters_checkbox_wrap.is-hidden').forEach(itm => slidetoggle.hide(itm, 300));
@@ -388,7 +388,7 @@ function hideShowFilters() {
 			filterBlock.classList.remove('is-hide');
 			goodsBlock.classList.remove('is-full');
 		}
-		
+
 	});
 }
 
@@ -405,7 +405,7 @@ function hideShowFiltersMob() {
 
 		this.classList.add('is-active');
 		filterBlock.classList.add('is-active');
-		
+
 	});
 
 	document.querySelector('.js-catfiltmob-close').addEventListener('click', function() {
@@ -446,7 +446,7 @@ if(slider) {
 			'min': parseInt(document.querySelector('.js-filters-rangeinput').getAttribute('data-filtrange-min')),
 			'max': parseInt(document.querySelector('.js-filters-rangeinput').getAttribute('data-filtrange-max'))
 		},
-	
+
 	});
 
 	slider.noUiSlider.on('update.one', function () {
@@ -537,16 +537,16 @@ const mainSlider = new Swiper('.js-mainslider-initial', {
 
 	breakpoints: {
 		0: {
-		
+
 		},
 		480: {
-		
+
 		},
 		768: {
-		
+
 		},
 		992: {
-		
+
 		}
 	},
 
@@ -569,7 +569,7 @@ const goodsSlider = new Swiper('.js-goodsslider-initial', {
 	slidesPerView: 6,
 
 	speed: 800,
-	
+
 	pagination: {
 		el: '.js-blgoodtemp-pagination',
 		clickable: true
@@ -610,7 +610,7 @@ const goodsSlider = new Swiper('.js-goodsslider-initial', {
 
 	on: {
 		init: function () {
-		
+
 		},
 
 		slideChange: function () {
@@ -635,7 +635,7 @@ const comparprodsliderinfSlider = new Swiper('.js-comparprodsliderinf-initial', 
 	// watchSlidesProgress: true,
 
 	loopedSlides: 1,
-	
+
 	// allowTouchMove: false,
 	// onlyExternal: true,
 	// noSwiping: true,
@@ -678,7 +678,7 @@ const comparprodsliderinfSlider = new Swiper('.js-comparprodsliderinf-initial', 
 
 	on: {
 		init: function () {
-		
+
 		},
 
 		slideChange: function () {
@@ -742,7 +742,7 @@ const comparprodSlider = new Swiper('.js-comparprod-initial', {
 
 	on: {
 		init: function () {
-		
+
 		},
 
 		slideChange: function () {
@@ -799,7 +799,7 @@ const catalogSlider = new Swiper('.js-catalog-slider-initial', {
 
 	on: {
 		init: function () {
-		
+
 		},
 
 		slideChange: function () {
@@ -823,7 +823,7 @@ const productsliderinfSlider = new Swiper('.js-productsliderinf-initial', {
 	// watchSlidesProgress: true,
 
 	loopedSlides: 1,
-	
+
 	// allowTouchMove: false,
 	// onlyExternal: true,
 	// noSwiping: true,
@@ -866,7 +866,7 @@ const productsliderinfSlider = new Swiper('.js-productsliderinf-initial', {
 
 	on: {
 		init: function () {
-		
+
 		},
 
 		slideChange: function () {
@@ -930,7 +930,7 @@ const productSlider = new Swiper('.js-product-initial', {
 
 	on: {
 		init: function () {
-		
+
 		},
 
 		slideChange: function () {
@@ -1053,9 +1053,31 @@ const productTemplateSaleSlider = new Swiper('.js-product-slidtemplatesale-initi
 MicroModal.init({
 	disableScroll: true,
   disableFocus: true,
-	
+
 	onShow: function(modal, element, event) {
 		document.querySelector('.modal.is-open').classList.remove('is-open');
 		modal.classList.add('is-open')
 	},
 });
+
+(function () {
+  window.addEventListener("click", function (event) {
+    if (event.target.classList.contains("js-validate")) {
+
+      const formParent = event.target.closest("form");
+      // console.log(formParent.querySelectorAll(".form_inpt"))
+      formParent.querySelectorAll(".form_inpt").forEach(function(item) {
+        console.log(item)
+        if (item.querySelector("[data-required]")) {
+          if (item.querySelector("[data-required]").value === '') {
+            console.log("не заполнен")
+            item.classList.add("js-field-error");
+          } else {
+            console.log("заполнен")
+            item.classList.remove("js-field-error");
+          }
+        }
+      });
+    }
+  })
+})();

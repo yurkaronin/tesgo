@@ -8,17 +8,17 @@
           <div class="form_box">
             <div class="form_inpt form_inpt-full">
               <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо"
-                required>
+                data-required required>
               <span class="form_inpt_name">Имя</span>
             </div>
             <div class="form_inpt form_inpt-full">
               <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона"
-                required>
+                data-required required>
               <span class="form_inpt_name">Телефон</span>
             </div>
             <div class="form_inpt form_textarea form_inpt-full">
               <textarea class="form_inpt_el form_textarea_el" name="message"
-                placeholder="Введите текст" required></textarea>
+                placeholder="Введите текст"></textarea>
               <span class="form_inpt_name form_textarea_name">Текст сообщения</span>
             </div>
           </div>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="form_actions">
-          <button class="form_submit m-button m-button-black" type="submit">Отправить</button>
+          <button class="form_submit m-button m-button-black js-validate" type="submit">Отправить</button>
         </div>
       </form>
 
@@ -61,12 +61,11 @@
         <div class="form_conbox">
           <div class="form_box">
             <div class="form_inpt form_inpt-full">
-              <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта"
-                required>
+              <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта" data-required required>
               <span class="form_inpt_name">Email</span>
             </div>
             <div class="form_inpt form_inpt-full">
-              <input class="form_inpt_el" type="password" name="password" autocomplete="off" placeholder="Введите пароль" required>
+              <input class="form_inpt_el" type="password" name="password" autocomplete="off" placeholder="Введите пароль" data-required required>
               <span class="form_inpt_name">Пароль</span>
             </div>
           </div>
@@ -97,7 +96,7 @@
         </div>
 
         <div class="form_actions">
-          <button class="form_submit m-button m-button-black" type="submit">Войти</button>
+          <button class="form_submit m-button m-button-black js-validate" type="submit">Войти</button>
         </div>
 
         <div class="form_notacc">
@@ -225,7 +224,7 @@
 
         <div class="form_actions">
           <button class="form_submit m-button m-button-black"
-            type="submit">зарегистрироваться</button>
+            type="submit js-validate">зарегистрироваться</button>
         </div>
       </form>
 

@@ -64,7 +64,7 @@
                     <div class="dropmnpc_col dropmnpc_col-nav">
                       <div class="dropmnpc_navtitle">Весь товар</div>
                       <div class="dropmnpc_nav">
-                        <button class="dropmnpc_link is-active" type="button" data-tabbtn="1">Жидкое Мыло / Пена для рук</button>
+                        <button class="dropmnpc_link" type="button" data-tabbtn="1">Жидкое Мыло / Пена для рук</button>
                         <button class="dropmnpc_link" type="button" data-tabbtn="2">для Сантехники</button>
                         <button class="dropmnpc_link" type="button" data-tabbtn="3">для Полов</button>
                         <button class="dropmnpc_link" type="button" data-tabbtn="4">для Посуды</button>
@@ -75,6 +75,7 @@
                         <button class="dropmnpc_link" type="button" data-tabbtn="9">Разное</button>
                       </div>
                     </div>
+
                     <div class="dropmnpc_col dropmnpc_col-prod">
                       <div class="dropmnpc_prods is-active" data-tabcontent="1">
                         <a href="#!" class="dropmnpc_card dropmnpc_card-big">

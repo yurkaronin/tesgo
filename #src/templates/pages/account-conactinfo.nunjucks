@@ -125,15 +125,15 @@
 
                     <div class="form_box form_box-physicalperson js-form-box-physicalperson">
                       <div class="form_inpt form_inpt-name">
-                        <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо">
-                        <span class="form_inpt_name">Имя</span>
+                        <input class="form_inpt_el" type="text" name="name" placeholder="Контактное лицо" data-required required>
+                        <span class="form_inpt_name">Имя2</span>
                       </div>
                       <div class="form_inpt form_inpt-tel">
-                        <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона">
+                        <input class="form_inpt_el" type="tel" name="tel" placeholder="Номер телефона" data-required required>
                         <span class="form_inpt_name">Телефон</span>
                       </div>
                       <div class="form_inpt form_inpt-email">
-                        <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта">
+                        <input class="form_inpt_el" type="email" name="email" placeholder="Электронная почта" data-required required>
                         <span class="form_inpt_name">Email</span>
                       </div>
                     </div>
@@ -184,7 +184,7 @@
                   </div>
 
                   <div class="form_actions">
-                    <button class="form_submit m-button m-button-card" type="submit">Сохранить</button>
+                    <button class="form_submit m-button m-button-card js-validate" type="submit">Сохранить</button>
                   </div>
                 </form>
 
@@ -195,10 +195,10 @@
                   </p>
                   <button class="deleteacc_btn m-button">Удалить профиль</button>
                 </div>
-                
+
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>

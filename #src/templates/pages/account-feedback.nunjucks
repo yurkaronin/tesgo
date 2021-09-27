@@ -78,12 +78,12 @@
                 <form class="form accfebackform">
                   <div class="form_conbox">
                     <div class="form_inpt form_textarea form_inpt-full form_inpt-message">
-                      <textarea class="form_inpt_el form_textarea_el" name="message" placeholder="Введите текст" required></textarea>
+                      <textarea class="form_inpt_el form_textarea_el" name="message" placeholder="Введите текст" data-required required></textarea>
                       <span class="form_inpt_name form_textarea_name">Текст вопроса</span>
                     </div>
                   </div>
                   <div class="form_actions">
-                    <button class="form_submit m-button m-button-card" type="submit">Задать вопрос</button>
+                    <button class="form_submit m-button m-button-card js-validate" type="submit">Задать вопрос</button>
                   </div>
                 </form>
               </div>

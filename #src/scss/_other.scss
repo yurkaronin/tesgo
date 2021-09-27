@@ -1656,9 +1656,9 @@
       color: $accent;
     }
 
-    input:focus:required:invalid + span {
-      color: #ff4d00;
-    }
+    // input:focus:required:invalid + span {
+    //   color: #ff4d00;
+    // }
 
     &_name {
       position: absolute;
@@ -1704,13 +1704,13 @@
         outline: none;
       }
 
-      &:focus:required:invalid {
-        border-color: #ff4d00;
-        color: #ff4d00;
-        &::placeholder {
-          color: #ff4d00;
-        }
-      }
+      // &:focus:required:invalid {
+      //   border-color: #ff4d00;
+      //   color: #ff4d00;
+      //   &::placeholder {
+      //     color: #ff4d00;
+      //   }
+      // }
     }
   }
 
