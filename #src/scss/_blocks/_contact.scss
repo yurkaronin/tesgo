@@ -194,10 +194,10 @@
 
 .cont_navitm {
   &_title {
-    margin-bottom: 19px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
   }
 
   &_menu {
@@ -210,9 +210,10 @@
   &_link {
     margin-bottom: 32px;
 
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 1;
+    margin-bottom: 19px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 
     transition: all 250ms ease-in;
 
