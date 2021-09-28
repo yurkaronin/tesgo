@@ -26,13 +26,13 @@
   <meta property="og:site_name" content="" />
   <meta property="og:locale" content="ru" />
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css"> 
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css">
   <!-- Main Style Page -->
   <link rel="stylesheet" href="css/style.min.css" />
   {% if (css) %}
   <link rel="stylesheet" href="css/{{css}}.min.css" />
   {% endif %}
-  
+
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#0051ff" />
   <!-- Windows Phone -->
@@ -66,6 +66,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
   <script src="js/vendors.min.js"></script>
   <script src="js/bundle.min.js"></script>
+
+  {% block Scripts %}
+  {% endblock %}
+
+
   {% if (pageproduct) %}
     <script src="js/cardprod.js"></script>
   {% endif %}

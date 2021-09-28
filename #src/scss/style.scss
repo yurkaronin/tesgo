@@ -256,18 +256,6 @@ section {
   color: #000000;
 }
 
-// input:focus:invalid + span {
-//   color: #ff4d00;
-// }
-
-// input:focus:required:invalid {
-//   border-color: #ff4d00;
-//   color: #ff4d00;
-//   &::placeholder {
-//     color: #ff4d00;
-//   }
-// }
-
 .js-field-error {
   input,
   .form_inpt_el {
@@ -291,4 +279,69 @@ section {
 
 .cont_navitm_link.is-active {
   font-weight: 700;
+}
+
+// новый элемент - сворачивающийся блок
+.accordeeon-btn {
+  display: none;
+}
+
+.accordeeon-btn__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #231f20;
+  pointer-events: none;
+}
+.accordeeon-btn__icon {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .wrapper-accordion {
+    border-bottom: 1px solid rgba(35, 31, 32, 0.1);
+    /* &.active {
+    border-bottom: none;
+  } */
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .product__info .product__info-prcie {
+    margin-bottom: 0;
+  }
+  .accordeeon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 22px 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .accordeeon-btn__icon {
+    transition: transform 0.5s ease;
+  }
+
+  .active .accordeeon-btn__icon {
+    transform: rotate(180deg);
+  }
+
+  .accordeeon-content {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .product__specifications-title,
+  .product__descr-title {
+    display: none;
+  }
+  .wrapper-accordion .product__specifications-list {
+    margin-bottom: 0;
+    padding-bottom: 26px;
+  }
 }

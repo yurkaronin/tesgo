@@ -48,6 +48,7 @@
     <section class="product">
       <div class="container">
         <div class="product_wrap">
+
           <div class="wrap-main__head">
             <h1 class="product__title">Alsoft R Кожный Антисептик 5л (3шт-уп)</h1>
             <div class="product__rating">
@@ -175,54 +176,70 @@
                     </div>
                   </div>
 
+                  <div class="wrapper-accordion">
+                    <button class="accordeeon-btn" type="button" data-spollers>
+                      <span class="accordeeon-btn__name">Характеристики</span>
+                      <svg class="accordeeon-btn__icon" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 1 6 6 6-6" stroke="#231F20" stroke-width="2"/></svg>
+                    </button>
+                    {# вкладка для мобилок - конец  #}
+                    <div class="product__specifications accordeeon-content">
+                      <p class="product__specifications-title">Характеристики:</p>
+                      <ul class="product__specifications-list">
+                        <li class="product__specifications-item">
+                          <p>Количество в упаковке</p>
+                          <p class="strong">12</p>
+                        </li>
+                        <li class="product__specifications-item">
+                          <p>Бренд</p>
+                          <p class="strong">Saraya</p>
+                        </li>
+                        <li class="product__specifications-item">
+                          <p>Объем</p>
+                          <p class="strong">1 л.</p>
+                        </li>
+                        <li class="product__specifications-item">
+                          <p>Страна-производитель</p>
+                          <p class="strong">Китай</p>
+                        </li>
+                        <li class="product__specifications-item">
+                          <p>Вес упаковки</p>
+                          <p class="strong">13.5 кг</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  {# вкладка для мобилок  #}
 
-                  <div class="product__specifications">
-                    <p class="product__specifications-title">Характеристики:</p>
-                    <ul class="product__specifications-list">
-                      <li class="product__specifications-item">
-                        <p>Количество в упаковке</p>
-                        <p class="strong">12</p>
-                      </li>
-                      <li class="product__specifications-item">
-                        <p>Бренд</p>
-                        <p class="strong">Saraya</p>
-                      </li>
-                      <li class="product__specifications-item">
-                        <p>Объем</p>
-                        <p class="strong">1 л.</p>
-                      </li>
-                      <li class="product__specifications-item">
-                        <p>Страна-производитель</p>
-                        <p class="strong">Китай</p>
-                      </li>
-                      <li class="product__specifications-item">
-                        <p>Вес упаковки</p>
-                        <p class="strong">13.5 кг</p>
-                      </li>
-                    </ul>
+                  <div class="wrapper-accordion">
+                  {# вкладка для мобилок  #}
+                    <button class="accordeeon-btn accordeeon-btn--last" type="button" data-spollers>
+                      <span class="accordeeon-btn__name">Описание</span>
+                      <svg class="accordeeon-btn__icon" width="14" height="9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 1 6 6 6-6" stroke="#231F20" stroke-width="2"/></svg>
+                    </button>
+                    {# вкладка для мобилок - конец  #}
+                    <div class="product__descr accordeeon-content">
+                      <p class="product__descr-title">Описание:</p>
+                      <p class="product__descr-text">
+                        Погранслой по определению инвариантен относительно сдвига. Турбулентность
+                        тормозит
+                        экситон. Исследователями из разных лабораторий неоднократно наблюдалось, как
+                        ударная
+                        волна восстанавливает фронт, в итоге возможно появление обратной связи и
+                        самовозбуждение системы. Химическое соединение, как неоднократно наблюдалось
+                        при
+                        постоянном воздействии ультрафиолетового облучения, трансформирует
+                        плоскополяризованный поток. Не только в вакууме, но и в любой нейтральной
+                        среде
+                        относительно низкой плотности расслоение недетерминировано излучает
+                        гидродинамический
+                        удар только в отсутствие тепло- и массообмена с окружающей средой. Жидкость, в
+                        отличие
+                        от классического случая, стохастично притягивает экранированный экситон
+                        независимо от
+                        расстояния до горизонта событий.</p>
+                    </div>
                   </div>
 
-                  <div class="product__descr">
-                    <p class="product__descr-title">Описание:</p>
-                    <p class="product__descr-text">
-                      Погранслой по определению инвариантен относительно сдвига. Турбулентность
-                      тормозит
-                      экситон. Исследователями из разных лабораторий неоднократно наблюдалось, как
-                      ударная
-                      волна восстанавливает фронт, в итоге возможно появление обратной связи и
-                      самовозбуждение системы. Химическое соединение, как неоднократно наблюдалось
-                      при
-                      постоянном воздействии ультрафиолетового облучения, трансформирует
-                      плоскополяризованный поток. Не только в вакууме, но и в любой нейтральной
-                      среде
-                      относительно низкой плотности расслоение недетерминировано излучает
-                      гидродинамический
-                      удар только в отсутствие тепло- и массообмена с окружающей средой. Жидкость, в
-                      отличие
-                      от классического случая, стохастично притягивает экранированный экситон
-                      независимо от
-                      расстояния до горизонта событий.</p>
-                  </div>
                 </div>
 
               </div>
@@ -940,7 +957,7 @@
 							</div>
 						</div>
 					</div>
-          
+
 				</div>
 			</div>
 			<div class="modalprod-window--overview-right">
@@ -967,7 +984,7 @@
 								<img src="img/product/product-img-2-thumb.png" alt="image product">
 							</div>
 						</div>
-						
+
 
             <div class="swiper-slide">
 							<div class="product__img-slide" data-slide='3'>
@@ -1025,7 +1042,7 @@
 
 					</div>
 				</div>
-        
+
 
 			</div>
 		</div>
@@ -1036,6 +1053,7 @@
 </div>
 
 {% endblock %}
+
 
 {# <div class="comparprodcard_goodscount goodscount js-goods-count">
   <div class="goodscount_main js-goods-count-trigger">
@@ -1060,3 +1078,23 @@
     <div class="goodscount_drop_itm">10</div>
   </div>
 </div> #}
+
+{% block Scripts %}
+  <script>
+    window.addEventListener('click', function(event) {
+      if (event.target.classList.contains('accordeeon-btn')) {
+
+        const heightInnerContent = event.target.closest('.wrapper-accordion').querySelector('.accordeeon-content').scrollHeight;
+        console.log();
+        if (event.target.closest('.wrapper-accordion').querySelector('.accordeeon-content').clientHeight === 0) {
+          console.log("height = 0")
+          event.target.closest('.wrapper-accordion').querySelector('.accordeeon-content').style.maxHeight = heightInnerContent + 'px';
+          event.target.closest('.wrapper-accordion').classList.add('active');
+        } else {
+          event.target.closest('.wrapper-accordion').querySelector('.accordeeon-content').style.maxHeight = '0';
+          event.target.closest('.wrapper-accordion').classList.remove('active');
+        }
+      }
+    });
+  </script>
+{% endblock %}
